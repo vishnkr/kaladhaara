@@ -1,0 +1,167 @@
+
+const ContactForm = () => {
+    return (
+        <div className="font-inter grid grid-cols-2">
+            <div className="text-xl ">
+            <h2 className="text-2xl font-bold">Mathura Viswanathan</h2>
+            <p>+1 (916)-496-8817</p>
+            <p>+1 (405)-334-6861</p>
+            <p>kaladhaara.artsacademy@gmail.com</p>
+            </div>
+            <form className="bg-white shadow-lg rounded px-8 pt-6 pb-8">
+                <div className="my-4">
+                <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
+                    Name
+                </label>
+                <input
+                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="name"
+                    type="text"
+                    placeholder="Enter your name"
+                />
+                </div>
+                <div className="my-4">
+                <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
+                    Email
+                </label>
+                <input
+                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="email"
+                    type="email"
+                    placeholder="Enter your email"
+                />
+                </div>
+                <div className="mb-4">
+                <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="phone">
+                    Phone
+                </label>
+                <input
+                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="phone"
+                    type="tel"
+                    placeholder="Enter your phone number"
+                />
+                </div>
+                <div className="mb-6">
+                <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="message">
+                    Message
+                </label>
+                <textarea
+                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="message"
+                    placeholder="Enter your message"
+                    rows={4}
+                ></textarea>
+                </div>
+                <div className="flex items-center justify-between">
+                <button
+                    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                    type="button"
+                >
+                    Submit
+                </button>
+                </div>
+            </form>
+        </div>
+      
+    );
+  };
+  
+  export default ContactForm;
+
+  const ContactFormgu = () => {
+    return (
+      <div className="relative flex flex-col justify-center min-h-screen overflow-hidden ">
+        <div className="w-full p-6 m-auto bg-white rounded-md ring-4 ring-indigo-600 lg:max-w-xl">
+          <form className="mt-6">
+            <div className="mb-2">
+              <label>
+                <span className="text-gray-700">Your name</span>
+                <input
+                  type="text"
+                  name="name"
+                  className="
+  
+              w-full
+              block px-16 py-2 mt-2
+              border-gray-300
+              rounded-md
+              shadow-sm
+              focus:border-indigo-300
+              focus:ring
+              focus:ring-indigo-200
+              focus:ring-opacity-50
+            "
+                  placeholder="John cooks"
+                />
+              </label>
+            </div>
+            <div className="my-4">
+              <label>
+                <span className="text-gray-700">Email address</span>
+                <input
+                  name="email"
+                  type="email"
+                  className="
+              block
+              w-full
+              mt-2 px-16 py-2
+              border-gray-300
+              rounded-md
+              shadow-sm
+              focus:border-indigo-300
+              focus:ring
+              focus:ring-indigo-200
+              focus:ring-opacity-50
+            "
+                  placeholder="john.cooks@example.com"
+                  required
+                />
+              </label>
+            </div>
+            <div className="my-4">
+              <label>
+                <span className="text-gray-700">Message</span>
+                <textarea
+                  name="message"
+                  className="
+              block
+              w-full
+              mt-2 px-16 py-8
+              border-gray-300
+              rounded-md
+              shadow-sm
+              focus:border-indigo-300
+              focus:ring
+              focus:ring-indigo-200
+              focus:ring-opacity-50
+            "
+                  rows={5}
+                ></textarea>
+              </label>
+            </div>
+  
+            <div className="mb-6">
+              <button
+                type="submit"
+                className="
+              h-10
+              px-5
+              text-indigo-100
+              bg-indigo-700
+              rounded-lg
+              transition-colors
+              duration-150
+              focus:shadow-outline
+              hover:bg-indigo-800
+            "
+              >
+                Contact Us
+              </button>
+            </div>
+            <div></div>
+          </form>
+        </div>
+      </div>
+    );
+  };
