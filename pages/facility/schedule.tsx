@@ -1,6 +1,8 @@
 import scheduleJSON from './schedule.json'
 import ScheduleTable from '@/components/ScheduleTable'
+import { ScheduleData } from '@/types'
 import Head from 'next/head'
+
 export default function Schedule(){
     return <section>
         <Head>
@@ -11,7 +13,7 @@ export default function Schedule(){
             <div className="mb-5">
                 <h1 className='text-2xl text-center'>SCHEDULE</h1>
             </div>
-            <ScheduleTable scheduleData={scheduleJSON}/>
+            <ScheduleTable scheduleData={scheduleJSON as ScheduleData}/>
         </div>
     </section>
 }

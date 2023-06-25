@@ -1,18 +1,5 @@
-type Day = 'Monday' | 'Tuesday'| 'Wednesday'| 'Thursday'| 'Friday'| 'Saturday'| 'Sunday';
-interface Event{
-    event:string,
-    time:string
-  }
-interface ScheduleData {
-    locations: {
-      name: string;
-      schedule: Record<string, Event[]>;
-    }[];
-  }
-  
-interface ScheduleTableProps {
-    scheduleData: ScheduleData;
-}
+import { Day, ScheduleTableProps } from "@/types";
+
   
   export default function ScheduleTable({ scheduleData }: ScheduleTableProps) {
     const days:Day[] = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
