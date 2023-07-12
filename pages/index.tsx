@@ -1,10 +1,13 @@
-import Image from 'next/image'
-import Link from 'next/link'
 import ReviewCarousel from '@/components/ReviewCarousel'
+import Head from 'next/head'
 
 export default function Home() {
   return (
-          <main className='flex flex-col'>
+          <main className='flex flex-col min-h-screen'>
+            <Head>
+            <title>Kaladhaara</title>
+            <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+            </Head>
             <div className="relative px-6 lg:px-8 py-16 sm:py-8">
               <div className='pb-8'>
                 <div className='flex space-x-8 items-center justify-center'>
@@ -27,7 +30,8 @@ export default function Home() {
                 
               </div>
             </div>
-            <div className='flex'>
+            <div className='flex flex-col text-center'>
+                <h3 className='my-2 text-md md:text-2xl'>What our students are saying about Kaladhaara </h3>
                 <ReviewCarousel />
              </div>
           </main>

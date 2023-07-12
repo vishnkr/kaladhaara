@@ -7,7 +7,7 @@ export type MenuItems = MenuItem[]
 
 export const menuItems: MenuItems = [
     {
-        title: 'About',
+        title: 'About Us',
         url: '/about',
         submenu:[
             {
@@ -18,15 +18,15 @@ export const menuItems: MenuItems = [
                 title: 'Mathura',
                 url: 'mathura'
             },
+            {
+                title: 'Our Team',
+                url: 'team'
+            },
         ]
     },
     {
         title: 'Curriculum',
         url: '/curriculum',
-    },
-    {
-        title: 'Our Team',
-        url: '/team'
     },
     {
         title: 'Events',
@@ -64,9 +64,13 @@ export const menuItems: MenuItems = [
         title: 'Sac Adavu Meetup',
         url:'/sac-adavu'
     },
-    {
+    /*{
         title: 'Testimonials',
         url: '/testimonials'
+    },*/
+    {
+        title: 'Contact Us',
+        url: '/contact'
     },
 
 ]

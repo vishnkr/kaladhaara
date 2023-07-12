@@ -18,7 +18,6 @@ export default function Locations() {
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             </Head>
             <h1 className="text-3xl font-semibold text-center my-2 ">OUR LOCATIONS</h1>
-            <h4 className="text-lg text-center">Slowly and surely, we have expanded into three studio spaces around the Sacramento area. </h4>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 p-10 " >
                 <div className="flex flex-col flex-wrap">
                     {geojson.features.map((location,idx) => 

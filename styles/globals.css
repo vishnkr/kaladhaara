@@ -179,6 +179,11 @@ button span {
   border-left: 0.32em solid transparent;
 }
 
+.nav-logo{
+    height: 100px;
+    display: block;
+}
+
 .dropdown {
   position: absolute;
   right: 0;

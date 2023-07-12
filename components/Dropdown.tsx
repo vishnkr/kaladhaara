@@ -14,7 +14,7 @@ const Dropdown = ({ curpath, submenus, dropdown }:DropdownProps) => {
         cursor-pointer py-2 px-2 ${dropdown ? "block" : "hidden"}`}>
             {submenus.map((submenu, index) => (
                 <Link key={index} href={`${curpath}/${submenu.url}`}>
-                <li className="px-1 py-2 hover:bg-zinc-300 hover:rounded-lg">
+                <li key={index} className="px-1 py-2 hover:bg-zinc-300 hover:rounded-lg">
                     {submenu.title}
                 </li>
                 </Link>
@@ -23,5 +23,4 @@ const Dropdown = ({ curpath, submenus, dropdown }:DropdownProps) => {
       
     );
   };
-  
   export default Dropdown;

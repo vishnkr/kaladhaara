@@ -58,7 +58,7 @@ export default function Staff() {
   return (
     <section>
       <Head>
-          <title>Staff - Kaladhaara</title>
+          <title>Our Team - Kaladhaara</title>
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
        <div className="">

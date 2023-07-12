@@ -37,37 +37,29 @@ const ReviewCarousel = () => {
     }, [])
   
     return (
-        <div className="w-full">
-            <div className="top-0 left-0 w-full h-full flex items-center justify-center">
-                <div className="bg-gray-200 flex justify-around space-x-3 rounded-lg shadow-md p-8 transform transition-opacity duration-500 ease-in-out opacity-100 review-card active">
-                <div className="rounded-full overflow-hidden w-20 h-20 mb-4">
-                    <img src='/dog.jpg' alt="Reviewer profile image" className="w-full h-full object-cover" />
-                </div>
-                <div>
-                <p className="text-lg font-medium mb-2">John Doe</p>
-                <p className="text-sm text-gray-700 mb-6">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in ante vel est blandit efficitur ut sit amet magna."</p>
-                <p className="text-sm text-gray-700 mb-6">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in ante vel est blandit efficitur ut sit amet magna."</p>
-                </div>
-
-                
-                </div>
-            </div>
+        <div className="w-full flex">
+            
+            <section className="w-full bg-white dark:bg-gray-700 rounded-md">
+              <div className="max-w-screen-xl py-3 mx-auto text-center lg:py-5 ">
+                  <figure className="max-w-screen-md mx-auto">
+                      <svg className="h-8 mx-auto mb-3 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
+                      </svg> 
+                      <blockquote>
+                          <p className="text-xl font-medium text-gray-900 dark:text-white">"Kaladhaara is just awesome. I made some great friends and became a better dancer during my time at Kaladhaara "</p>
+                      </blockquote>
+                      <figcaption className="flex items-center justify-center mt-6 space-x-3">
+                          <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+                              <div className="pr-3 font-medium text-gray-900 dark:text-white">John Doe</div>
+                              <div className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400"></div>
+                          </div>
+                      </figcaption>
+                  </figure>
+              </div>
+            </section>
         </div>
       
     )
   }
   
   export default ReviewCarousel;
-  {/* <div className="relative h-300">
-        <div className="absolute top-0 left-0 w-full 
-            h-full flex flex-col items-center justify-center bg-[#f2f2f2] rounded-lg
-            shadow shadow-black	p-32 box-border transition ease-in opacity-100 delay-500">
-          <div className="review-image">
-            <img src={currentReview.imagePath} alt={currentReview.name} />
-          </div>
-          <div className="review-content">
-            <p className="review-feedback">{currentReview.feedback}</p>
-            <p className="review-name">{currentReview.name}</p>
-          </div>
-        </div>
-      </div> */}

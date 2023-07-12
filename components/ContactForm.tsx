@@ -1,14 +1,43 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faInstagram, faFacebook, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import Link from 'next/link';
 
 const ContactForm = () => {
     return (
-        <div className="font-inter grid grid-cols-2">
+        <div className="font-inter grid md:grid-cols-2 grid-cols-1">
             <div className="text-xl ">
-            <h2 className="text-2xl font-bold">Mathura Viswanathan</h2>
-            <p>+1 (916)-496-8817</p>
-            <p>+1 (405)-334-6861</p>
-            <p>kaladhaara.artsacademy@gmail.com</p>
+            <h2 className="md:text-2xl text-lg font-semibold">Mathura Viswanathan</h2>
+            <div className='my-2'>
+              <p className="text-lg md:text-md"> <FontAwesomeIcon icon={faPhone}/> +1 (916)-496-8817</p>
+              <p className="text-lg md:text-md"><FontAwesomeIcon icon={faPhone}/> +1 (405)-334-6861</p>
+              <p className="text-lg md:text-md"><FontAwesomeIcon icon={faEnvelope}/> kaladhaara.artsacademy@gmail.com</p>
             </div>
-            <form className="bg-white shadow-lg rounded px-8 pt-6 pb-8">
+            <div className='flex flex-col md:text-2xl text-lg px-3 items-center justify-center'>
+              <h3>Follow us on our socials for more updates!</h3>
+              <div className='flex flex-col'>
+                  
+                  <p className="md:text-xl text-lg">
+                  <Link href="https://www.instagram.com/kaladhaara_arts_academy/" target="_blank" className="mx-2">
+                    <FontAwesomeIcon icon={faInstagram}/> -
+                    @kaladhaara_arts_academy</Link>
+                  </p>
+                  <p className="md:text-xl text-lg">
+                  <Link href="https://www.facebook.com/Kaladhaara" target="_blank" className="mx-2">
+                    <FontAwesomeIcon icon={faFacebook}/> -
+                    Kaladhaara</Link>
+                  </p>
+                  <p className="md:text-xl text-lg">
+                  <Link href="https://www.youtube.com/channel/UCtlYWV3SmKg-CXTQyzwh6ag" target="_blank" className="mx-2">
+                    <FontAwesomeIcon icon={faYoutube}/> -
+                    @kaladhaara</Link>
+                  </p>
+              </div>
+              
+            </div>
+
+            </div>
+            <form className="bg-white shadow-lg rounded px-4 pt-6 pb-8 mx-4">
                 <div className="my-4">
                 <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
                     Name
