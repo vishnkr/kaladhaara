@@ -64,6 +64,26 @@ export default function Staff() {
        <div className="">
             <h1 className='text-3xl font-semibold text-center'>TEAM KALADHAARA</h1>
         </div>
+      <div className='flex flex-wrap justify-center'>
+        <div
+          key={0}
+          className="flex rounded overflow-hidden shadow-lg m-2"
+        >
+          <img
+            className="h-auto"
+            src="/dog.jpg"
+            alt="Mathura Viswanathan"
+          />
+          <div className="px-6 py-4">
+            <div className="font-bold text-xl mb-2">Mathura Viswanathan</div>
+            <p className="text-gray-700 text-base">Founder and Artistic Director</p>
+              <p className="text-gray-700 text-base mt-2">
+                I am the boss here
+              </p>
+          </div>
+        </div>
+      </div>
+
       <div className="flex flex-wrap justify-center">
       {staff.map((staffMember) => (
         <div
