@@ -13,7 +13,7 @@ export default function Schedule(){
             <div className="mb-5">
                 <h1 className='text-2xl text-center'>SCHEDULE</h1>
             </div>
-            <ScheduleTable scheduleData={scheduleJSON as ScheduleData}/>
+            <ScheduleTable scheduleData={scheduleJSON}/>
         </div>
     </section>
 }
