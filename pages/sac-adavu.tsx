@@ -17,6 +17,14 @@ export default function Samu(){
              revisit the foundation, technique and learn something new every time. The approach is similar 
              to a drop in dance class.
         </p>
+        <div className="grid grid-cols-2 gap-2 mt-8">
+             <div className="aspect-w-2 aspect-h-1">
+                <img src="/sac-adavu/sa1.jpg" alt="Mathura" className="" />
+              </div>
+              <div className="aspect-w-2 aspect-h-1">
+                <img src="/sac-adavu/sa2.jpg" alt="Mathura" className="" />
+               </div>
+        </div>
         <p className='mt-8 text-lg text-center leading-8 text-gray-600'>
             This is a collaborative work space that allows for dancers in the 
             area to learn, grow and enjoy this beautiful art form. Every session starts with a  slow warm up,

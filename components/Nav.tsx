@@ -26,7 +26,7 @@ export default function Nav(){
     })
   
     return (
-        <nav className="isolate bg-[#ededbb]  text-sky-900">
+        <nav className="isolate bg-[#ededbb] dark:bg-orange-200  text-sky-900">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <div className="flex items-center">
                     <Link className="m-1.5" href="/">
@@ -44,7 +44,7 @@ export default function Nav(){
                         return (
                             menu.submenu ? 
                             <li 
-                                className="font-semibold cursor-pointer leading-6 text-sky-900 mx-2" 
+                                className="font-semibold cursor-pointer leading-6 text-zinc-900 mx-2" 
                                 key={idx} aria-haspopup="menu" aria-expanded={dropdown} 
                                 onClick={()=>setDropdown((prev)=>!prev)}
                                 onMouseEnter={()=>onMouseEnter(idx)}
@@ -59,7 +59,7 @@ export default function Nav(){
                             <Dropdown  curpath={menu.url} submenus={menu.submenu} dropdown={dropdown && curSelected===idx} />
                             </li>
                             : 
-                            <li key={idx} className="font-medium lg:font-semibold leading-6 text-sky-900 group transition duration-300 ease-in-out mx-2">
+                            <li key={idx} className="font-medium lg:font-semibold leading-6 text-zinc-900 group transition duration-300 ease-in-out mx-2">
                                 <Link target="_self" href={menu.url}>
                                     {menu.title}
                                     <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-gradient-to-r from-pink-500 to-pink-500"></span>

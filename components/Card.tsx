@@ -4,11 +4,12 @@ interface CardProps {
     title: string,
     content: string,
     color: string,
+    img:string,
 }
 
 import React, { useState } from 'react';
 
-function Card({title,content,color}:CardProps) {
+function Card({title,content,color,img}:CardProps) {
   const [isHovered, setIsHovered] = useState(false);
   const [isClicked, setIsClicked] = useState(false);
 
@@ -25,7 +26,7 @@ function Card({title,content,color}:CardProps) {
     >
       <div className="absolute top-0 left-0 w-full h-full">
         <img
-          src="/dog.jpg"
+          src={img}
           alt="Card Background"
           className={`object-cover w-full h-full ${isHovered || isClicked ? 'grayscale-0' : 'grayscale'}`}
         />

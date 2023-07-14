@@ -4,14 +4,11 @@
       "name": "Mather Field",
       "schedule": {
         "Monday":[{ "event":"Intermediate", "time": "6:00pm - 8:30pm"}],
-        "Tuesday": [{ "event":"Arangetram Classes", "time": ""}],
         "Thursday": [{ "event":"Intermediate & Advanced", "time": "6:30pm - 8:00pm"}],
-        "Friday": [{ "event":"Arangetram Classes", "time": ""}],
         "Saturday":[
           {"event":"Beginner Adavus","time":"10:00pm-12:00pm"},
           {"event":"Varnam","time":"2:30pm"}
-        ],
-        "Sunday":[{ "event":"Arangetram Classes", "time": ""}]
+        ]
       }
         
     },
@@ -20,16 +17,13 @@
       "schedule": {
         "Monday":[{ "event":"Beginner & Intermediate", "time": "6:00pm - 8:30pm"}],
         "Tuesday":[{"event":"Adult beginners","time":"7:00pm - 8:00pm"}],
-        "Wednesday": [{ "event":"External group", "time": "6:30pm-8:30pm"}],
-        "Thursday": [{ "event":"Bhajan Class", "time": "5:30-6:30pm"},
-          {"event":"External group", "time":"6:45pm-7:30pm"}
+        "Thursday": [{ "event":"Bhajan Class", "time": "5:30-6:30pm"}
+          
         ],
-        "Friday": [{ "event":"External group", "time": ""}],
         "Saturday":[
           {"event":"2 Intermediate groups","time":"11am - 1:30pm"},
           {"event":"SacAdavu group meetup","time":"7:15am - 9:00am "}
-        ],
-        "Sunday":[{ "event":"Arangetram Classes", "time": ""}]
+        ]
       }
     },
     {
