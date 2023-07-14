@@ -1,5 +1,5 @@
 
-const params: Stripe.Checkout.SessionCreateParams = {
+/*const params: Stripe.Checkout.SessionCreateParams = {
     submit_type: 'donate',
     payment_method_types: ['card'],
     line_items:[
@@ -8,4 +8,4 @@ const params: Stripe.Checkout.SessionCreateParams = {
             amount: formatAmountForStripe(amount,CURRENCY)
         }
     ],
-}
+}*/

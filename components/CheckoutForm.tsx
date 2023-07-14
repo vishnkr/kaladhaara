@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+/*import React, { useState } from 'react'
 
 import CustomDonationInput from '../components/CustomDonationInput'
 import StripeTestCards from '../components/StripeTestCards'
@@ -72,4 +72,4 @@ const CheckoutForm = () => {
   )
 }
 
-export default CheckoutForm
+export default CheckoutForm*/
