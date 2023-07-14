@@ -1,4 +1,4 @@
-import {loadStripe, Stripe} from '@stripe/stripe-js/pure';
+/*import {loadStripe, Stripe} from '@stripe/stripe-js/pure';
 
 
 const stripe = await loadStripe(process.env.STRIPE_PUBLISHABLE_KEY!);
@@ -18,4 +18,4 @@ const getStripe = () => {
 };
 
 
-export default getStripe;
+export default getStripe;*/

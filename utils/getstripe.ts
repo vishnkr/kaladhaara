@@ -1,4 +1,4 @@
-import {loadStripe} from '@stripe/stripe-js/pure';
+/*import {loadStripe} from '@stripe/stripe-js/pure';
 import { Stripe } from '@stripe/stripe-js';
 
 let stripePromise: Promise<Stripe | null>;
@@ -16,4 +16,4 @@ const getStripe = () => {
 };
 
 
-export default getStripe;
+export default getStripe;*/
