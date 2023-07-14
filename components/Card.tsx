@@ -27,7 +27,6 @@ function Card({title,content,color,img}:CardProps) {
       <div className="absolute top-0 left-0 w-full h-full">
         <img
           src={img}
-          alt="Card Background"
           className={`object-cover w-full h-full ${isHovered || isClicked ? 'grayscale-0' : 'grayscale'}`}
         />
       </div>
