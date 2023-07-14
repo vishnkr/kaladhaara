@@ -77,8 +77,7 @@ export default function Staff() {
         >
           <img
             className="h-auto"
-            src="/dog.jpg"
-            alt="Mathura Viswanathan"
+            src="/mathura/mathura7.jpg"
           />
           <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2">Mathura Viswanathan</div>

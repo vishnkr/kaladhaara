@@ -12,10 +12,10 @@ export default function FirstPost() {
 
                 <div className="grid grid-cols-2 gap-2 mt-8">
                         <div className="aspect-w-1 aspect-h-1">
-                        <img src="/mathura/mathura2.jpg" alt="Mathura" className="object-cover w-full" />
+                        <img src="/mathura/mathura2.jpg" className="object-cover w-full" />
                         </div>
                         <div className="aspect-w-1 aspect-h-1">
-                        <img src="/mathura/mathura3.jpg" alt="Mathura" className="object-cover w-full" />
+                        <img src="/mathura/mathura3.jpg" className="object-cover w-full" />
                         </div>
                 </div>
                 <p className="mt-8 text-lg text-center leading-8 text-gray-600">
@@ -36,7 +36,7 @@ export default function FirstPost() {
                         </p>
                     </div>
                     <div className="w-full lg:w-1/2 flex justify-center items-center">
-                        <img src="/mathura/mathura5.jpg" alt="Image" className="max-w-full h-auto" />
+                        <img src="/mathura/mathura5.jpg" className="max-w-full h-auto" />
                     </div>
                 </div>
                 <p className="mt-8 text-lg text-center leading-8 text-gray-600">

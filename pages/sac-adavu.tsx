@@ -13,16 +13,16 @@ export default function Samu(){
         <p className='mt-8 text-lg text-center leading-8 text-gray-600'>
             If you have learnt any form of Indian dance years ago and feel the urge to get back in touch and 
             dance away your stress, look no further. This is what Kaladhaara's newest initiative is all about!
-             SacAdavu meetup is a group of like minded dancers who meet bi monthly on a weeknd morning to 
+             SacAdavu meetup is a group of like minded dancers who meet bi monthly on a weekend morning to 
              revisit the foundation, technique and learn something new every time. The approach is similar 
              to a drop in dance class.
         </p>
         <div className="grid grid-cols-2 gap-2 mt-8">
              <div className="aspect-w-2 aspect-h-1">
-                <img src="/sac-adavu/sa1.jpg" alt="Mathura" className="" />
+                <img src="/sac-adavu/sa1.jpg" className="" />
               </div>
               <div className="aspect-w-2 aspect-h-1">
-                <img src="/sac-adavu/sa2.jpg" alt="Mathura" className="" />
+                <img src="/sac-adavu/sa2.jpg" className="" />
                </div>
         </div>
         <p className='mt-8 text-lg text-center leading-8 text-gray-600'>

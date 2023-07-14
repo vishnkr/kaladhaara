@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { useEffect, useState } from "react"
+import { useState } from "react"
 
 function cn(...classes:string[]){
     return classes.filter(Boolean).join(' ');
@@ -54,7 +54,7 @@ export default function GalleryComponent(){
               >
                 &times;
               </button>
-              <img src={selectedImage.src} alt="" className="max-h-full object-contain" />
+              <img src={selectedImage.src} className="max-h-full object-contain" />
             </div>
           </div>
         </Modal>
