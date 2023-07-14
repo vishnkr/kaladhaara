@@ -29,7 +29,7 @@
     "**/*.ts",
     "**/*.tsx",
     "pages/about/about.js"
-, "components/MenuItems.js", "components/Dropdown.js", "components/Footer.tsx", "components/Map.tsx", "pages/facility/schedule.js"  ],
+, "components/MenuItems.js", "components/Dropdown.js", "components/Footer.tsx", "components/Map.tsx", "pages/facility/schedule.js", "components/ScheduleTable.js"  ],
   "exclude": [
     "node_modules"
   ]
