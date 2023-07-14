@@ -1,6 +1,5 @@
 import scheduleJSON from './schedule.json'
 import ScheduleTable from '@/components/ScheduleTable'
-import { ScheduleData } from '@/types'
 import Head from 'next/head'
 
 export default function Schedule(){

@@ -1,8 +1,6 @@
-import { Day, ScheduleTableProps } from "@/types";
-
   
-  export default function ScheduleTable({ scheduleData }: ScheduleTableProps) {
-    const days:Day[] = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+  export default function ScheduleTable({ scheduleData }) {
+    const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
   
     return (
       <div className="flex flex-col">
