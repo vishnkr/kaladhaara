@@ -17,9 +17,7 @@
       "schedule": {
         "Monday":[{ "event":"Beginner & Intermediate", "time": "6:00pm - 8:30pm"}],
         "Tuesday":[{"event":"Adult beginners","time":"7:00pm - 8:00pm"}],
-        "Thursday": [{ "event":"Bhajan Class", "time": "5:30-6:30pm"}
-          
-        ],
+        "Thursday": [{ "event":"Bhajan Class", "time": "5:30-6:30pm"}],
         "Saturday":[
           {"event":"2 Intermediate groups","time":"11am - 1:30pm"},
           {"event":"SacAdavu group meetup","time":"7:15am - 9:00am "}

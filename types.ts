@@ -6,7 +6,7 @@ export interface Event{
 export interface ScheduleData {
     locations: {
       name: string;
-      schedule: Record<string, Event[]>;
+      schedule: any;
     }[];
   }
   
