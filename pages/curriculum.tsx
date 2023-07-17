@@ -23,8 +23,9 @@ const curriculumCards = [
         title: 'Advanced',
         img:'/other/arangetram3.jpg',
         content: 'Students work towards arangetram and beyond. Here they learn complex compositions like Varnams, Padams, Javalis. Students at this level often help in mentoring younger students and inspiring the younger groups with their performances.',
-        color: 'linear-gradient(90deg, rgba(249,249,249,1) 0%, rgba(70,152,176,1) 99%)'
+        color: 'linear-gradient(90deg, rgba(249,249,249,1) 0%, rgba(226,146,67,1) 99%)'
     }
+    //c3: rgba(226,146,67,1) 0%, rgba(187,117,233,1) c4: rgba(70,152,176,1)
 ]
 export default function Curriculum(){
     return <section className={`font-inter`}>

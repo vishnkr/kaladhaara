@@ -34,7 +34,7 @@ function Card({title,content,color,img}:CardProps) {
         <div 
             className={`absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center transition-opacity duration-500 ${isHovered ? 'opacity-90' : 'opacity-0'}`}
             style={{
-                background: color
+                background: "linear-gradient(90deg, rgba(249,249,249,1) 0%, rgba(226,146,67,1) 99%)",
               }}
         >
           <h2 className={`text-4xl text-center font-bold mb-4 ${maven.className}`}>{title}</h2>
