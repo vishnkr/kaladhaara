@@ -1,5 +1,4 @@
 import Card from '@/components/Card';
-import { Montserrat,Inter } from 'next/font/google';
 import Head from 'next/head';
 const curriculumCards = [
     {

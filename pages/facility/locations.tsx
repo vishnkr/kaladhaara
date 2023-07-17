@@ -21,12 +21,12 @@ export default function Locations() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 p-10 " >
                 <div className="flex flex-col flex-wrap">
                     {geojson.features.map((location,idx) => 
-                        <div className="w-full p-4 bg-red-200 my-3 rounded-lg" key={idx}>
+                        <div className="w-full p-4 bg-slate-300 my-3 rounded-lg" key={idx}>
                         <h2 className="text-lg font-bold mb-4">{location.properties.title}</h2>
                             <div className="mb-4">
                                 <div className="flex flex-auto items-center space-x-4" >
                                     <h4 className="font-bold">{location.properties.loc1}  <br /> {location.properties.loc2}</h4>
-                                    <button className=" bg-orange-400 rounded-md p-2"
+                                    <button className=" bg-orange-800 text-white rounded-md p-2"
                                     onClick={() => handleButtonClick(location.geometry.lng, location.geometry.lat)}
                                     > View Location
                                     </button>

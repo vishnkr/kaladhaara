@@ -68,7 +68,7 @@ export default function Staff() {
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
        <div className="">
-            <h1 className='text-3xl font-semibold text-center'>TEAM KALADHAARA</h1>
+            <h1 className='text-3xl font-semibold text-center'>Meet our Team</h1>
         </div>
       <div className='flex flex-wrap justify-center'>
         <div
