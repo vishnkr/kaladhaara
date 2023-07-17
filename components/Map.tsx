@@ -29,11 +29,9 @@ export default function Map({markerCoordinates}:MapProps){
           map.current.setCenter(markerCoordinates);
           map.current.setZoom(13);
           if(markers){
-            console.log('marks',markerCoordinates,markers)
             markers.forEach((marker,idx)=>{
               const lngLat = marker.getLngLat();
               if (lngLat.lat == markerCoordinates.lat && lngLat.lng == markerCoordinates.lng){
-                console.log('toggling',markerCoordinates)
                 marker.togglePopup()
                 setCurPopupIdx(idx);
               }

@@ -8,15 +8,19 @@ export default function FirstPost() {
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             </Head>
             <div className="flex flex-col">
-                <h1 className="text-2xl text-center">ABOUT MATHURA</h1>
+                <h1 className="text-3xl text-center">Mathura</h1>
 
                 <div className="grid grid-cols-2 gap-2 mt-8">
-                        <div className="aspect-w-1 aspect-h-1">
-                        <img src="/mathura/mathura2.jpg" className="object-cover w-full" />
+                    <div className="aspect-w-1 aspect-h-1">
+                        <div className="flex items-center justify-center h-full w-full">
+                            <img src="/mathura/mathura2.jpg" className="object-cover w-full h-full" />
                         </div>
-                        <div className="aspect-w-1 aspect-h-1">
-                        <img src="/mathura/mathura3.jpg" className="object-cover w-full" />
+                    </div>
+                    <div className="aspect-w-1 aspect-h-1">
+                        <div className="flex items-center justify-center h-full w-full">
+                            <img src="/mathura/mathura3.jpg" className="object-cover h-full w-full" />
                         </div>
+                    </div>
                 </div>
                 <p className="mt-8 text-lg text-center leading-8 text-gray-600">
                 Mathura Viswanathan is the founder and artistic director of Kaladhaara Arts Academy. Rooted with a strong foundation from eminent Gurus like Kalaimamani Smt. Krishnakumari Narendran,  Natanamamani Sri A. Lakshman and Nritya Choodamani Smt. Priyadarsini Govind, her abhinaya skills were groomed under Padma Vibhushan Smt. Kalanidhi Narayan. Presently, Mathura is delving into learning Karanas under the mentorship of Guru Sri. N. Srikanth to enhance her learning in this art form. Having been initiated into the art of nattuvangam by the exponent Bhagavatula Seetharama Sharma, she continues to hone her nattuvangam skills with Mridangam vidwan Sri. Nagai P.Sriram. 

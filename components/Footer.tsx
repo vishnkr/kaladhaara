@@ -6,12 +6,15 @@ function Footer() {
     const year = new Date().getFullYear();
 	return (
 		<>
-			<div className="bg-gray-50 h-1/2 w-full flex md:flex-row flex-col justify-around items-start p-8">
-				<div className="px-5 ">
+			<div className="bg-gray-50 w-full flex md:flex-row flex-col items-start md:justify-around md:items-start px-8 py-2">
+				<div className="px-2">
+					<div className="px-5 flex flex-col items-center">
+						<img src="/logo-sm.png" alt="Logo" className="h-12 w-12 mr-2" />	
+						<p className="text-gray-800 font-semibold text-2xl pb-3">Kaladhaara</p>
+						
+					</div>
 					<ul>
-						<p className="text-gray-800 font-bold text-2xl pb-3">
-							Kaladhaara
-						</p>
+						
 						<div className="flex gap-6 pb-5">
                         <Link href="https://www.instagram.com/kaladhaara_arts_academy/" target="_blank" className="mx-2">
                             <div className="bg-gradient-to-br from-pink-600 via-purple-600 to-red-600 rounded-lg p-2 flex justify-center items-center cursor-pointer">
