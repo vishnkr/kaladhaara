@@ -15,58 +15,85 @@ function Modal(props: { onClose: () => void; children: React.ReactNode }) {
     return (
       <div
         className="fixed top-0 left-0 right-0 bottom-0 z-50"
-        onClick={props.onClose}
+        
       >
         {props.children}
       </div>
     );
   }
 
-export default function GalleryComponent(){
-
+  export default function GalleryComponent() {
     const numImages = 25; // Number of images to loop through
     const imageBasePath = "/gallery/gallery"; // Base path for the images
     const images = [];
-
-    const [selectedImage, setSelectedImage] = useState<Image|null>(null);
-    const openModal = (image:Image) => {
-        setSelectedImage(image);
+  
+    const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
+  
+    const openModal = (imageIndex: number) => {
+      setSelectedImageIndex(imageIndex);
     };
-
+  
     const closeModal = () => {
-        setSelectedImage(null);
+      setSelectedImageIndex(null);
     };
+  
     for (let i = 1; i <= numImages; i++) {
-        const image = {
+      const image = {
         id: i,
         src: `${imageBasePath}${i}.jpg`,
-        };
-        images.push(image);
+      };
+      images.push(image);
     }
-
-    return <div className="max-w-2-xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-7-xl lg:px-8">
-        <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
-            {images.map((image) => (
-            <BlurImage key={image.id} src={image.src} onClick={() => openModal(image)}/>
+  
+    const handlePrevImage = () => {
+      if (selectedImageIndex !== null) {
+        setSelectedImageIndex(() => (selectedImageIndex === 0 ? numImages - 1 : selectedImageIndex - 1));
+      }
+    };
+  
+    const handleNextImage = () => {
+      if (selectedImageIndex !== null) {
+        setSelectedImageIndex(() => (selectedImageIndex === numImages - 1 ? 0 : selectedImageIndex + 1));
+      }
+    };
+  
+    return (
+        <div className="max-w-2-xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-7-xl lg:px-8">
+          <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+            {images.map((image, index) => (
+              <BlurImage key={image.id} src={image.src} onClick={() => openModal(index)} />
             ))}
-        </div>
-        {selectedImage && (
-        <Modal onClose={closeModal}>
-          <div className="fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50 flex justify-center items-center">
-            <div className="relative w-4/5 h-5/6">
-              <button
-                className="absolute top-4 right-4 text-white text-xl cursor-pointer"
-                onClick={closeModal}
-              >
-                &times;
-              </button>
-              <img src={selectedImage.src} className="max-h-full object-contain" />
-            </div>
           </div>
-        </Modal>
-      )}
-    </div>
-}
+          {selectedImageIndex !== null && (
+            <Modal onClose={closeModal}>
+              <div className="fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50 flex justify-center items-center">
+                <div className="relative w-4/5 h-5/6 flex justify-center items-center">
+                    <button
+                    className="absolute top-4 right-4 text-white text-xl cursor-pointer"
+                    onClick={closeModal}
+                    >
+                    &times;
+                    </button>
+                  <button
+                    className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white text-2xl cursor-pointer z-10"
+                    onClick={handlePrevImage}
+                  >
+                    &lt;
+                  </button>
+                  <img src={images[selectedImageIndex].src} className="max-h-full object-contain" />
+                  <button
+                    className="absolute top-1/2 right-4 transform -translate-y-1/2 text-white text-2xl cursor-pointer z-10"
+                    onClick={handleNextImage}
+                  >
+                    &gt;
+                  </button>
+                </div>
+              </div>
+            </Modal>
+          )}
+        </div>
+      );
+  }
 
 function BlurImage(props:{src:string,onClick:()=>void}){
     const [isLoading,setLoading] = useState(true);
