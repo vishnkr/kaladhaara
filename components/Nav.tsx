@@ -27,13 +27,14 @@ export default function Nav() {
         <div className="max-w-screen-xl flex flex-wrap items-center md:justify-start mx-auto p-2">
           <div className="flex items-center">
             <Link className="m-1.5" href="/">
-              <img src="/logo.png" className="nav-logo" />
+              <img src="/logo.png" className="block h-20 md:h-24 " />
             </Link>
+            <div className="flex items-center justify-end">
             <button
               data-collapse-toggle="navbar-multi-level"
               type="button"
               onClick={toggleMenu}
-              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              className="inline-flex items-center p-2 w-10 h-10 justify-end text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
               aria-controls="navbar-multi-level"
               aria-expanded="false"
             >
@@ -56,6 +57,7 @@ export default function Nav() {
                 />
               </svg>
             </button>
+            </div>
           </div>
           <div
             className={`${
@@ -70,7 +72,7 @@ export default function Nav() {
                     
                     {menu.submenu ? (
                       <div
-                        className="font-semibold cursor-pointer leading-6 text-zinc-900 mx-2"
+                        className="font-semibold cursor-pointer leading-6 text-red-900 mx-2"
                         aria-haspopup="menu"
                         aria-expanded={dropdown}
                         onClick={() => {
@@ -119,7 +121,7 @@ export default function Nav() {
                     ) : (
                         
                       <Link target="_self" href={menu.url}>
-                        <div className="font-medium lg:font-semibold leading-6 text-zinc-900 group transition duration-300 ease-in-out mx-2">
+                        <div className="font-medium lg:font-semibold leading-6 text-red-900 group transition duration-300 ease-in-out mx-2">
                           {menu.title}
                           <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-orange-700"></span>
                         </div>

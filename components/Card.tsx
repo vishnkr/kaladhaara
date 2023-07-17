@@ -37,11 +37,11 @@ function Card({title,content,color,img}:CardProps) {
                 background: "linear-gradient(90deg, rgba(249,249,249,1) 0%, rgba(226,146,67,1) 99%)",
               }}
         >
-          <h2 className={`text-4xl text-center font-bold mb-4 ${maven.className}`}>{title}</h2>
-          <p className="text-lg text-center">{content}</p>
+          <h2 className={`text-3xl md:text-4xl lg:text-5xl text-center font-bold mb-4 ${maven.className}`}>{title}</h2>
+          <p className="text-lg md:text-xl lg:text-2xl text-center">{content}</p>
         </div>
         : <div className='absolute top-0 left-0 w-full h-full bg-gray-500 bg-opacity-50 flex flex-col justify-center items-center'>
-            <h2 className={`text-white text-4xl font-bold mb-4 text-center ${maven.className}`}>{title.toUpperCase()}</h2>
+            <h2 className={`text-white text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-center ${maven.className}`}>{title.toUpperCase()}</h2>
         </div>
       }
     </div>

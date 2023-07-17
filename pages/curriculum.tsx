@@ -36,19 +36,19 @@ export default function Curriculum(){
         <div className="page-title">
             <h1 className='text-2xl text-center'>OUR CURRICULUM</h1>
         </div>
-        <p className='mt-8 text-lg text-center leading-8 text-gray-600'>
+        <p className='mt-8 text-base md:text-lg lg:text-xl text-center leading-8 text-gray-600'>
         Kaladhaara's approach to teaching Bharatanatyam is based on providing a wholesome experience that 
         includes learning form and technique, foundational theory of dance, understanding the cultural 
         significance, fostering creativity, all the while making it an enjoyable experience for the students. 
         </p>
-        <p className='mt-8 text-lg text-center leading-8 text-gray-600'>
+        <p className='mt-8 text-base md:text-lg lg:text-xl text-center leading-8 text-gray-600'>
         Based on the student's age and level, they are placed into groups with similar learning abilities. 
         These group classes and practice sessions often help students form strong friendships, learning from each other and progressing as a group. 
         Through these classes, the students learn important values like perseverance, determination, discipline, 
         time management while enjoying the learning experience.<br />
         </p>
-        <h3 className='text-center my-3 text-xl'>Here is a sample of what some of these groups work on </h3>
-       <div className="grid grid-cols-2 grid-rows-2 gap-3">
+        <h3 className='text-center my-3 text-lg md:text-xl lg:text-2xl '>Here is a sample of what some of these groups work on </h3>
+       <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-3">
             {curriculumCards.map((cardProps,idx)=>{
                 return <Card {...cardProps} key={idx}/>
             })}

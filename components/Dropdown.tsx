@@ -10,7 +10,7 @@ const Dropdown = ({ curpath, submenus, dropdown }:DropdownProps) => {
     return (
         
         <ul className={`absolute rounded-lg
-        z-9000 list-none text-md shadow-lg bg-white
+        z-9000 list-none text-md shadow-lg bg-white text-zinc-900
         cursor-pointer py-2 px-2 ${dropdown ? "block" : "hidden"}`}>
             {submenus.map((submenu, index) => (
                 <Link key={index} href={`${curpath}/${submenu.url}`}>
