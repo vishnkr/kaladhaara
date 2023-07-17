@@ -23,8 +23,8 @@ export default function Nav() {
     };
   
     return (
-      <nav className="isolate bg-[#ededbb] dark:bg-orange-200 text-sky-900">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <nav className="isolate bg-[#ededbb]  text-sky-900">
+        <div className="max-w-screen-xl flex flex-wrap items-center md:justify-start mx-auto p-2">
           <div className="flex items-center">
             <Link className="m-1.5" href="/">
               <img src="/logo.png" className="nav-logo" />

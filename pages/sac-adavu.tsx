@@ -17,7 +17,7 @@ export default function Samu(){
              revisit the foundation, technique and learn something new every time. The approach is similar 
              to a drop in dance class.
         </p>
-        <div className="grid grid-cols-2 gap-2 mt-8">
+        <div className="grid grid-rows-1 md:grid-cols-2 gap-2 mt-8">
              <div className="aspect-w-2 aspect-h-1">
                 <img src="/sac-adavu/sa1.jpg" className="" />
               </div>
