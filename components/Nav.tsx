@@ -121,7 +121,7 @@ export default function Nav() {
                       <Link target="_self" href={menu.url}>
                         <div className="font-medium lg:font-semibold leading-6 text-zinc-900 group transition duration-300 ease-in-out mx-2">
                           {menu.title}
-                          <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-gradient-to-r from-pink-500 to-pink-500"></span>
+                          <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-orange-700"></span>
                         </div>
                       </Link>
                       

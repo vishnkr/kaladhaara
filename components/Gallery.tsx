@@ -11,10 +11,16 @@ type Image = {
 }
 
 
-function Modal(props:any) {
-    return <div className="fixed top-0 left-0 right-0 bottom-0 z-50">{props.children}</div>;
+function Modal(props: { onClose: () => void; children: React.ReactNode }) {  
+    return (
+      <div
+        className="fixed top-0 left-0 right-0 bottom-0 z-50"
+        onClick={props.onClose}
+      >
+        {props.children}
+      </div>
+    );
   }
-  
 
 export default function GalleryComponent(){
 
@@ -45,7 +51,7 @@ export default function GalleryComponent(){
             ))}
         </div>
         {selectedImage && (
-        <Modal>
+        <Modal onClose={closeModal}>
           <div className="fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50 flex justify-center items-center">
             <div className="relative w-4/5 h-5/6">
               <button

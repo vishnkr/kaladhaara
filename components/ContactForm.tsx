@@ -11,23 +11,23 @@ const ContactForm = () => {
             <div className='my-2'>
               <p className="text-lg md:text-md"> <FontAwesomeIcon icon={faPhone}/> +1 (916)-496-8817</p>
               <p className="text-lg md:text-md"><FontAwesomeIcon icon={faPhone}/> +1 (405)-334-6861</p>
-              <p className="text-lg md:text-md"><FontAwesomeIcon icon={faEnvelope}/> kaladhaara.artsacademy@gmail.com</p>
+              <p className="text-lg md:text-md"><FontAwesomeIcon icon={faEnvelope}/> <a href="mailto:kaladhaara.artsacademy@gmail.com" className='hover:text-blue-600'>kaladhaara.artsacademy@gmail.com</a></p>
             </div>
             <div className='flex flex-col md:text-2xl text-lg px-3 items-center justify-center'>
               <h3>Follow us on our socials for more updates!</h3>
               <div className='flex flex-col'>
                   
-                  <p className="md:text-xl text-lg">
+                  <p className="md:text-xl text-lg hover:text-pink-600">
                   <Link href="https://www.instagram.com/kaladhaara_arts_academy/" target="_blank" className="mx-2">
                     <FontAwesomeIcon icon={faInstagram}/> -
                     @kaladhaara_arts_academy</Link>
                   </p>
-                  <p className="md:text-xl text-lg">
+                  <p className="md:text-xl text-lg hover:text-blue-600">
                   <Link href="https://www.facebook.com/Kaladhaara" target="_blank" className="mx-2">
                     <FontAwesomeIcon icon={faFacebook}/> -
                     Kaladhaara</Link>
                   </p>
-                  <p className="md:text-xl text-lg">
+                  <p className="md:text-xl text-lg hover:text-red-600">
                   <Link href="https://www.youtube.com/channel/UCtlYWV3SmKg-CXTQyzwh6ag" target="_blank" className="mx-2">
                     <FontAwesomeIcon icon={faYoutube}/> -
                     @kaladhaara</Link>
