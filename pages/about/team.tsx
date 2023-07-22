@@ -43,7 +43,7 @@ const staff = [
     description:
       ["Bharatanatyam is the one and only passion in my life that I was able to experience and make progress in. This passion gave me opportunities that keep me going. I have been learning Bharatanatyam with Smt. Mathura Viswanathan since the age of 8. I did my Arangetram at the age of 15 and it was one of the most accomplishing and rewarding experiences in my life.",
       "Kaladhaara has given me numerous opportunities as a dancer which aided me to give back to this community of dancers by being able to teach as well. I'm grateful for this community's support I've had for the past few years and I hope to bring inspiration in the next generation of Bharatanatyam dancers."],
-    imageSrc: "/faculty/Anvitha.png",
+    imageSrc: "/faculty/Anvitha.jpeg",
   },
   {
     name: "Aarthi Krishnamurthy",
