@@ -84,7 +84,7 @@ export default function Staff() {
         <div className="max-w-xl mx-auto my-5">
           <img
             className="w-full h-auto mx-auto"
-            src="/faculty/group.jpg"
+            src="/faculty/Group.jpg"
             alt="Group Image"
           />
         </div>
