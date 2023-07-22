@@ -37,7 +37,7 @@ export const menuItems: MenuItems = [
                 url: 'upcoming'
             },
             {
-                title: 'Past Performances',
+                title: 'Past Events',
                 url: 'past'
             },
         ]
