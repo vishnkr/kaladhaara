@@ -24,7 +24,7 @@ export default function Home() {
         <title>Kaladhaara</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <div className="relative px-6 lg:px-8 py-10 sm:py-8">
+      <div className="relative px-6 lg:px-8 py-16 sm:py-8">
         <div className="pb-8">
           <div className="flex flex-col items-center space-y-8 md:space-y-0 md:space-x-8 md:flex-row md:items-center">
             <div className="text-center md:text-left md:w-[38rem]">

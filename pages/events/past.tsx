@@ -100,7 +100,7 @@ const EventList = () => {
       <Head>
         <title>Past Events - Kaladhaara</title>
       </Head>
-      <h1 className="text-3xl font-semibold mb-5">PAST EVENTS</h1>
+      <h1 className="text-3xl font-semibold mb-4">PAST EVENTS</h1>
       <div className="mb-6">
         <select
           value={selectedYear}

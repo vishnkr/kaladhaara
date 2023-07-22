@@ -3,7 +3,7 @@ import Head from 'next/head';
 const curriculumCards = [
     {
         title: 'Beginner Adavu',
-        img:'/mathura/mathura.jpg',
+        img:'/curriculum/beginner.jpg',
         content: 'Focuses on foundational adavus, posture building, introduction to hand gestures, yoga movements to strengthen the body',
         color: 'linear-gradient(90deg, rgba(233,86,148,1) 0%, rgba(255,239,0,1) 100%)',
     },
@@ -15,13 +15,13 @@ const curriculumCards = [
     },
     {
         title: 'Intermediate',
-        img:'/mathura/mathura1.jpg',
+        img:'/curriculum/intermediate.jpeg',
         content: "Students are introduced to Abhinaya (expressions) and learn kriti's/bhajans. This is often a starting point to some students carving a path to their Salangai Poojai.",
         color: 'linear-gradient(90deg, rgba(226,146,67,1) 0%, rgba(187,117,233,1) 100%)'
     },
     {
         title: 'Advanced',
-        img:'/other/arangetram3.jpg',
+        img:'/curriculum/advanced.jpg',
         content: 'Students work towards arangetram and beyond. Here they learn complex compositions like Varnams, Padams, Javalis. Students at this level often help in mentoring younger students and inspiring the younger groups with their performances.',
         color: 'linear-gradient(90deg, rgba(249,249,249,1) 0%, rgba(226,146,67,1) 99%)'
     }
@@ -34,7 +34,7 @@ export default function Curriculum(){
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
         <div className="page-title">
-            <h1 className='text-2xl text-center'>OUR CURRICULUM</h1>
+            <h1 className='text-4xl text-center'>OUR CURRICULUM</h1>
         </div>
         <p className='mt-8 text-base md:text-lg lg:text-xl text-center leading-8 text-gray-600'>
         Kaladhaara's approach to teaching Bharatanatyam is based on providing a wholesome experience that 
@@ -53,5 +53,11 @@ export default function Curriculum(){
                 return <Card {...cardProps} key={idx}/>
             })}
        </div>
+       <p className='mt-8 text-base md:text-lg lg:text-xl text-center leading-8 text-gray-600'>
+        Every summer, Kaladhaara hosts multiple week-long workshops where students learn special choreographic works from traveling artists & professionals from the Industry or thematic projects and have an opportunity to perform in the summer showcase. These are also accompanied by “Adavuthon'' sessions to prepare the students for the intense workshop experience. In addition to these, students at Kaladhaara are given some additional choreography challenges to deepen their quest if they want to be challenged and raise the bar they set for themselves.  
+       </p>
+       <p className='mt-8 text-base md:text-lg lg:text-xl text-center leading-8 text-gray-600'>
+        We are also working on creating avenues for students that transition into post arangetram learning which includes applying for scholarship, external performances and refining their progress. Kaladhaara embarked on their first tour of Natyanjali festivities in India during Feb-March 2020 where five of the students and their families traveled with Mathura to perform at various temples across Tamil Nadu for MahaShivarathri.
+       </p>
     </section>
 }
