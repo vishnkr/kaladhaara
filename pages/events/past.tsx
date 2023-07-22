@@ -2,6 +2,17 @@ import Head from "next/head";
 import { useState } from "react";
 
 const events = [
+
+  { date: '2023-01', event: 'Margazhi performance in Sri Venkateshwara temple' },
+  { date: '2023-01', event: 'Srinivasa Kalyanam TAGS Sacramento' },
+  { date: '2023-03', event: 'Sangam 2023: Annual day' },
+  { date: '2023-03', event: 'Performance at “Together Women Rise”' },
+  { date: '2023-03', event: 'Sargolsav Bharatanatyam competition' },
+  { date: '2023-03', event: 'Rama Navami performance at Sri Venkateshwara temple' },
+  { date: '2023-04', event: 'Sacramento Natyanjali' },
+  { date: '2023-04', event: 'Fit to Dance workshop' },
+  { date: '2023-04', event: 'Maha Rudra festival' },
+  
   { date: '2022-02', event: 'Pongal Celebration by Sacramento Tamil Sangam, CA' },
   { date: '2022-03', event: 'ISCKON, Sacramento, CA' },
   { date: '2022-03', event: 'Shivaratri performances, Mather, CA' },
@@ -87,9 +98,9 @@ const EventList = () => {
   return (
     <div className="max-w-2xl mx-auto py-2 px-4 sm:py-24 sm:px-6 lg:max-7-xl lg:px-8">
       <Head>
-        <title>Past Events</title>
+        <title>Past Events - Kaladhaara</title>
       </Head>
-      <h1 className="text-3xl font-bold mb-8">Past Events</h1>
+      <h1 className="text-3xl font-semibold mb-5">PAST EVENTS</h1>
       <div className="mb-6">
         <select
           value={selectedYear}
