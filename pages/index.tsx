@@ -1,7 +1,23 @@
 import ReviewCarousel from '@/components/ReviewCarousel'
 import Head from 'next/head'
+import { useEffect, useState } from 'react';
 
 export default function Home() {
+  const images = ['/other/arangetram3.jpg','/other/arangetram2.jpg', '/gallery/gallery1.jpg', '/gallery/gallery2.jpg'];
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const updateImageIndex = () => {
+    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
+  // Effect to change the image every 3 seconds (3000 milliseconds)
+  useEffect(() => {
+    const interval = setInterval(updateImageIndex, 3000);
+
+    // Clean up the interval when the component unmounts
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
   return (
     <main className="flex flex-col min-h-screen">
       <Head>
@@ -22,13 +38,17 @@ export default function Home() {
                 Of Greater Sacramento
               </h1>
             </div>
-            <div className="md:hidden">
-              {/* For smaller screens, place the image above the text */}
-              <img src="/dog.jpg" className="border rounded w-full mb-4 md:w-96" alt="Premier Dance Institute" />
-            </div>
             <div className="hidden md:block">
-              {/* For larger screens, keep the image on the right */}
-              <img src="/dog.jpg" className="border rounded" width="470" alt="Premier Dance Institute" />
+              <div className="w-[30rem] h-96 overflow-hidden rounded-md">
+                <img
+                  src={images[currentImageIndex]}
+                  className="w-full h-full object-cover"
+                  alt="Premier Dance Institute"
+                />
+              </div>
+            </div>
+            <div className="md:hidden">
+              <img src={images[currentImageIndex]} className="border rounded w-full mb-4 md:w-96" alt="Premier Dance Institute" />
             </div>
           </div>
         </div>
