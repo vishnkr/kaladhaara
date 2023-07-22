@@ -12,7 +12,7 @@ const staff = [
     role: "Foundation Course Lead ",
     description:
       ["I started learning Bharatanatyam when I was a kid and completed Arangetram at the age of 14. Since childhood, dancing has been my main hobby and it gives me lots of happiness.","My body and mind feel refreshed after every practice. I am always grateful to God and my Gurus for teaching this art to me which I could carry through in all phases of my life.","I have been connected with Kaladhaara for the past few years and I am thankful for this opportunity and space to live with the art which I love. I teach a beginners batch in Kaladhaara and thoroughly enjoy teaching little ones and am proud to be a teacher and a part of Kaladhaara family."],
-    imageSrc: "",
+    imageSrc: "/faculty/Saritha.jpg",
   },
   {
     name: "Raji Viswanathan",
@@ -27,7 +27,7 @@ const staff = [
     description:
       ["I joined Kaladhaara in 2011 and have been rejoicing working with Mathura and the team for over a decade now. At Kaladhaara, I teach advanced level students and also work as digital marketing manager handling Kaladhaara's social media accounts. I also lead the SacAdavu group initiative.",
       "I work as a full time Systems Engineer and enjoy playing with my three boys. I am grateful for the opportunity to pass down the art form to the next gen in this community. Bharatanatyam is a mind space for me to let my inner self transcend to a dimension beyond the physical realm!"],
-    imageSrc: "/faculty/anu2.png",
+    imageSrc: "/faculty/Anu2.jpg",
   },
   {
     name: "Charanya Ramaswamy",
@@ -115,9 +115,9 @@ export default function Staff() {
           key={staffMember.name}
           className="max-w-xs rounded overflow-hidden shadow-lg m-2"
         >
-          <div className="aspect-w-1 aspect-h-1 w-full">
+          <div className="aspect-w-1 aspect-h-1 w-full h-[400px]">
           <img
-            className="object-cover w-full h-full"
+            className="object-cover h-full w-full"
             src={staffMember.imageSrc}
             
           />
