@@ -61,11 +61,13 @@ const staff = [
     name: "Aishwarya",
     role: "Instructor",
     description: [""],
+    imageSrc:"/faculty/aishwarya.jpeg",
   },
   {
     name: "Mayura",
     role: "Instructor",
     description: [""],
+    imageSrc: "/faculty/mayura.jpg",
   }
 ];
 
@@ -107,7 +109,7 @@ export default function Staff() {
           </div>
         </div> */}
 
-      <div className="flex flex-wrap justify-center">
+      <div className="flex flex-wrap md:grid md:grid-cols-3 justify-center">
       {staff.map((staffMember) => (
         <div
           key={staffMember.name}

@@ -37,7 +37,7 @@ const ContactForm = () => {
             </div>
 
             </div>
-            <form className="bg-white shadow-lg rounded px-4 pt-6 pb-8 mx-4" 
+            <form className="bg-white shadow-lg rounded px-4 pt-6 pb-8 mx-4" action="https://formspree.io/f/xrgwbyge"
   method="POST">
                 <div className="my-4">
                 <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
