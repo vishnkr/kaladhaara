@@ -34,7 +34,7 @@ export default function Curriculum(){
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
         <div className="page-title">
-            <h1 className='text-4xl text-center'>OUR CURRICULUM</h1>
+            <h1 className='text-3xl font-semibold text-center'>OUR CURRICULUM</h1>
         </div>
         <p className='mt-8 text-base md:text-lg lg:text-xl text-center leading-8 text-gray-600'>
         Kaladhaara's approach to teaching Bharatanatyam is based on providing a wholesome experience that 

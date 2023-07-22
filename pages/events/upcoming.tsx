@@ -29,7 +29,7 @@ export default function Upcoming() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <div className="max-w-2xl mx-auto py-2 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-        <h1 className="text-3xl font-semibold text-center mb-4">UPCOMING EVENTS</h1>
+        <h1 className="text-2xl md:text-3xl font-semibold text-center mb-4">UPCOMING EVENTS</h1>
         {Object.entries(eventsByMonth).map(([month, events]) => (
           <div key={month} className="mb-8">
             <h2 className="text-2xl font-semibold mb-4">{month}</h2>

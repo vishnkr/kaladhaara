@@ -7,7 +7,7 @@ export default function Gallery() {
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
        <div className="">
-            <h1 className='text-3xl font-semibold text-center'>GALLERY</h1>
+            <h1 className='text-2xl md:text-3xl font-semibold text-center'>GALLERY</h1>
         </div>
         <div>
           <GalleryComponent />

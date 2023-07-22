@@ -8,7 +8,7 @@ export default function Samu(){
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             </Head>
             <div className="">
-            <h1 className='text-3xl font-semibold text-center'>SAC ADAVU MEETUP</h1>
+            <h1 className='text-2xl md:text-3xl font-semibold text-center'>SAC ADAVU MEETUP</h1>
             </div>
         <p className='mt-8 text-lg text-center leading-8 text-gray-600'>
             If you have learnt any form of Indian dance years ago and feel the urge to get back in touch and 

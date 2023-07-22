@@ -8,7 +8,7 @@ export default function Kaladhaara(){
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             </Head>
             <div className="flex flex-col">
-            <h1 className="text-2xl text-center">ABOUT KALADHAARA</h1>
+            <h1 className="text-2xl md:text-3xl font-semibold text-center">ABOUT KALADHAARA</h1>
                 <p className="mt-8 text-lg text-center leading-8 text-gray-600">
                 Kaladhaara, is a nonprofit registered dance Academy in Sacramento (US) to impart quality Indian classical performing 
                 arts (dance and music) for the holistic development of children living abroad. 

@@ -17,7 +17,7 @@ export default function Locations() {
             <title>Our Locations - Kaladhaara</title>
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
           </Head>
-          <h1 className="text-3xl font-semibold text-center ">OUR LOCATIONS</h1>
+          <h1 className="text-2xl md:text-3xl font-semibold text-center ">OUR LOCATIONS</h1>
           <div className="flex flex-col md:flex-row md:space-x-6"> 
             <div className="order-2 md:order-1 md:w-1/2">
               {geojson.features.map((location, idx) => (
