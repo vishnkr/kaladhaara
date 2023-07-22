@@ -26,7 +26,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
       <Nav />
       <main className={`bg-white ${inter.variable} ${montserrat.variable}`}>
-        <div className='max-w-7xl mx-auto py-8 sm:py-24 px-4 sm:px-6 lg:px-8'>
+        <div className='max-w-7xl mx-auto py-8 sm:py-18 px-4 sm:px-6 lg:px-8'>
           <Component {...pageProps} />
         </div>            
       </main>

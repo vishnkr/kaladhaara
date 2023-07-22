@@ -12,7 +12,7 @@ const events = [
   { date: '2023-04', event: 'Sacramento Natyanjali' },
   { date: '2023-04', event: 'Fit to Dance workshop' },
   { date: '2023-04', event: 'Maha Rudra festival' },
-  
+
   { date: '2022-02', event: 'Pongal Celebration by Sacramento Tamil Sangam, CA' },
   { date: '2022-03', event: 'ISCKON, Sacramento, CA' },
   { date: '2022-03', event: 'Shivaratri performances, Mather, CA' },
@@ -115,7 +115,7 @@ const EventList = () => {
         </select>
       </div>
       {filteredEvents.map((event, index) => (
-        <div key={index} className="mb-6">
+        <div key={index} className="mb-6 grid-cols-1 gap-4 md:grid-cols-2">
           {index === 0 || filteredEvents[index - 1].date !== event.date ? (
             <div className="bg-white rounded-lg p-4 shadow-md mb-2">
               <h2 className="text-xl font-bold mb-2">{getFormattedDate(event.date)}</h2>
