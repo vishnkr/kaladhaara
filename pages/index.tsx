@@ -3,15 +3,14 @@ import Head from 'next/head'
 import { useEffect, useState } from 'react';
 
 export default function Home() {
-  const images = ['/other/arangetram3.jpg','/other/arangetram2.jpg', '/gallery/gallery1.jpg', '/gallery/gallery2.jpg'];
+  const images = ['/gallery/gallery18.jpg','/other/arangetram2.jpg', '/gallery/gallery1.jpg', '/gallery/gallery2.jpg','/other/arangetram3.jpg'];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const updateImageIndex = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 
-  // Effect to change the image every 3 seconds (3000 milliseconds)
   useEffect(() => {
-    const interval = setInterval(updateImageIndex, 3000);
+    const interval = setInterval(updateImageIndex, 4000);
 
     // Clean up the interval when the component unmounts
     return () => {

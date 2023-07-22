@@ -37,7 +37,8 @@ const ContactForm = () => {
             </div>
 
             </div>
-            <form className="bg-white shadow-lg rounded px-4 pt-6 pb-8 mx-4">
+            <form className="bg-white shadow-lg rounded px-4 pt-6 pb-8 mx-4" 
+  method="POST">
                 <div className="my-4">
                 <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
                     Name
@@ -47,6 +48,7 @@ const ContactForm = () => {
                     id="name"
                     type="text"
                     placeholder="Enter your name"
+                    name="name"
                 />
                 </div>
                 <div className="my-4">
@@ -58,6 +60,7 @@ const ContactForm = () => {
                     id="email"
                     type="email"
                     placeholder="Enter your email"
+                    name="email"
                 />
                 </div>
                 <div className="mb-4">
@@ -69,6 +72,7 @@ const ContactForm = () => {
                     id="phone"
                     type="tel"
                     placeholder="Enter your phone number"
+                    name="phone"
                 />
                 </div>
                 <div className="mb-6">
@@ -80,12 +84,13 @@ const ContactForm = () => {
                     id="message"
                     placeholder="Enter your message"
                     rows={4}
+                    name="message"
                 ></textarea>
                 </div>
                 <div className="flex items-center justify-center">
                 <button
                     className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                    type="button"
+                    type="submit"
                 >
                     Submit
                 </button>
