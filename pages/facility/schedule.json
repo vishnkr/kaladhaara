@@ -1,35 +1,36 @@
 {
   "locations": [
     {
-      "name": "Mather Field",
+      "name": "Kaladhaara @ Rancho Cordova",
       "schedule": {
         "Tuesday":[{"event":"Arangetram classes"}],
-        "Thursday": [{ "event":"Intermediate & Advanced", "time": "6:30pm - 8:00pm"}],
+        "Thursday": [{ "event":"Intermediate"},{"event":"Advanced"}],
         "Friday": [{"event":"Arangetram classes"}],
         "Saturday":[
-          {"event":"Beginner Adavus","time":"10:00pm-12:00pm"},
-          {"event":"Varnam","time":"2:30pm"}
+          {"event":"Beginner Adavus"},
+          {"event":"Intermediate"}
         ],
         "Sunday": [{"event":"Arangetram classes"}]
       }
         
     },
     {
-      "name": "Folsom",
+      "name": "Kaladhaara @ Folsom",
       "schedule": {
-        "Monday":[{ "event":"Beginner Adavus", "time": "6:00pm - 8:30pm"}],
-        "Tuesday":[{ "event":"Intermediate", "time": "6:00pm - 7:00pm"},{"event":"Adult beginners","time":"7:00pm - 8:00pm"}],
-        "Thursday": [{ "event":"Bhajan Class", "time": "5:30-6:30pm"}],
+        "Monday":[{ "event":"Beginner Adavus"}],
+        "Tuesday":[{ "event":"Intermediate"},{"event":"Adult beginners"}],
+        "Thursday": [{ "event":"Bhajan Class"},{"event":"In use by external group"}],
+        "Friday": [{"event":"In use by external group"}],
         "Saturday":[
-          {"event":"2 Intermediate groups","time":"11am - 1:30pm"}
+          {"event":"2 Intermediate groups"}
         ],
-        "Sunday":[{"event":"SacAdavu group meetup","time":"7:15am - 9:00am "}]
+        "Sunday":[{"event":"SacAdavu group meetup"}]
       }
     },
     {
-      "name": "Roseville",
+      "name": "Kaladhaara @ Roseville",
       "schedule": {
-        "Wednesday": [{ "event":"Beginner/ Intermediate/ Advanced", "time": "6-8:30pm"}]
+        "Wednesday": [{ "event":"Beginner"},{"event":"Intermediate"},{"event":"Advanced"}]
       }
     }
   ]

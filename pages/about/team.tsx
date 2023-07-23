@@ -54,7 +54,7 @@ const staff = [
   {
     name: "Vatsalya Narayan",
     role: "Technical Coordinator",
-    description: [""],
+    description: ["Dance has been a constant part of my life. I find myself immersed in the timeless tales of Indian mythology, captivating audiences with every graceful move and expressive gesture. Embracing the discipline of this traditional dance form has taught me how to not only become a better dancer but a better person."],
     imageSrc: "/faculty/Vatsu.jpg"
   },
   {

@@ -12,7 +12,7 @@ export default function Samu() {
         </div>
         <div className="grid grid-rows-1 gap-2 mt-8">
           <div className="w-full max-w-[800px] mx-auto">
-            <img src="/sac-adavu/sa1.jpg" className="w-full h-auto rounded-lg" alt="Sac Adavu Meetup" />
+            <img src="/sac-adavu/sa1.jpg" className="w-full h-auto rounded md:rounded-lg" alt="Sac Adavu Meetup" />
           </div>
         </div>
         <p className="mt-8 text-lg text-center leading-8 text-gray-600">
@@ -24,7 +24,7 @@ export default function Samu() {
         </p>
         <div className="grid grid-rows-1 gap-2 mt-8">
           <div className="w-full max-w-[800px] mx-auto">
-            <img src="/sac-adavu/sa2.jpg" className="w-full h-auto rounded-lg" alt="Sac Adavu Meetup" />
+            <img src="/sac-adavu/sa2.jpg" className="w-full h-auto rounded md:rounded-lg" alt="Sac Adavu Meetup" />
           </div>
         </div>
         <p className="mt-8 text-lg text-center leading-8 text-gray-600">
