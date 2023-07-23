@@ -1,7 +1,13 @@
 import Head from "next/head";
+import { ReactNode } from "react";
 
 const events: Event[] = [
-  { date: "08/13/2023", month:"August",year:"2023", title: "Cosmic Elements: Thematic performance by Mathura Viswanathan", poster:'/events/cosmic-elements.jpg' },
+  { date: "08/13/2023", month:"August",year:"2023", title: "Cosmic Elements: Thematic performance by Mathura Viswanathan", 
+    poster:'/events/cosmic-elements.jpg',
+    jsxContent: <a href="https://www.zeffy.com/en-US/ticketing/a313ba08-eb0b-4139-a15f-ccea4176e29b" target="blank">
+        <button className="rounded py-2 px-4 bg-red-800 text-white font-semibold"> Get tickets</button>
+        </a>
+  },
   { date: "08/12/2023", month:"August",year:"2023", title: "Arangetram - Hasmitha Vaibhavi Kanugula", poster: '/events/hasmitha-arangetram.jpeg'},
   { date: "08/19/2023", month:"August",year:"2023", title: "Arangetram - Sahana Shankar" ,poster: '/events/sahana-arangetram.jpeg'},
   { date: "08/05/2023", month:"August",year:"2023", title: "Arangetram - Samyukta and Sadhana Suresh", poster: '/events/samyukta-arangetram.jpeg' },
@@ -13,6 +19,7 @@ type Event = {
   year:string;
   title: string;
   poster?:string;
+  jsxContent?: ReactNode; 
 };
 
 export default function Upcoming() {
@@ -61,7 +68,9 @@ export default function Upcoming() {
                   <div key={month} className="mb-4">
                     {events.map((event) => (
                       <div key={event.title} className="bg-white p-6 rounded-lg shadow-md">
+
                         <p className="text-lg text-center md:text-2xl font-semibold mb-4">{event.title}</p>
+                        {event.jsxContent && <div className="flex items-center justify-center m-2">{event.jsxContent}</div>}
                         {event.poster ?  (
                           <div className="h-auto max-w-[800px] mx-auto">
                             <img src={event.poster} alt={event.title} className="w-full h-full object-cover rounded-lg" />
@@ -79,3 +88,4 @@ export default function Upcoming() {
     </section>
   );
 }
+

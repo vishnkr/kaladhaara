@@ -8,7 +8,7 @@ export default function FirstPost() {
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             </Head>
             <div className="flex flex-col">
-                <h1 className="text-2xl md:text-3xl font-semibold text-center">MATHURA</h1>
+                <h1 className="text-2xl md:text-3xl font-semibold text-center">MATHURA VISWANATHAN</h1>
 
                 <div className="grid grid-cols-2 gap-2 mt-8 ">
                     <div className="aspect-w-1 aspect-h-1">
