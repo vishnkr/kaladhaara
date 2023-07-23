@@ -1,7 +1,7 @@
 import Head from "next/head";
 
 const events: Event[] = [
-  { date: "08/13/2023", month:"August",year:"2023", title: "Cosmic Elements: Thematic performance by Mathura Viswanathan" },
+  { date: "08/13/2023", month:"August",year:"2023", title: "Cosmic Elements: Thematic performance by Mathura Viswanathan", poster:'/events/cosmic-elements.jpg' },
   { date: "08/12/2023", month:"August",year:"2023", title: "Arangetram - Hasmitha Vaibhavi Kanugula", poster: '/events/hasmitha-arangetram.jpeg'},
   { date: "08/19/2023", month:"August",year:"2023", title: "Arangetram - Sahana Shankar" ,poster: '/events/sahana-arangetram.jpeg'},
   { date: "08/05/2023", month:"August",year:"2023", title: "Arangetram - Samyukta and Sadhana Suresh", poster: '/events/samyukta-arangetram.jpeg' },

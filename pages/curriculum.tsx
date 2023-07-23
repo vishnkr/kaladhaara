@@ -9,13 +9,13 @@ const curriculumCards = [
     },
     {
         title: 'Beginner Intermediate',
-        img:'/other/arangetram2.jpg',
+        img:'/curriculum/beg-int.jpg',
         content: 'Classes move into learning items like Alarippu, Jatheeswaram where students learn to form simple dance sequences with the basic building blocks learnt in adavu classes.',
         color: 'linear-gradient(90deg, rgba(54,147,212,1) 0%, rgba(157,228,120,1) 100%)'
     },
     {
         title: 'Intermediate',
-        img:'/curriculum/beg-int.jpg',
+        img:'/curriculum/intermediate.jpg',
         content: "Students are introduced to Abhinaya (expressions) and learn kriti's/bhajans. This is often a starting point to some students carving a path to their Salangai Poojai.",
         color: 'linear-gradient(90deg, rgba(226,146,67,1) 0%, rgba(187,117,233,1) 100%)'
     },
