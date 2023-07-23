@@ -26,7 +26,7 @@ function Footer() {
                         <FontAwesomeIcon icon={faFacebook} color="white"/>
                         </div>
                         </Link>
-                        <Link href="https://www.youtube.com/channel/UCtlYWV3SmKg-CXTQyzwh6ag" target="_blank" className="mx-2">
+                        <Link href="https://youtube.com/@kaladhaaraarts5000" target="_blank" className="mx-2">
                             <div className="bg-red-600 rounded-lg p-2 flex justify-center items-center cursor-pointer">
                             <FontAwesomeIcon icon={faYoutube} color="white"/>
                             </div>

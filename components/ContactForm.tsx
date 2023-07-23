@@ -28,9 +28,9 @@ const ContactForm = () => {
                     Kaladhaara</Link>
                   </p>
                   <p className="md:text-xl text-lg hover:text-red-600">
-                  <Link href="https://www.youtube.com/channel/UCtlYWV3SmKg-CXTQyzwh6ag" target="_blank" className="mx-2">
+                  <Link href="https://youtube.com/@kaladhaaraarts5000" target="_blank" className="mx-2">
                     <FontAwesomeIcon icon={faYoutube}/> -
-                    @kaladhaara</Link>
+                    @kaladhaaraarts5000</Link>
                   </p>
               </div>
               

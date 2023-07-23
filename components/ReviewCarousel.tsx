@@ -50,7 +50,7 @@ const reviews: ShortTestimonials = [
     useEffect(() => {
       const intervalId = setInterval(() => {
         setCurrentReviewIndex((currentReviewIndex) => (currentReviewIndex + 1) % reviews.length);
-      }, 7000);
+      }, 10000);
   
       return () => clearInterval(intervalId);
     }, []);
