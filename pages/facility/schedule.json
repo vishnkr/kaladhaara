@@ -4,11 +4,11 @@
       "name": "Kaladhaara @ Rancho Cordova",
       "schedule": {
         "Tuesday":[{"event":"Arangetram classes"}],
+        "Wednesday": [{"event":"Beginner Adavu classes"}],
         "Thursday": [{ "event":"Intermediate"},{"event":"Advanced"}],
-        "Friday": [{"event":"Arangetram classes"}],
         "Saturday":[
-          {"event":"Beginner Adavus"},
-          {"event":"Intermediate"}
+          {"event":"Intermediate"},
+          {"event":"Advanced"}
         ],
         "Sunday": [{"event":"Arangetram classes"}]
       }
@@ -17,12 +17,13 @@
     {
       "name": "Kaladhaara @ Folsom",
       "schedule": {
-        "Monday":[{ "event":"Beginner Adavus"}],
+        "Monday":[{ "event":"Beginner Adavu classes"}],
         "Tuesday":[{ "event":"Intermediate"},{"event":"Adult beginners"}],
-        "Thursday": [{ "event":"Bhajan Class"},{"event":"In use by external group"}],
-        "Friday": [{"event":"In use by external group"}],
+        "Wednesday": [{"event":"Private lessons / 1 : 1"}],
+        "Thursday": [{ "event":"Bhajan Class"},{"event":"Private lessons"}],
+        "Friday": [{"event":"Performance rehearsals"}],
         "Saturday":[
-          {"event":"2 Intermediate groups"}
+          {"event":"Intermediate groups"}
         ],
         "Sunday":[{"event":"SacAdavu group meetup"}]
       }
@@ -30,7 +31,7 @@
     {
       "name": "Kaladhaara @ Roseville",
       "schedule": {
-        "Wednesday": [{ "event":"Beginner"},{"event":"Intermediate"},{"event":"Advanced"}]
+        "Wednesday": [{ "event":"Beginner"},{"event":"Intermediate"}]
       }
     }
   ]

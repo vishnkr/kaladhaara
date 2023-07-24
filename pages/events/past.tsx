@@ -19,7 +19,7 @@ const events = [
   { date: '2022-04', event: 'Sree Seetrama Kalyanam at CTS, Sacramento, CA' },
   { date: '2022-06', event: 'Stuti Chauhan Arangetram' },
   { date: '2022-08', event: 'Of love and Longing, B street theatre, Sacramento' },
-  { date: '2022-08', event: 'Anika and Amirtha Arangetram' },
+  { date: '2022-08', event: 'Anika and Amritha Arangetram', img:'/arangetram/amritha.jpg'},
   { date: '2022-09', event: 'Samyuktha arangetram' },
   { date: '2022-10', event: 'Vijayadashmi performance at in-home Mather theater' },
   // Events for 2021
@@ -43,9 +43,9 @@ const events = [
   { date: '2019-03', event: 'iFest' },
   { date: '2019-04', event: 'VTSeva' },
   { date: '2019-06', event: 'Annual Summer Kriya' },
-  { date: '2019-07', event: 'Aruna Arangetram' },
-  { date: '2019-08', event: "Anvita's Arangetram" },
-  { date: '2019-09', event: "Stuti's Arangetram" },
+  { date: '2019-07', event: "Aruna's Arangetram", img: '/arangetram/aruna.jpg'},
+  { date: '2019-08', event: "Anvita's Arangetram" , img: '/arangetram/anvita.jpg'},
+  { date: '2019-09', event: "Stuti's Arangetram" , img: '/arangetram/stuti.jpg'},
   { date: '2019-09', event: 'Salangai poojai 2019, Saptami competitions' },
   { date: '2019-09', event: 'Saptami Competitions, San Jose, CA' },
   { date: '2019-10', event: 'Sangam 2019' },
@@ -58,7 +58,7 @@ const events = [
   { date: '2018-04', event: 'Annamayya Day Performance for Silicon Andhra University' },
   { date: '2018-04', event: 'Samavesha by Srikanth & Aswathy Annual Summer Workshop' },
   { date: '2018-07', event: "Avanthika Panchapakesan's Arangetram" },
-  { date: '2018-08', event: "Vatsalya Narayan's Arangetram" },
+  { date: '2018-08', event: "Vatsalya Narayan's Arangetram", img: '/arangetram/vatsu.jpg'},
   { date: '2018-09', event: 'Salangai Poojai Performance by Anika M, Samyuktha R, Shriya, Samyuktha S, Amirtha B' },
   { date: '2018-10', event: 'Annual Vijayadasami Celebrations' },
   { date: '2018-11', event: 'Adavu Clinic Part 1' },
@@ -123,9 +123,12 @@ const EventList = () => {
                 {filteredEvents
                   .filter((e) => e.date === event.date)
                   .map((e, idx) => (
-                    <p key={idx} className="text-lg">
-                      {e.event}
-                    </p>
+                    <div key={idx}>
+                      <p className="text-lg">{e.event}</p>
+                      {e.img && (
+                        <img src={e.img} className="w-full h-auto mt-4" />
+                      )}
+                    </div>
                   ))}
               </div>
             </div>

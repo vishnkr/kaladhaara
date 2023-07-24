@@ -18,7 +18,7 @@ export default function FirstPost() {
                     </div>
                     <div className="aspect-w-1 aspect-h-1">
                         <div className="flex items-center justify-center h-full w-full">
-                            <img src="/mathura/mathura3.jpg" className="object-cover h-full w-full rounded-md" />
+                            <img src="/mathura/mathura4.jpg" className="object-cover h-full w-full rounded-md" />
                         </div>
                     </div>
                 </div>

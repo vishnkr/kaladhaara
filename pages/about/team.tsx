@@ -54,19 +54,21 @@ const staff = [
   {
     name: "Vatsalya Narayan",
     role: "Technical Coordinator",
-    description: ["Dance has been a constant part of my life. I find myself immersed in the timeless tales of Indian mythology, captivating audiences with every graceful move and expressive gesture. Embracing the discipline of this traditional dance form has taught me how to not only become a better dancer but a better person."],
+    description: ["As a faculty member at Kaladhaara, I've grown in so many different ways. Being in high school I enjoy teaching kids as it allows me to better communicate and understand nuisances of learning and choreography. I currently am an Adavu batch teacher and help manage foundational concepts. I have been with Kaladhaara since it's starting and was recently initiated as a teacher into its wonderful faculty team!"],
     imageSrc: "/faculty/Vatsu.jpg"
   },
   {
     name: "Aishwarya",
     role: "Instructor",
-    description: [""],
+    description: ["My love for dance was ignited by a performance that I watched when I was 9yrs old. Ever since that my love for the art has only been growing.Thanks to the Raghuvamsa flyer that put me in touch with Kaladhaara and brought me back into the world of dance. Im grateful to be associated with Mathura and Kaladhaara. I teach beginner classes. Working with the kids gives me immense pleasure and the satisfaction of passing down this art form to the next gen."],
     imageSrc:"/faculty/aishwarya.jpeg",
   },
   {
     name: "Mayura",
     role: "Instructor",
-    description: [""],
+    description: ["Dance has been a part of my life from a young age. It gives me great joy and I cannot imagine a time when I am not learning, practicing or being a Rasika of dance. I was very fortunate to have been introduced to Bharatanatyam at the age of four. I trained under several gurus and completed my arangetrem under the guidance of Guru Kalamamani K J Sarasa.",
+      "I  joined Kaladhaara in 2016 in the production of Raghuvamsa and have recently begun teaching in beginner classes. I love being part of this community and doing my part in passing on this beautiful art form to next generations."
+    ],
     imageSrc: "/faculty/mayura.jpg",
   }
 ];
