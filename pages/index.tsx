@@ -41,7 +41,7 @@ export default function Home() {
             <div className="hidden md:block md:w-[50%] md:h-[50%] overflow-hidden rounded-md ">
               <div className="items-center aspect-w-1 aspect-h-1">
                 <img
-                  src={`/homepage/homepage${currentImageIndex+1}.jpg`}
+                  src={`/homepage/homepage${currentImageIndex}.jpg`}
                   className="w-full h-full object-cover"
                   alt="Premier Dance Institute"
                 />
@@ -49,7 +49,7 @@ export default function Home() {
             </div>
             <div className="md:hidden w-full h-[50%]">
              <div className="aspect-w-1 aspect-h-1">
-              <img src={`/homepage/homepage${currentImageIndex+1}.jpg`} className="border object-cover rounded w-full mb-4" alt="Premier Dance Institute" />
+              <img src={`/homepage/homepage${currentImageIndex}.jpg`} className="border object-cover rounded w-full mb-4" alt="Premier Dance Institute" />
             </div>
             </div>
           </div>

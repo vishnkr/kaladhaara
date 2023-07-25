@@ -3,13 +3,12 @@ const maven = Maven_Pro({subsets:['latin']});
 interface CardProps {
     title: string,
     content: string,
-    color: string,
     img:string,
 }
 
 import React, { useState } from 'react';
 
-function Card({title,content,color,img}:CardProps) {
+function Card({title,content,img}:CardProps) {
   const [isHovered, setIsHovered] = useState(false);
   const [isClicked, setIsClicked] = useState(false);
 
