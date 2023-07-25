@@ -41,6 +41,10 @@ const reviews: ShortTestimonials = [
     {
       name: "Lavanya Gnanakumar",
       feedback: "In addition to learning Bharatanatyam, dance class has taught me much about dedication, discipline, and perseverance. Kaladhaara is an extremely supportive environment that fosters a strong sense of community, which makes learning just as fun and exciting as it is instructive"
+    },
+    {
+      name: "Aaradhana Arvind",
+      feedback: "I am 10 years old and have been learning dance for the past 5 years. I can't express the gratitude I have towards Mathura Auntie and Kaladhara teachers. Dancing gives me self confidence and joy. With my teachers help I am able to connect with the music and dance gracefully."
     }
   ] 
 
