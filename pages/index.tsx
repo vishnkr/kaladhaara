@@ -56,7 +56,7 @@ export default function Home() {
         </div>
       </div>
       <div className="flex flex-col text-center">
-        <h3 className="my-2 text-md md:text-2xl">What our students are saying about Kaladhaara</h3>
+        <h3 className="my-2 text-xl font font-semibold md:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-yellow-600 to-orange-600">What our students are saying about Kaladhaara</h3>
         <ReviewCarousel />
       </div>
     </main>
