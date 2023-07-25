@@ -58,7 +58,7 @@ const events = [
   { date: '2018-04', event: 'Annamayya Day Performance for Silicon Andhra University' },
   { date: '2018-04', event: 'Samavesha by Srikanth & Aswathy Annual Summer Workshop' },
   { date: '2018-06', event : "Neha Seshadri's Arangetram", img: '/arangetram/neha.jpg'},
-  { date: '2018-07', event: "Avanthika Panchapakesan's Arangetram" },
+  { date: '2018-07', event: "Avanthika Panchapakesan's Arangetram", img: '/arangetram/avanthika.jpg'},
   { date: '2018-08', event: "Vatsalya Narayan's Arangetram", img: '/arangetram/vatsu.jpg'},
   { date: '2018-09', event: 'Salangai Poojai Performance by Anika M, Samyuktha R, Shriya, Samyuktha S, Amirtha B' },
   { date: '2018-10', event: 'Annual Vijayadasami Celebrations' },
