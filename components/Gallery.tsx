@@ -23,8 +23,8 @@ function Modal(props: { onClose: () => void; children: React.ReactNode }) {
   }
 
   export default function GalleryComponent() {
-    const numImages = 25; // Number of images to loop through
-    const imageBasePath = "/gallery/gallery"; // Base path for the images
+    const numImages = 26; 
+    const imageBasePath = "/gallery/gallery";
     const images = [];
   
     const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
