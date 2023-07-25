@@ -19,8 +19,8 @@ const events = [
   { date: '2022-04', event: 'Sree Seetrama Kalyanam at CTS, Sacramento, CA' },
   { date: '2022-06', event: 'Stuti Chauhan Arangetram' },
   { date: '2022-08', event: 'Of love and Longing, B street theatre, Sacramento' },
-  { date: '2022-08', event: 'Anika and Amritha Arangetram', img:'/arangetram/amritha.jpg'},
-  { date: '2022-09', event: 'Samyuktha arangetram' },
+  { date: '2022-08', event: "Anika and Amirtha's Arangetram", imgs:['/arangetram/amirtha.jpg','/arangetram/anika.jpg','/arangetram/amirtha-anika.jpg']},
+  { date: '2022-09', event: "Samyuktha's arangetram", imgs:['/arangetram/samyuktha.jpg'] },
   { date: '2022-10', event: 'Vijayadashmi performance at in-home Mather theater' },
   // Events for 2021
   { date: '2021-01', event: 'Marghazi Kala Utsavam, Kaladhaara production, Mather, CA' },
@@ -128,6 +128,9 @@ const EventList = () => {
                       {e.img && (
                         <img src={e.img} className="w-full h-auto mt-4" />
                       )}
+                      {e.imgs && e.imgs.map((image)=>(
+                        <img src={image} className="w-auto max-h-[80%] object-cover mt-4" />
+                      ))}
                     </div>
                   ))}
               </div>
