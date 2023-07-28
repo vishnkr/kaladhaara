@@ -59,7 +59,7 @@ const reviews: ShortTestimonials = [
     {
       name: "Ananya Gorjalar",
       feedback: "In addition to using lots of expressions, hand gestures, a lot of energy, and telling a story, dancing to me is to enjoy while you dance, having a smile on your face, showing efforts to learn the next thing, and finally practicing at home and improving from the past mistakes that you made.",
-      imagePath:'/testimonials/Ananya.jpeg"
+      imagePath: '/testimonials/Ananya.jpeg'
     }
   ] 
 
