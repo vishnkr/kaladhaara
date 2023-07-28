@@ -11,9 +11,7 @@ export default function Home() {
   };
 
   useEffect(() => {
-    const interval = setInterval(updateImageIndex, 4000);
-
-    // Clean up the interval when the component unmounts
+    const interval = setInterval(updateImageIndex, 5000);
     return () => {
       clearInterval(interval);
     };
