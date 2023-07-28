@@ -55,6 +55,11 @@ const reviews: ShortTestimonials = [
       name: "Aaradhana Arvind",
       feedback: "I am 10 years old and have been learning dance for the past 5 years. I can't express the gratitude I have towards Mathura Auntie and Kaladhara teachers. Dancing gives me self confidence and joy. With my teachers help I am able to connect with the music and dance gracefully.",
       imagePath: '/testimonials/Aaradhana.jpg'
+    },
+    {
+      name: "Ananya Gorjalar",
+      feedback: "In addition to using lots of expressions, hand gestures, a lot of energy, and telling a story, dancing to me is to enjoy while you dance, having a smile on your face, showing efforts to learn the next thing, and finally practicing at home and improving from the past mistakes that you made.",
+      imagePath:'/testimonials/Ananya.jpeg"
     }
   ] 
 
