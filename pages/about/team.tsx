@@ -54,7 +54,7 @@ const staff = [
   {
     name: "Vatsalya Narayan",
     role: "Technical Coordinator",
-    description: ["As a faculty member at Kaladhaara, I've grown in so many different ways. Being in high school I enjoy teaching kids as it allows me to better communicate and understand nuisances of learning and choreography. I currently am an Adavu batch teacher and help manage foundational concepts. I have been with Kaladhaara since it's starting and was recently initiated as a teacher into its wonderful faculty team!"],
+    description: ["As a faculty member at Kaladhaara, I've grown in so many different ways. Being in high school I enjoy teaching kids as it allows me to better communicate and understand nuances of learning and choreography. I currently am an Adavu batch teacher and help manage foundational concepts. I have been with Kaladhaara since it's starting and was recently initiated as a teacher into its wonderful faculty team!"],
     imageSrc: "/faculty/Vatsu.jpg"
   },
   {
