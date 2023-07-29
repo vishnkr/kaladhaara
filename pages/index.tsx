@@ -24,32 +24,51 @@ export default function Home() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       {showAnnouncement && (
-        <div className="bg-orange-200 p-4 flex flex-col items-center justify-center rounded-sm relative">
-        <p className="text-xl md:text-3xl text-slate-700 font-semibold text-center my-2">
-          Don't Miss Our Upcoming Event!
-        </p>
-        <p className="text-lg md:text-xl text-slate-700 font-semibold text-center my-2"> "Cosmic Elements" - A Thematic Bharatanatyam presentation by Kaladhaara's finest dancers and Live orchestra.</p>
-        <a href="https://tinyurl.com/CE13th" target="_blank"><p className=' bg-red-800 rounded-md px-4 py-2 text-white text-md md:text-lg'>Get Your Tickets Now! </p></a>
-        <button
-          onClick={() => setShowAnnouncement(false)}
-          className="absolute top-0 right-0 mt-2 mr-2 w-6 h-6 flex items-center justify-center font-bold text-black rounded-full bg-white"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-4 w-4"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
-        </button>
-      </div>
+        <div className='bg-black bg-opacity-50 z-10 fixed top-0 left-0 w-full h-full flex items-center rounded-md justify-center'>
+          <div className="bg-orange-100 p-4 flex flex-col items-center justify-center rounded-sm relative mx-2">
+            <p className="text-xl md:text-3xl text-slate-700 font-semibold text-center my-2">
+              Don't Miss Our Upcoming Event!
+            </p>
+            <div className='flex flex-col items-center justify-center'>
+              <div className="max-w-md sm:max-w-lg">
+                <img
+                  className="w-full h-full object-fit"
+                  src="/events/cosmic-elements.jpg"
+                  alt="Cosmic Elements"
+                />
+              </div>
+              <div className=''>
+                <p className="text-lg md:text-xl text-slate-700 font-semibold text-center my-2">
+                  "Cosmic Elements" - A Thematic Bharatanatyam presentation by Kaladhaara's finest dancers and Live orchestra.
+                </p>
+              </div>
+              <div className=''>
+                <a href="https://tinyurl.com/CE13th" target="_blank">
+                  <button className='bg-red-800 rounded-md px-4 py-2 text-white text-md md:text-lg'>Get Your Tickets Now!</button>
+                </a>
+              </div>
+            </div>
+            <button
+              onClick={() => setShowAnnouncement(false)}
+              className="absolute top-0 right-0 mt-2 mr-2 w-6 h-6 flex items-center justify-center font-bold text-black rounded-full bg-white"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-4 w-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
       )}
       <div className="relative px-6 lg:px-8 py-16 sm:py-8">
         <div className="pb-8">

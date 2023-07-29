@@ -37,7 +37,7 @@ function Modal(props: { onClose: () => void; children: React.ReactNode }) {
       setSelectedImageIndex(null);
     };
   
-    for (let i = 1; i <= numImages; i++) {
+    for (let i = 0; i < numImages; i++) {
       const image = {
         id: i,
         src: `${imageBasePath}${i}.jpg`,
