@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram, faFacebook, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import Link from 'next/link';
+import { useState, useEffect } from 'react';
 
 const ContactForm = () => {
     return (
@@ -86,6 +87,7 @@ const ContactForm = () => {
                     rows={4}
                     name="message"
                 ></textarea>
+                <input type="text" name="_gotcha" className='hidden' />
                 </div>
                 <div className="flex items-center justify-center">
                 <button
