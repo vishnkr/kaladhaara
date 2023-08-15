@@ -2,7 +2,8 @@ import Head from "next/head";
 import { ReactNode } from "react";
 
 const events: Event[] = [
-  { date: "08/13/2023", month:"August",year:"2023", title: "Cosmic Elements: Thematic performance by Mathura Viswanathan", 
+  { date: "08/19/2023", month:"August",year:"2023", title: "Arangetram - Sahana Shankar" ,poster: '/events/sahana-arangetram.jpeg'},
+  /*{ date: "08/13/2023", month:"August",year:"2023", title: "Cosmic Elements: Thematic performance by Mathura Viswanathan", 
     poster:'/events/cosmic-elements.jpg',
     jsxContent: <a href="https://www.zeffy.com/en-US/ticketing/a313ba08-eb0b-4139-a15f-ccea4176e29b" target="blank">
         <button className="rounded py-2 px-4 bg-red-800 text-white font-semibold"> Get tickets</button>
@@ -10,8 +11,8 @@ const events: Event[] = [
     id: 'cosmicElements'
   },
   { date: "08/12/2023", month:"August",year:"2023", title: "Arangetram - Hasmitha Vaibhavi Kanugula", poster: '/events/hasmitha-arangetram.jpeg'},
-  { date: "08/19/2023", month:"August",year:"2023", title: "Arangetram - Sahana Shankar" ,poster: '/events/sahana-arangetram.jpeg'},
-  { date: "08/05/2023", month:"August",year:"2023", title: "Arangetram - Samyukta and Sadhana Suresh", poster: '/events/samyukta-arangetram.jpeg' },
+
+  { date: "08/05/2023", month:"August",year:"2023", title: "Arangetram - Samyukta and Sadhana Suresh", poster: '/events/samyukta-arangetram.jpeg' },*/
 ];
 
 type Event = {
