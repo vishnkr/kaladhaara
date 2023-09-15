@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 export default function Home() {
   const images = 6;
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [showAnnouncement, setShowAnnouncement] = useState(true);
+  const [showAnnouncement, setShowAnnouncement] = useState(false);
 
   const updateImageIndex = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images);
