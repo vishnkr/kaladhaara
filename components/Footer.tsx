@@ -44,9 +44,6 @@ function Footer() {
 						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
                             <Link href="/about/mathura">Mathura</Link>
 						</li>
-                        <li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-                            <Link href="/about/team">Our team</Link>
-						</li>
 
 					</ul>
 				</div>
