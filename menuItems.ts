@@ -18,10 +18,6 @@ export const menuItems: MenuItems = [
                 title: 'Mathura',
                 url: 'mathura'
             },
-            {
-                title: 'Our Team',
-                url: 'team'
-            },
         ]
     },
     {
