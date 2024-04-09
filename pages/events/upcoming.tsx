@@ -2,7 +2,7 @@ import Head from "next/head";
 import { ReactNode } from "react";
 
 const events: Event[] = [
-  { date: "08/19/2023", month:"August",year:"2023", title: "Arangetram - Sahana Shankar" ,poster: '/events/sahana-arangetram.jpeg'},
+  //{ date: "08/19/2023", month:"August",year:"2023", title: "Arangetram - Sahana Shankar" ,poster: '/events/sahana-arangetram.jpeg'},
   /*{ date: "08/13/2023", month:"August",year:"2023", title: "Cosmic Elements: Thematic performance by Mathura Viswanathan", 
     poster:'/events/cosmic-elements.jpg',
     jsxContent: <a href="https://www.zeffy.com/en-US/ticketing/a313ba08-eb0b-4139-a15f-ccea4176e29b" target="blank">
@@ -58,7 +58,7 @@ export default function Upcoming() {
       </Head>
       <div className="py-2 px-4 sm:py-24 sm:px-6">
         <h1 className="text-2xl md:text-3xl font-semibold text-center mb-4">UPCOMING EVENTS</h1>
-        {Object.entries(eventsByDateAndMonth).map(([formattedDate, eventsByMonth]) => {
+        {events.length === 0 ? <p className="text-lg text-center">There are no upcoming events at this time. Stay tuned for future event announcements!</p>: Object.entries(eventsByDateAndMonth).map(([formattedDate, eventsByMonth]) => {
           return (
             <div key={formattedDate} className="mb-8">
               <div className="bg-red-800 rounded-lg p-2 mb-1 text-white text-center">

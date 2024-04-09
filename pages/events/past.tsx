@@ -14,6 +14,10 @@ const events = [
   { date: '2023-04', event: 'Fit to Dance workshop' },
   { date: '2023-04', event: 'Maha Rudra festival' },
   { date: '2023-07', event: 'FETNA inaugural performance'},
+  { date: '2023-08', event: "Sahana Shankar's Arangetram" },
+  { date: "2023-08", event: "Cosmic Elements: Thematic performance by Mathura Viswanathan"},
+  { date: "2023-08", event: "Hasmitha Vaibhavi Kanugula's Arangetram"},
+  { date: "2023-08", event: "Samyukta Suresh and Sadhana Suresh's Arangetram" },
 
   { date: '2022-02', event: 'Pongal Celebration by Sacramento Tamil Sangam, CA' },
   { date: '2022-03', event: 'ISCKON, Sacramento, CA' },

@@ -23,6 +23,11 @@ export default function Home() {
         <title>Kaladhaara</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
+      <div className="bg-gradient-to-r from-fuchsia-500 via-fuchsia-900 to-orange-600 text-white py-6 text-center rounded-md">
+        <h2 className="text-3xl font-semibold mb-2">Admissions for August 2024 are open! </h2>
+        <h2 className='text-2xl font-bold mb-2'>Check out our trial classes and register for new admissions</h2>
+        <a href="https://app.classmanager.com/portal/kaladhaara-arts-academy/register" target='_blank' rel="noopener noreferrer" className="text-lg inline-block bg-yellow-400 hover:bg-yellow-500 text-violet-900 font-semibold px-8 py-3 rounded-full transition duration-300 ease-in-out shadow-lg">Register Now</a>
+      </div>
       {showAnnouncement && (
         <div className='bg-black bg-opacity-50 z-10 fixed top-0 left-0 w-full h-full flex items-center rounded-md justify-center'>
           <div className="bg-orange-100 p-4 flex flex-col items-center justify-center rounded-sm relative mx-2">
