@@ -23,10 +23,12 @@ export default function Home() {
         <title>Kaladhaara</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <div className="bg-gradient-to-r from-fuchsia-500 via-fuchsia-900 to-orange-600 text-white py-6 text-center rounded-md">
-        <h2 className="text-3xl font-semibold mb-2">Admissions for August 2024 are open! </h2>
-        <h2 className='text-2xl font-bold mb-2'>Check out our trial classes and register for new admissions</h2>
-        <a href="https://app.classmanager.com/portal/kaladhaara-arts-academy/register" target='_blank' rel="noopener noreferrer" className="text-lg inline-block bg-yellow-400 hover:bg-yellow-500 text-violet-900 font-semibold px-8 py-3 rounded-full transition duration-300 ease-in-out shadow-lg">Register Now</a>
+      <div className="bg-gradient-to-r from-fuchsia-500 via-fuchsia-900 to-orange-600 text-white p-6 md:p-4 text-center rounded-md">
+        <h2 className="text-2xl md:text-3xl font-bold mb-2">Admissions for August 2024 are open! </h2>
+        <h2 className='text-xl md:text-2xl font-bold m-2'>Check out our trial classes and register for new admissions</h2>
+        <a href="https://app.classmanager.com/portal/kaladhaara-arts-academy/register" target='_blank' rel="noopener noreferrer" className="text-md md:text-lg inline-block bg-yellow-400 hover:bg-yellow-500 text-violet-900 font-semibold px-8 py-3 rounded-lg transition duration-300 ease-in-out shadow-lg">Register Now</a>
+        <p className='text-md md:text-lg font-semibold m-2'>Existing families can login to our portal here - <a href="https://app.classmanager.com/portal/kaladhaara-arts-academy/login" target='_blank' className="text-md md:text-lg inline-block bg-yellow-400 hover:bg-yellow-500 text-violet-900 font-semibold px-4 py-2 rounded-lg transition duration-300 ease-in-out shadow-lg">Login</a></p>
+        <p className="text-md md:text-lg font-semibold m-2">For enquiries, <a href="https://app.classmanager.com/kaladhaara-arts-academy/lead-forms/95a5eccf-dc16-4779-8f34-55990dd890a0" target='_blank' className="text-blue-400 hover:underline">visit here</a>.</p>
       </div>
       {showAnnouncement && (
         <div className='bg-black bg-opacity-50 z-10 fixed top-0 left-0 w-full h-full flex items-center rounded-md justify-center'>
