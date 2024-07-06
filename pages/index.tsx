@@ -55,7 +55,7 @@ export default function Home() {
             </div>
             
             <div className="my-4">
-                <a href="https://app.classmanager.com/portal/kaladhaara-arts-academy/trial" target="_blank" rel="noopener noreferrer" className="text-md md:text-lg inline-block bg-yellow-400 hover:bg-yellow-500 text-violet-900 font-semibold px-8 py-3 rounded-lg transition duration-300 ease-in-out shadow-lg">
+                <a href="https://forms.gle/RDj9YdsmmQ7rB2qV8" target="_blank" rel="noopener noreferrer" className="text-md md:text-lg inline-block bg-yellow-400 hover:bg-yellow-500 text-violet-900 font-semibold px-8 py-3 rounded-lg transition duration-300 ease-in-out shadow-lg">
                     Click here to sign up for our trial classes
                 </a>
             </div>
