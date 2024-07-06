@@ -35,22 +35,22 @@ export default function Home() {
           <div className="md:w-1/2">
             <div className="my-4">
               <h3 className="text-lg md:text-xl font-bold">Folsom Studio:</h3>
-              <p className="text-md md:text-lg">Mondays July 22nd, 29th 7pm</p>
-              <p className="text-md md:text-lg">Wednesdays July 24th 7:30pm</p>
+              <p className="text-md md:text-lg">Mondays: July 22nd, 29th - 7pm</p>
+              <p className="text-md md:text-lg">Wednesday: July 24th - 7:30pm</p>
             </div>
             <div className="my-4">
               <h3 className="text-lg md:text-xl font-bold">Mather Studio:</h3>
               <p className="text-md md:text-lg">
-                Tuesdays July 23rd, 30th - 6pm
+                Tuesday: July 23rd, 30th - 6pm
               </p>
-              <p className="text-md md:text-lg">Thursdays July 25th - 6pm</p>
+              <p className="text-md md:text-lg">Thursday: July 25th - 6pm</p>
             </div>
             <div className="my-4">
               <h3 className="text-lg md:text-xl font-bold">
                 Roseville Studio:
               </h3>
               <p className="text-md md:text-lg">
-                Wednesdays Aug 7th, 14th - 6:15pm
+                Wednesday: Aug 7th, 14th - 6:15pm
               </p>
             </div>
             
