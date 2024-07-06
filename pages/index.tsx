@@ -59,7 +59,7 @@ export default function Home() {
                     Click here to sign up for our trial classes
                 </a>
             </div>
-            <p className="text-md md:text-lg font-semibold m-2">For more info, join our WhatsApp group <a href="https://chat.whatsapp.com/yourgroupinvite" target="_blank" className="text-green-400 hover:underline">here</a>.</p>
+            <p className="text-md md:text-lg font-semibold m-2">For more info, join our WhatsApp group <a href="https://chat.whatsapp.com/EoBdjVffFsiInmEJMfFeW6" target="_blank" className="text-green-400 hover:underline">here</a>.</p>
 
           </div>
           
