@@ -1,7 +1,9 @@
 export interface MenuItem{
     title: string,
     url: string,
-    submenu?: MenuItem[]
+    submenu?: MenuItem[],
+    isSpecial?: boolean,
+    target?:string
 }
 export type MenuItems = MenuItem[]
 
@@ -64,13 +66,19 @@ export const menuItems: MenuItems = [
         title: 'Sac Adavu Meetup',
         url:'/sac-adavu'
     },
-    /*{
-        title: 'Testimonials',
-        url: '/testimonials'
-    },*/
     {
         title: 'Contact Us',
         url: '/contact'
+    },
+    {
+        title: 'Blog',
+        url: '/blogs'
+    },
+    {
+        title: 'Login',
+        url: 'https://app.classmanager.com/portal/kaladhaara-arts-academy/login',
+        isSpecial: true,
+        target: "_blank"
     },
 
 ]

@@ -4,9 +4,10 @@ import Link from "next/link";
 interface DropdownProps{
   curpath:string,
   submenus: MenuItems,
-  dropdown: boolean
+  dropdown: boolean,
+  className?: string; 
 }
-const Dropdown = ({ curpath, submenus, dropdown }:DropdownProps) => {
+const Dropdown = ({ curpath, submenus, dropdown , className}:DropdownProps) => {
     return (
         
         <ul className={`absolute rounded-lg

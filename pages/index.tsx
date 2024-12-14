@@ -6,7 +6,7 @@ export default function Home() {
   const images = 6;
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [showAnnouncement, setShowAnnouncement] = useState(false);
-
+  const [showAnnouncement2, setShowAnnouncement2] = useState(false);
   const updateImageIndex = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images);
   };
@@ -23,7 +23,8 @@ export default function Home() {
         <title>Kaladhaara</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <div className="bg-gradient-to-r from-fuchsia-500 via-fuchsia-900 to-orange-600 text-white p-6 md:p-4 text-center rounded-md">
+
+      {showAnnouncement2 &&  <div className="bg-gradient-to-r from-fuchsia-500 via-fuchsia-900 to-orange-600 text-white p-6 md:p-4 text-center rounded-md">
         <h2 className="text-2xl md:text-3xl font-bold mb-2">
           Trial classes and Admissions are open!
         </h2>
@@ -111,6 +112,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      }
       {showAnnouncement && (
         <div className="bg-black bg-opacity-50 z-10 fixed top-0 left-0 w-full h-full flex items-center rounded-md justify-center">
           <div className="bg-orange-100 p-4 flex flex-col items-center justify-center rounded-sm relative mx-2">
