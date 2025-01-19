@@ -67,17 +67,17 @@ export const menuItems: MenuItems = [
         url:'/sac-adavu'
     },
     {
-        title: 'Contact Us',
-        url: '/contact'
-    },
-    {
         title: 'Updates',
         url: '/updates',
         submenu: [
           { title: 'Blog', url: '/blogs' },
           { title: 'Newsletters', url: '/newsletters' }
         ]
-    },      
+    },   
+    {
+        title: 'Contact Us',
+        url: '/contact'
+    },   
     {
         title: 'Login',
         url: 'https://app.classmanager.com/portal/kaladhaara-arts-academy/login',
