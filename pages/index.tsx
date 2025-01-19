@@ -23,8 +23,7 @@ export default function Home() {
         <title>Kaladhaara</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-
-      {showAnnouncement2 &&  <div className="bg-gradient-to-r from-fuchsia-500 via-fuchsia-900 to-orange-600 text-white p-6 md:p-4 text-center rounded-md">
+      {/*showAnnouncement2 &&  <div className="bg-gradient-to-r from-fuchsia-500 via-fuchsia-900 to-orange-600 text-white p-6 md:p-4 text-center rounded-md">
         <h2 className="text-2xl md:text-3xl font-bold mb-2">
           Trial classes and Admissions are open!
         </h2>
@@ -112,8 +111,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      }
-      {showAnnouncement && (
+      */}
+      {/*showAnnouncement && (
         <div className="bg-black bg-opacity-50 z-10 fixed top-0 left-0 w-full h-full flex items-center rounded-md justify-center">
           <div className="bg-orange-100 p-4 flex flex-col items-center justify-center rounded-sm relative mx-2">
             <p className="text-xl md:text-3xl text-slate-700 font-semibold text-center my-2">
@@ -145,7 +144,7 @@ export default function Home() {
             </button>
           </div>
         </div>
-      )}
+      )*/}
       <div className="relative px-6 lg:px-8 py-16 sm:py-8">
         <div className="pb-8">
           <div className="flex flex-col items-center space-y-8 md:space-y-0 md:space-x-8 md:flex-row md:items-center">

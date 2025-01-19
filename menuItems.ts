@@ -71,9 +71,13 @@ export const menuItems: MenuItems = [
         url: '/contact'
     },
     {
-        title: 'Blog',
-        url: '/blogs'
-    },
+        title: 'Updates',
+        url: '/updates',
+        submenu: [
+          { title: 'Blog', url: '/blogs' },
+          { title: 'Newsletters', url: '/newsletters' }
+        ]
+    },      
     {
         title: 'Login',
         url: 'https://app.classmanager.com/portal/kaladhaara-arts-academy/login',
