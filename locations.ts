@@ -28,20 +28,20 @@ export const geojson = {
           loc1: '302 S Lexington Dr',
           loc2: 'Folsom, CA 95630',
           description: 'Our Folsom location is used for beginner and intermediate level and 1:1 advanced classes. This is where the SacAdavu meetup happens on the weekend as well. Most recently, Bhajan classes at Kaladhaara use this space once a week. This space is also available for rent to be used by anyone interested to conduct classes when the studio is available. Please reach out to us if you have questions about using this space.',
-          images:['/facility/folsom1.jpg','/facility/folsom2.jpg']
+          images:['/facility/folsom1.jpg','/facility/folsom2.jpg','/facility/folsom3.jpg'
+          ]
         }
       },
       {
         type: 'Feature',
         geometry: {
           type: 'Point',
-          lng: -121.2717502,
-          lat:38.7478403
-          
+          lng: -121.26997080000001,
+          lat: 38.76397363588585
         },
         properties: {
           title: 'Kaladhaara @ Roseville',
-          loc1: '201 Harding Blvd',
+          loc1: '920 Reserve Dr STE 110,',
           loc2: 'Roseville, CA 95678',
           description: 'At the Roseville location, we have beginners and intermediate classes once a week for students around that area. We have been conducting these classes and catering to art lovers in Roseville for seven years now.'
         }
