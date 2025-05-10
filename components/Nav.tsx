@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Dropdown from "./Dropdown";
-import { menuItems } from '../menuItems';
+import { menuItems } from "../menuItems";
 
 export default function Nav() {
   const [activeDropdown, setActiveDropdown] = useState<number | null>(null);
@@ -29,10 +29,10 @@ export default function Nav() {
         <div className="flex items-center justify-between w-full">
           {/* Logo Section */}
           <Link className="flex items-center" href="/">
-            <img 
-              src="/logo.png" 
-              className="h-16 w-auto object-contain" 
-              alt="Logo" 
+            <img
+              src="/logo.png"
+              className="h-16 w-auto object-contain"
+              alt="Logo"
             />
           </Link>
 
@@ -81,13 +81,15 @@ export default function Nav() {
               >
                 {menu.submenu ? (
                   <div className="relative group w-full">
-                    <div 
+                    <div
                       className="font-semibold cursor-pointer leading-6 text-red-900 px-2 py-2 whitespace-nowrap flex items-center"
                       aria-haspopup="menu"
                       aria-expanded={activeDropdown === idx}
                       onClick={() => {
                         if (window.innerWidth <= 960) {
-                          setActiveDropdown(activeDropdown === idx ? null : idx);
+                          setActiveDropdown(
+                            activeDropdown === idx ? null : idx
+                          );
                         }
                       }}
                     >
@@ -107,7 +109,11 @@ export default function Nav() {
                         />
                       </svg>
                     </div>
-                    <div className="md:absolute md:top-full md:left-0 md:z-50 w-full">
+                    <div
+                      className={`w-full ${
+                        activeDropdown === idx ? "block" : "hidden"
+                      } md:block md:absolute md:top-full md:left-0 md:z-50`}
+                    >
                       <Dropdown
                         curpath={menu.url}
                         submenus={menu.submenu}
@@ -119,7 +125,7 @@ export default function Nav() {
                   <Link
                     href={menu.url}
                     target={menu.target || "_self"}
-                    rel={menu.target === '_blank' ? 'noopener noreferrer' : ''}
+                    rel={menu.target === "_blank" ? "noopener noreferrer" : ""}
                     className="font-medium lg:font-semibold leading-6 text-red-900 group transition duration-300 ease-in-out px-2 py-2 whitespace-nowrap block"
                   >
                     {menu.title}

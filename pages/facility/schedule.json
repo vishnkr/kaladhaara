@@ -3,35 +3,17 @@
     {
       "name": "Kaladhaara @ Rancho Cordova",
       "schedule": {
-        "Tuesday":[{"event":"Arangetram classes"}],
-        "Wednesday": [{"event":"Beginner Adavu classes"}],
-        "Thursday": [{ "event":"Intermediate"},{"event":"Advanced"}],
-        "Saturday":[
-          {"event":"Intermediate"},
-          {"event":"Advanced"}
-        ],
-        "Sunday": [{"event":"Arangetram classes"}]
       }
         
     },
     {
       "name": "Kaladhaara @ Folsom",
       "schedule": {
-        "Monday":[{ "event":"Beginner Adavu classes"}],
-        "Tuesday":[{ "event":"Intermediate"},{"event":"Adult beginners"}],
-        "Wednesday": [{"event":"Private lessons / 1 : 1"}],
-        "Thursday": [{ "event":"Bhajan Class"},{"event":"Private lessons"}],
-        "Friday": [{"event":"Performance rehearsals"}],
-        "Saturday":[
-          {"event":"Intermediate groups"}
-        ],
-        "Sunday":[{"event":"SacAdavu group meetup"}]
       }
     },
     {
       "name": "Kaladhaara @ Roseville",
       "schedule": {
-        "Wednesday": [{ "event":"Beginner"},{"event":"Intermediate"}]
       }
     }
   ]
