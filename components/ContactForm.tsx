@@ -42,7 +42,7 @@ const ContactForm = () => {
   method="POST">
                 <div className="my-4">
                 <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
-                    Name
+                    Name<span className="text-red-500">*</span>
                 </label>
                 <input
                     className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -50,11 +50,12 @@ const ContactForm = () => {
                     type="text"
                     placeholder="Enter your name"
                     name="name"
+                    required
                 />
                 </div>
                 <div className="my-4">
                 <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
-                    Email
+                    Email<span className="text-red-500">*</span>
                 </label>
                 <input
                     className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -62,11 +63,12 @@ const ContactForm = () => {
                     type="email"
                     placeholder="Enter your email"
                     name="email"
+                    required
                 />
                 </div>
                 <div className="mb-4">
                 <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="phone">
-                    Phone
+                    Phone<span className="text-red-500">*</span>
                 </label>
                 <input
                     className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -74,11 +76,12 @@ const ContactForm = () => {
                     type="tel"
                     placeholder="Enter your phone number"
                     name="phone"
+                    required
                 />
                 </div>
                 <div className="mb-6">
                 <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="message">
-                    Message
+                    Message<span className="text-red-500">*</span>
                 </label>
                 <textarea
                     className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -86,6 +89,7 @@ const ContactForm = () => {
                     placeholder="Enter your message"
                     rows={4}
                     name="message"
+                    required
                 ></textarea>
                 <input type="text" name="_gotcha" className='hidden' />
                 </div>
@@ -104,100 +108,3 @@ const ContactForm = () => {
   };
   
   export default ContactForm;
-
-  const ContactFormgu = () => {
-    return (
-      <div className="relative flex flex-col justify-center min-h-screen overflow-hidden ">
-        <div className="w-full p-6 m-auto bg-white rounded-md ring-4 ring-indigo-600 lg:max-w-xl">
-          <form className="mt-6">
-            <div className="mb-2">
-              <label>
-                <span className="text-gray-700">Your name</span>
-                <input
-                  type="text"
-                  name="name"
-                  className="
-  
-              w-full
-              block px-16 py-2 mt-2
-              border-gray-300
-              rounded-md
-              shadow-sm
-              focus:border-indigo-300
-              focus:ring
-              focus:ring-indigo-200
-              focus:ring-opacity-50
-            "
-                  placeholder="John cooks"
-                />
-              </label>
-            </div>
-            <div className="my-4">
-              <label>
-                <span className="text-gray-700">Email address</span>
-                <input
-                  name="email"
-                  type="email"
-                  className="
-              block
-              w-full
-              mt-2 px-16 py-2
-              border-gray-300
-              rounded-md
-              shadow-sm
-              focus:border-indigo-300
-              focus:ring
-              focus:ring-indigo-200
-              focus:ring-opacity-50
-            "
-                  placeholder="john.cooks@example.com"
-                  required
-                />
-              </label>
-            </div>
-            <div className="my-4">
-              <label>
-                <span className="text-gray-700">Message</span>
-                <textarea
-                  name="message"
-                  className="
-              block
-              w-full
-              mt-2 px-16 py-8
-              border-gray-300
-              rounded-md
-              shadow-sm
-              focus:border-indigo-300
-              focus:ring
-              focus:ring-indigo-200
-              focus:ring-opacity-50
-            "
-                  rows={5}
-                ></textarea>
-              </label>
-            </div>
-  
-            <div className="mb-6">
-              <button
-                type="submit"
-                className="
-              h-10
-              px-5
-              text-indigo-100
-              bg-indigo-700
-              rounded-lg
-              transition-colors
-              duration-150
-              focus:shadow-outline
-              hover:bg-indigo-800
-            "
-              >
-                Contact Us
-              </button>
-            </div>
-            <div></div>
-          </form>
-        </div>
-      </div>
-    );
-  };
