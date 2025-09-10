@@ -7,7 +7,7 @@ const events = [
 },
 { date: "2025-02",
   event: "Pravaahini and Natyanjani Festivals Tour in India ",
-  //imgs: ["/events/10th-anniv1.jpg", "/events/10th-anniv2.jpg"],
+ img:"/homepage/homepage2.jpg",
 },
 {
   date: "2025-03", event: "Natyanjali Festival in Sacramento",
