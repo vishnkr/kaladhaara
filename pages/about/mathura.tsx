@@ -31,6 +31,7 @@ export default function FirstPost() {
                         <p className="mt-8 text-lg mx-6 text-start leading-8 text-gray-600">
                         <p className="font-semibold text-gray-900">Her very notable achievements include the following:</p>
                         <ul>
+                            <li>- Kalemane Kalashree Award, Mysuru (2025) </li>
                             <li>- Dharmavarapu Seetharama Anjaneyalu award as the best all-rounder (2004)</li>
                             <li>- Balasaraswathi prize for best performance (2005)</li>
                             <li>- Music Academy's Spirit of Youth Best Dancer award (2006)</li>

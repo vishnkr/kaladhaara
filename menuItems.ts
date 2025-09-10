@@ -56,10 +56,7 @@ export const menuItems: MenuItems = [
                 title: 'Locations',
                 url: 'locations'
             },
-            {
-                title: 'Schedule',
-                url:'schedule'
-            }
+            
         ]
     },
     {
