@@ -4,33 +4,28 @@ import { ReactNode } from "react";
 const events: Event[] = [
   { 
     year: "2025", 
+    title: "Pravaahini in Sacramento and Bay Area",
+    id: 'pravaahini-sac-bay-2025'
+  },
+  { 
+    year: "2025", 
     title: "Sac Valley Margazhi",
     id: 'sac-valley-margazhi-2025'
   },
   { 
-    year: "2025", 
+    year: "2026", 
+    title: "Chennai Sabha Performances",
+    id: 'chennai-sabha-2026'
+  },
+  { 
+    year: "2026", 
     title: "Sacramento Natyanjali",
-    id: 'sacramento-natyanjali-2025'
+    id: 'natyanjali-sac-2026'
   },
   { 
-    year: "2025", 
-    title: "Spring Showcase",
-    id: 'spring-showcase-2025'
-  },
-  { 
-    year: "2025", 
-    title: "Natyanjali - India",
-    id: 'natyanjali-india-2025'
-  },
-  { 
-    year: "2025", 
+    year: "2026", 
     title: "Arangetrams",
-    id: 'arangetrams-2025'
-  },
-  { 
-    year: "2025", 
-    title: "Thematic Presentation",
-    id: 'thematic-presentation-2025'
+    id: 'arangetrams-2026'
   }
 ];
 
