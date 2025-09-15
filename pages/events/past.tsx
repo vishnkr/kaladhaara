@@ -4,6 +4,7 @@ import { useState } from "react";
 const events = [
   {
   date: "2025-01",event: "Margazhi in the SF Music and Dance Festival",
+  img:"/events/sfMargazhi.jpg"
 },
 { date: "2025-02",
   event: "Pravaahini and Natyanjani Festivals Tour in India ",
@@ -17,20 +18,18 @@ const events = [
   event: "Sargolsav Dance Competition",
 },
 {
-  date: "2025-03", 
-  event: "Natyanjali Festival in Sacramento",
-},
-{
   date: "2025-04", 
   event: "Ram Navami Celebrations at Vista del Lago High School",
 },
 {
   date: "2025-05", 
   event: "Abhang Bhajans by Tukaram Ganapathi Maharaj",
+  img:"/events/AbhangBhajan.jpg"
 },
 {
   date: "2025-05", 
   event: "Students participated in Meraki Shining Stars featuring Women Empowerment",
+  img: "/events/Meraki.jpg",
 },
 {
   date: "2025-06", 
@@ -39,6 +38,7 @@ const events = [
 {
   date: "2025-06", 
   event: "Students of Kaladhaara participated in Navadarshana's Dance Intensive",
+  img: "/events/navadharshana.jpg",
 },
 {
   date: "2025-07", 
@@ -49,9 +49,15 @@ const events = [
     date: "2025-08", event: "Arangetram - Dhatrisri Alla",
     img: "/arangetram/Dhatri.jpeg"
   },
-  { date: "2025-08", event: "Annual Day", imgs: ["/events/AnnualDay1.jpeg","/events/AnnualDay2.jpeg"]},
+  { date: "2025-08", event: "15th Anniversary Annual Day", imgs: ["/events/AnnualDay1.jpeg","/events/AnnualDay2.jpeg"]},
+  { date: "2025-08", event: "Hosted Annual Day for Soundaryam School of Layam", img: ["/events/SoundaryamAnnualDay.jpg"]},
   { date: "2025-08", event: "Arangetram - Trishelle Ravindran", img: "/arangetram/trishelle.jpg" },
   { date: "2025-08", event: "Varnamala", img: "/events/Varnamala.jpeg" },
+
+  {
+  date: "2025-09", 
+  event: "Solo Performance by Sahana Shankar at EKA Dance Festival",
+},
 
   
   

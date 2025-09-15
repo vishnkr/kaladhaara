@@ -4,8 +4,8 @@ const staff = [
       name: "Sowmiya Ramkarthik",
       role: "Outreach and Events Coordinator",
       description:
-        ["I love being a part of the Kaladhaara family and I teach an adult Adavu class.","I really enjoy seeing new students learn and grow. This also gives me an opportunity to continue practicing Bharatanatyam."],
-        imageSrc: "/faculty/Sowmiya.jpg",
+        ["I love being a part of the Kaladhaara family and I teach beginner, intermediate as well as Adult beginner batches ","I really enjoy seeing new students learn and grow. This also gives me an opportunity to continue practicing Bharatanatyam."]
+        , imageSrc: "/faculty/Sowmiya.jpg",
     },
     /*{
       name: "Saritha Gorjalar",
@@ -15,20 +15,12 @@ const staff = [
       imageSrc: "/faculty/Saritha.jpg",
     },*/
     {
-      name: "Raji Viswanathan",
-      role: "Body conditioning coach",
-      description:
-        ["I have been learning dance from a very young age. Dance gives me a good workout, freedom from mundane life, inner peace and sense of satisfaction.","I am lucky to be part of Kaladhara faculty, teaching the  foundational class to the students. I am also a student at the school and I am enjoying learning and teaching this beautiful form of dance."],
-      imageSrc: "/faculty/Raji.jpg",
-    },
-    {
       name: "Anuradha Sukumaran",
-      role: "Digital Marketing and Administrative Manager",
+      role: "Assistant Director",
       description:
-        ["I joined Kaladhaara in 2011 and have been rejoicing working with Mathura and the team for over a decade now. At Kaladhaara, I teach advanced level students and also work as digital marketing manager handling Kaladhaara's social media accounts. I also lead the SacAdavu group initiative.",
-        "I work as a full time Systems Engineer and enjoy playing with my three boys. I am grateful for the opportunity to pass down the art form to the next gen in this community. Bharatanatyam is a mind space for me to let my inner self transcend to a dimension beyond the physical realm!"],
-      imageSrc: "/faculty/Anu.jpg",
-    },
+        ["In 2011, I found my artistic home at Kaladhaara, where I continue to refine my craft under the inspiring mentorship of Smt. Mathura Viswanathan. My exploration of rhythm has deepened through training in Nattuvangam with Sri. Nagai P Sriram since 2020. I am grateful for the opportunity to pass down the art form to the next gen in this community. Bharatanatyam is a mind space for me to let my inner self transcend to a dimension beyond the physical realm!"]
+     , imageSrc: "/faculty/Anu.jpg",
+      },
     {
       name: "Charanya Ramaswamy",
       role: "Facilities/Rehearsal Coordinator",
@@ -36,6 +28,45 @@ const staff = [
         ["I am very thankful to my parents for having introduced me to this dance form as a child. Even with a few breaks in between, I found my way back to dancing when I joined Kaladhaara a few years back.",
         "At Kaladhaara, I enjoy teaching beginner and intermediate level students and this keeps me accountable for my practices and progress as well. I love learning, performing, watching and this is my biggest stress buster! I work full time as a Hardware Engineer and enjoy being outdoors hiking or biking with my kids."],
       imageSrc: "/faculty/Charanya.jpg",
+    },
+    {
+      name: "Aishwarya Viswanathan",
+      role: "Administrative Head",
+      description: ["My love for dance was ignited by a performance that I watched when I was 9yrs old. Ever since that my love for the art has only been growing.Thanks to the Raghuvamsa flyer that put me in touch with Kaladhaara and brought me back into the world of dance. Im grateful to be associated with Mathura and Kaladhaara. I teach beginner classes. Working with the kids gives me immense pleasure and the satisfaction of passing down this art form to the next gen."],
+      imageSrc:"/faculty/Aishwarya.jpg",
+    },
+    {
+      name: "Raji Viswanathan",
+      role: "Body conditioning coach",
+      description:
+        ["I have been learning dance from a very young age. Dance gives me a good workout, freedom from mundane life, inner peace and sense of satisfaction.","I am lucky to be part of Kaladhara faculty, teaching the  foundational class to the students. I am also a student at the school and I am enjoying learning and teaching this beautiful form of dance."],
+      imageSrc: "/faculty/Raji.jpg",
+    },
+      {
+      name: "Rajini Aiyah",
+      role: "Instructor and Stage Manager",
+      description: ["I'm grateful to my parents for introducing me to Bharatanatyam and deeply indebted to my Guru for nurturing my passion. I completed my arangetram and a 5-year course in theory and practicals. I joined Kaladhaara as a parent in 2014 and later became a faculty member in 2019. Dance helps me connect intellectually and spiritually. I feel the unison with eternity through Bharatanatyam. As an Adavu teacher at Kaladhaara, I cherish imparting this beautiful art form to the students."]
+      ,imageSrc: "/faculty/rajini.jpg",
+    },
+    {
+      name: "Mayura Ravi",
+      role: "Dance and Carnatic Vocal Lead Instructor",
+      description: ["Dance has been a part of my life from a young age. It gives me great joy and I cannot imagine a time when I am not learning, practicing or being a Rasika of dance. I was very fortunate to have been introduced to Bharatanatyam at the age of four. I trained under several gurus and completed my arangetrem under the guidance of Guru Kalamamani K J Sarasa.",
+        "I  joined Kaladhaara in 2016 in the production of Raghuvamsa and have recently begun teaching in beginner classes. I love being part of this community and doing my part in passing on this beautiful art form to next generations."
+      ],
+      imageSrc: "/faculty/Mayura.jpg",
+    },
+    {
+      name: "Aarthi Krishnamurthy",
+      role: "Carnatic Vocal Instructor",
+      description: ["Music has been a constant in my life, be it learning or performing from a young age and I am so grateful to Kaladhaara for giving me an opportunity to be in touch with music more through teaching Bhajans.", "The enthusiasm of the kids keeps me motivated each week. I look forward to each class as it gives me a chance to unwind, destress and be present."],
+      imageSrc: "/faculty/Aarthi.jpg",
+    },
+    {
+      name: "Vatsalya Narayan",
+      role: "Tech Designer",
+      description: ["As a faculty member at Kaladhaara, I've grown in so many different ways. Being in high school I enjoy teaching kids as it allows me to better communicate and understand nuances of learning and choreography. I currently am an Adavu batch teacher and help manage foundational concepts. I have been with Kaladhaara since it's starting and was recently initiated as a teacher into its wonderful faculty team!"],
+      imageSrc: "/faculty/vatsu.jpg"
     },
     {
       name: "Anvita Chinthada",
@@ -46,37 +77,29 @@ const staff = [
       imageSrc: "/faculty/Anvita.jpg",
     },
     {
-      name: "Aarthi Krishnamurthy",
-      role: "",
-      description: ["Music has been a constant in my life, be it learning or performing from a young age and I am so grateful to Kaladhaara for giving me an opportunity to be in touch with music more through teaching Bhajans.", "The enthusiasm of the kids keeps me motivated each week. I look forward to each class as it gives me a chance to unwind, destress and be present."],
-      imageSrc: "/faculty/Aarthi.jpg",
+      name: "Gopika Srivastava",
+      role: "Digital Marketing Associate",
+      description:
+        ["I have been a student at Kaladhaara since 2018. Bharatanatyam has taught me a plethora of lessons regarding footwork, expressions, history, and more. But beyond this, I have learned about the important of practice and discipline of the art. Dance is outlet of creativity, grace, and strength which I have developed a passion for thanks to training here under such amazing gurus. I hope to inspire the same passion in the students I will be training"]
+      ,imageSrc: "/faculty/gopika.jpg",
     },
     {
-      name: "Vatsalya Narayan",
-      role: "Technical Coordinator",
-      description: ["As a faculty member at Kaladhaara, I've grown in so many different ways. Being in high school I enjoy teaching kids as it allows me to better communicate and understand nuances of learning and choreography. I currently am an Adavu batch teacher and help manage foundational concepts. I have been with Kaladhaara since it's starting and was recently initiated as a teacher into its wonderful faculty team!"],
-      imageSrc: "/faculty/vatsu.jpg"
+      name: "Swetha Ramkarthik",
+      role: "Teacher in Training",
+      description:
+        ["From 2019, Kaladhaara Arts Academy has taught me Bharatanatyam, and I have grown in dance so much since then. After becoming a senior student, I started assisting in teaching the younger batches, and once I completed my arangetram I TA'd for the beginners moving into the intermediate level. Currently, I am teaching kids at the post-alarippu stage learn more about the dance form beyond the foundational steps with new kinds of pieces. I am so glad to be apart of younger dancers' journeys, and I hope to help more kids grow and enjoy the art of dance as I progress more as well."]
+      ,imageSrc: "/faculty/Swetha.jpg",
     },
     {
-      name: "Aishwarya",
-      role: "Instructor",
-      description: ["My love for dance was ignited by a performance that I watched when I was 9yrs old. Ever since that my love for the art has only been growing.Thanks to the Raghuvamsa flyer that put me in touch with Kaladhaara and brought me back into the world of dance. Im grateful to be associated with Mathura and Kaladhaara. I teach beginner classes. Working with the kids gives me immense pleasure and the satisfaction of passing down this art form to the next gen."],
-      imageSrc:"/faculty/Aishwarya.jpg",
+      name: "Dhatrisri Alla",
+      role: "Teacher in Training",
+      description:
+        ["Being a teacher in training at Kaladhaara Arts Academy has been an amazing experience. I enjoy teaching kids because it helps me understand how they learn and how to guide them in any possible way. I currently teach the Adavu batch, focusing on building strong foundational skills. And, recently completed my Arangetram on August 9, 2025, which has inspired me to bring even more passion and dedication to my teaching."]
+      ,imageSrc: "/faculty/Dhatri.jpg",
     },
-    {
-      name: "Mayura",
-      role: "Instructor",
-      description: ["Dance has been a part of my life from a young age. It gives me great joy and I cannot imagine a time when I am not learning, practicing or being a Rasika of dance. I was very fortunate to have been introduced to Bharatanatyam at the age of four. I trained under several gurus and completed my arangetrem under the guidance of Guru Kalamamani K J Sarasa.",
-        "I  joined Kaladhaara in 2016 in the production of Raghuvamsa and have recently begun teaching in beginner classes. I love being part of this community and doing my part in passing on this beautiful art form to next generations."
-      ],
-      imageSrc: "/faculty/Mayura.jpg",
-    },
-      {
-      name: "Rajini",
-      role: "Instructor",
-      description: ["I'm grateful to my parents for introducing me to Bharatanatyam and deeply indebted to my Guru for nurturing my passion. I completed my arangetram and a 5-year course in theory and practicals. I joined Kaladhaara as a parent in 2014 and later became a faculty member in 2019. Dance helps me connect intellectually and spiritually. I feel the unison with eternity through Bharatanatyam. As an Adavu teacher at Kaladhaara, I cherish imparting this beautiful art form to the students."]
-      ,imageSrc: "/faculty/rajini.jpg",
-    },
+    
+    
+    
     
   ];
   
