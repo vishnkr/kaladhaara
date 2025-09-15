@@ -52,7 +52,7 @@ const events = [
   { date: "2025-08", event: "15th Anniversary Annual Day", imgs: ["/events/AnnualDay1.jpeg","/events/AnnualDay2.jpeg"]},
   { date: "2025-08", event: "Hosted Annual Day for Soundaryam School of Layam", img: "/events/SoundaryamAnnualDay.jpg"},
   { date: "2025-08", event: "Arangetram - Trishelle Ravindran", img: "/arangetram/trishelle.jpg" },
-  { date: "2025-08", event: "Varnamala", img: "/events/Varnamala.jpeg" },
+  { date: "2025-08", event: "Varnamala", img: "/events/Varnamala.jpg" },
 
   {
   date: "2025-09", 
