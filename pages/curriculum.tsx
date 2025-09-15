@@ -29,7 +29,23 @@ const curriculumCards = [
         title: 'Adult Beginner',
         content: 'We also have beginner classes for Adults who are passionate about restarting dance or starting from scratch.',
         img: '/gallery/gallery5.jpg'
+    },
+    {
+        title: 'Adult Intermediate',
+        content: 'Classes to help adult dancers deepen their Bharatanatyam technique and expand repertoire. Focus is on refining adavus, mastering intermediate choreography, and building stage confidence',
+        img: '/events/Varnamala.jpg'
+    },
+    {
+        title: 'Post Arangetram',
+        content: 'Designed for graduates to keep advancing their artistry. Emphasis on nuanced abhinaya, complex choreography, and sustaining professional-level practice.',
+        img: '/gallery/gallery13.jpg'
+    },
+     {
+        title: 'Carnatic Vocal',
+        content: 'Beginner-friendly Carnatic vocal classes for kids aged 5+, with a focus on fun, foundation, and tradition.',
+        img: '/gallery/gallery3.jpg'
     }
+   
     //c3: rgba(226,146,67,1) 0%, rgba(187,117,233,1) c4: rgba(70,152,176,1)
 ]
 export default function Curriculum(){
