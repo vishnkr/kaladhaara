@@ -3,17 +3,18 @@ import Head from 'next/head';
 
 const musicCards = [
     {
-    title: 'Carnatic Vocal',
-    img: '/gallery/gallery3.jpg',
-    content:
-      'Beginner-friendly Carnatic vocal classes for kids aged 5+, with a focus on fun, foundation, and tradition.',
-  },
-  {
     title: 'Bhajan',
     img: '/gallery/gallery2.jpg',
     content:
       'Introduces little ones to the joy of devotional music through simple bhajans and playful rhythm activities.',
   },
+    {
+    title: 'Carnatic Vocal',
+    img: '/gallery/gallery3.jpg',
+    content:
+      'Beginner-friendly Carnatic vocal classes for kids aged 5+, with a focus on fun, foundation, and tradition.',
+  },
+  
   
 ];
 

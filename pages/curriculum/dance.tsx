@@ -92,7 +92,8 @@ export default function Dance() {
         We are also working on creating avenues for students that transition into post arangetram learning which includes
         applying for scholarships, external performances and refining their progress. Kaladhaara embarked on their first tour
         of Natyanjali festivities in India during Feb-March 2020 where five of the students and their families traveled with
-        Mathura to perform at various temples across Tamil Nadu for MahaShivarathri.
+        Mathura to perform at various temples across Tamil Nadu for MahaShivarathri. The academy has continued to organize international 
+        tours since then, offering students valuable opportunities to share their art on global stages.
       </p>
     </section>
   );
