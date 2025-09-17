@@ -77,10 +77,17 @@ const staff = [
       imageSrc: "/faculty/Anvita.jpg",
     },
     {
+      name: "Gopika Srivastava",
+      role: "Digital Marketing Associate",
+      description:
+        ["I have been a student at Kaladhaara since 2018. Bharatanatyam has taught me a plethora of lessons regarding footwork, expressions, history, and more. But beyond this, I have learned about the important of practice and discipline of the art. Dance is outlet of creativity, grace, and strength which I have developed a passion for thanks to training here under such amazing gurus. I hope to inspire the same passion in the students I will be training"]
+      ,imageSrc: "/faculty/gopika.jpg",
+    },
+    {
       name: "Samyuktha Suresh",
       role: "Teacher in Training",
       description:
-        ["From 2019, Kaladhaara Arts Academy has taught me Bharatanatyam, and I have grown in dance so much since then. After becoming a senior student, I started assisting in teaching the younger batches, and once I completed my arangetram I TA'd for the beginners moving into the intermediate level. Currently, I am teaching kids at the post-alarippu stage learn more about the dance form beyond the foundational steps with new kinds of pieces. I am so glad to be apart of younger dancers' journeys, and I hope to help more kids grow and enjoy the art of dance as I progress more as well."]
+        ["I joined Kaladhaara at the age of 7 and my love for dance has grown ever since then. I am glad to have had so many oppurtunities to perform on stage such as Saptami fondation, where I won first prize and had the opportunity to dance with KCRA on TV. Through many years of experience in dance, I have completed my Salangai Poojai, in 2018, and successfully completed my Arangetram in 2023. I enjoy teaching kids, and at the same time going to Sac State."]
       ,imageSrc: "/faculty/samy.jpg",
     },
     {
@@ -104,13 +111,7 @@ const staff = [
         ["Being a teacher in training at Kaladhaara Arts Academy has been an amazing experience. I enjoy teaching kids because it helps me understand how they learn and how to guide them in any possible way. I currently teach the Adavu batch, focusing on building strong foundational skills. And, recently completed my Arangetram on August 9, 2025, which has inspired me to bring even more passion and dedication to my teaching."]
       ,imageSrc: "/faculty/Dhatri.jpg",
     },
-    {
-      name: "Gopika Srivastava",
-      role: "Digital Marketing Associate",
-      description:
-        ["I have been a student at Kaladhaara since 2018. Bharatanatyam has taught me a plethora of lessons regarding footwork, expressions, history, and more. But beyond this, I have learned about the important of practice and discipline of the art. Dance is outlet of creativity, grace, and strength which I have developed a passion for thanks to training here under such amazing gurus. I hope to inspire the same passion in the students I will be training"]
-      ,imageSrc: "/faculty/gopika.jpg",
-    },
+    
     
     
     
