@@ -29,6 +29,16 @@ export const menuItems: MenuItems = [
     {
         title: 'Curriculum',
         url: '/curriculum',
+        submenu:[
+            {
+                title: 'Dance',
+                url: 'dance'
+            },
+            {
+                title: 'Music',
+                url: 'music'
+            },
+        ]
     },
     {
         title: 'Events',

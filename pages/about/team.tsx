@@ -54,7 +54,7 @@ const staff = [
       description: ["Dance has been a part of my life from a young age. It gives me great joy and I cannot imagine a time when I am not learning, practicing or being a Rasika of dance. I was very fortunate to have been introduced to Bharatanatyam at the age of four. I trained under several gurus and completed my arangetrem under the guidance of Guru Kalamamani K J Sarasa.",
         "I  joined Kaladhaara in 2016 in the production of Raghuvamsa and have recently begun teaching in beginner classes. I love being part of this community and doing my part in passing on this beautiful art form to next generations."
       ],
-      imageSrc: "/faculty/Mayura.jpg",
+      imageSrc: "/faculty/Mayuraa.jpg",
     },
     {
       name: "Aarthi Krishnamurthy",
@@ -66,7 +66,7 @@ const staff = [
       name: "Vatsalya Narayan",
       role: "Tech Designer",
       description: ["As a faculty member at Kaladhaara, I've grown in so many different ways. Being in high school I enjoy teaching kids as it allows me to better communicate and understand nuances of learning and choreography. I currently am an Adavu batch teacher and help manage foundational concepts. I have been with Kaladhaara since it's starting and was recently initiated as a teacher into its wonderful faculty team!"],
-      imageSrc: "/faculty/vatsu.jpg"
+      imageSrc: "/faculty/Vatsu.jpg"
     },
     {
       name: "Anvita Chinthada",
@@ -89,6 +89,20 @@ const staff = [
       description:
         ["From 2019, Kaladhaara Arts Academy has taught me Bharatanatyam, and I have grown in dance so much since then. After becoming a senior student, I started assisting in teaching the younger batches, and once I completed my arangetram I TA'd for the beginners moving into the intermediate level. Currently, I am teaching kids at the post-alarippu stage learn more about the dance form beyond the foundational steps with new kinds of pieces. I am so glad to be apart of younger dancers' journeys, and I hope to help more kids grow and enjoy the art of dance as I progress more as well."]
       ,imageSrc: "/faculty/Swetha.jpg",
+    },
+    {
+      name: "Samyuktha Suresh",
+      role: "Teacher in Training",
+      description:
+        ["From 2019, Kaladhaara Arts Academy has taught me Bharatanatyam, and I have grown in dance so much since then. After becoming a senior student, I started assisting in teaching the younger batches, and once I completed my arangetram I TA'd for the beginners moving into the intermediate level. Currently, I am teaching kids at the post-alarippu stage learn more about the dance form beyond the foundational steps with new kinds of pieces. I am so glad to be apart of younger dancers' journeys, and I hope to help more kids grow and enjoy the art of dance as I progress more as well."]
+      ,imageSrc: "/faculty/samy.jpg",
+    },
+    {
+      name: "Sadhana Suresh",
+      role: "Teacher in Training",
+      description:
+        ["I’ve been part of Kaladhaara for seven years, and dance has always been my way to release stress and express myself without words. It’s where I can channel my feelings, build confidence, and grow as both a dancer and a person. Teaching kids this beautiful art form is something I love, because I get to share not just the technique, but also the joy and creativity that come with it. My hope is to inspire them the same way Kaladhaara has inspired me."]
+      ,imageSrc: "/faculty/Sadhana.jpg",
     },
     {
       name: "Dhatrisri Alla",

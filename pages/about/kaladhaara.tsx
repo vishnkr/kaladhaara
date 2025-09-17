@@ -17,8 +17,9 @@ export default function Kaladhaara(){
                 capability to drive them to their milestone debuts 
                 and pre-debut performances by the students. we have organized several 
                 workshops and demonstrations of visiting artists from India who add value to 
-                the learning of art form.  Some of our recent thematic productions Radhe 
-                Shyama (2014), Vandemataram (2015) Raghuvamsa (2016) to name a few received 
+                the learning of art form. Some our thematic productions Radhe Shyama (2014), 
+                Vandemataram(2015), Raghuvamsa (2016), Ballad of the Gods (2021), Of Love and Longing (2022), 
+                Cosmic Elements (2023), Anubhava (2024), Varnamala(2025) to name a few received 
                 rave reviews from viewers and local art patron has brought in riveting success.
                 </p>
                 <p className='mt-8 text-lg text-center leading-8 text-gray-600'>
