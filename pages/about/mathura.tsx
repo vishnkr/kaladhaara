@@ -13,30 +13,33 @@ export default function FirstPost() {
           MATHURA VISWANATHAN
         </h1>
 
-        {/* Image layout section */}
-        <div className="flex flex-col md:flex-row items-start justify-center gap-6 mt-8">
-          {/* Left big image */}
-          <div className="flex justify-center md:w-[33%]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8 max-w-4xl mx-auto">
+          <div className="aspect-square">
             <img
               src="/mathura/mathura.jpg"
-              className="object-cover w-full rounded-md"
+              className="w-full h-full object-cover rounded-md"
             />
           </div>
-
-          {/* Right two smaller images stacked */}
-          <div className="flex flex-col gap-4 md:w-[18%]">
+          <div className="aspect-square">
+            <img
+              src="/mathura/mathura1.jpg"
+              className="w-full h-full object-cover rounded-md"
+            />
+          </div>
+          <div className="aspect-square">
             <img
               src="/mathura/mathura6.jpg"
-              className="object-cover w-full rounded-md"
+              className="w-full h-full object-cover rounded-md"
             />
+          </div>
+          <div className="aspect-square">
             <img
               src="/mathura/mathura8.jpg"
-              className="object-cover w-full rounded-md"
+              className="w-full h-full object-cover rounded-md"
             />
           </div>
         </div>
 
-        {/* Bio section */}
         <p className="mt-8 text-lg text-center leading-8 text-gray-600">
           Mathura Viswanathan is the founder and artistic director of Kaladhaara
           Arts Academy. Rooted with a strong foundation from eminent Gurus like
@@ -50,7 +53,6 @@ export default function FirstPost() {
           Mridangam vidwan Sri. Nagai P.Sriram.
         </p>
 
-        {/* Achievements section */}
         <div className="flex flex-col lg:flex-row mt-8">
           <div className="w-full lg:w-1/2">
             <div className="mt-8 text-lg mx-6 text-start leading-8 text-gray-600">
@@ -59,7 +61,7 @@ export default function FirstPost() {
               </p>
               <ul className="list-disc ml-6">
                 <li>Kalemane Kalashree Award, Mysuru (2025)</li>
-                <li>Kartik Fine Arts' Nrithyajyoti award of excellence (2017)</li>
+                <li>Kartik Fine Arts' Nrithyajyoti award of excellence (2016)</li>
                 <li>Balasaraswathi endowment award (2016)</li>
                 <li>Vazhuvoor Ramaiyah Pillai Award (2015)</li>
                 <li>Music Academy's Spirit of Youth Best Dancer award (2006)</li>
@@ -73,11 +75,13 @@ export default function FirstPost() {
           </div>
 
           <div className="w-full lg:w-1/2 flex justify-center items-center">
-            <img src="/mathura/mathura5.jpg" className="max-w-full h-auto rounded-md" />
+            <img
+              src="/mathura/mathura5.jpg"
+              className="max-w-full h-auto rounded-md"
+            />
           </div>
         </div>
 
-        
         <p className="mt-8 text-lg text-center leading-8 text-gray-600">
           With a vision to create an authentic Arts academy, Mathura has formed
           a robust core faculty team and formulated an intensive curriculum
