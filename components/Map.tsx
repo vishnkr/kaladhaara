@@ -1,5 +1,4 @@
 'use client';
-console.log("ENV TOKEN:", process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN);
 
 import React, { useRef, useEffect, useState } from 'react';
 import mapboxgl from "mapbox-gl";
@@ -48,7 +47,7 @@ export default function Map({ markerCoordinates }: MapProps) {
       }
     }
 
-    if (map.current) return; // initialize map only once
+    if (map.current) return; 
 
     map.current = new mapboxgl.Map({
       container: mapContainer.current!,
