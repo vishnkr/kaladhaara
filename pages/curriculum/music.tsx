@@ -12,7 +12,7 @@ const musicCards = [
     title: 'Carnatic Vocal',
     img: '/gallery/gallery3.jpg',
     content:
-      'Beginner-friendly Carnatic vocal classes for kids aged 5+, with a focus on fun, foundation, and tradition.',
+      'Beginner-friendly Carnatic vocal lessons for kids aged 5+, with a focus on fun, foundation, and tradition.',
   },
   
   

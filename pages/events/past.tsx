@@ -51,7 +51,7 @@ const events = [
   },
   { date: "2025-08", event: "15th Anniversary Annual Day", imgs: ["/events/AnnualDay1.jpeg","/events/AnnualDay2.jpeg"]},
   { date: "2025-08", event: "Hosted Annual Day for Soundaryam School of Layam", img: "/events/SoundaryamAnnualDay.jpg"},
-  { date: "2025-08", event: "Arangetram - Trishelle Ravindran", img: "/arangetram/trishelle.jpg" },
+  { date: "2025-08", event: "Arangetram - Trishelle Ravindran", img: "/arangetram/Trishelle.jpg" },
   { date: "2025-08", event: "Varnamala", img: "/events/Varnamala.jpg" },
 
   {
@@ -210,7 +210,6 @@ const events = [
     date: "2022-10",
     event: "Vijayadashmi performance at in-home Mather theater",
   },
-  // Events for 2021
   {
     date: "2021-01",
     event: "Marghazi Kala Utsavam, Kaladhaara production, Mather, CA",
@@ -235,7 +234,7 @@ const events = [
     event: "BALLAD OF THE GODS, Kaladhaara production, Sacramento, CA",
   },
 
-  // Events for 2020
+  
   { date: "2020-01", event: "Adavuthon/Suryanmaskar workshop" },
   {
     date: "2020-02",
@@ -244,7 +243,6 @@ const events = [
   { date: "2020-03", event: "Sacramento Natyanjali" },
   { date: "2020-06", event: "Kaladhaara Annual day Performance" },
 
-  // Events for 2019
   { date: "2019-01", event: "Adavuthon" },
   { date: "2019-02", event: "Mathura's India tour" },
   { date: "2019-03", event: "Natyanjali, Sacramento, CA" },
