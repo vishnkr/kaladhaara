@@ -29,6 +29,16 @@ export const menuItems: MenuItems = [
     {
         title: 'Curriculum',
         url: '/curriculum',
+        submenu:[
+            {
+                title: 'Dance',
+                url: 'dance'
+            },
+            {
+                title: 'Music',
+                url: 'music'
+            },
+        ]
     },
     {
         title: 'Events',
@@ -56,10 +66,7 @@ export const menuItems: MenuItems = [
                 title: 'Locations',
                 url: 'locations'
             },
-            {
-                title: 'Schedule',
-                url:'schedule'
-            }
+            
         ]
     },
     {
@@ -70,8 +77,8 @@ export const menuItems: MenuItems = [
         title: 'Updates',
         url: '/updates',
         submenu: [
-          { title: 'Blog', url: '/blogs' },
-          { title: 'Newsletters', url: '/newsletters' }
+          { title: 'Blog', url: 'blogs' },
+          { title: 'Newsletters', url: 'newsletters' }
         ]
     },   
     {

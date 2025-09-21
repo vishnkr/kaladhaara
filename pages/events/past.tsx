@@ -3,6 +3,65 @@ import { useState } from "react";
 
 const events = [
   {
+  date: "2025-01",event: "Margazhi in the SF Music and Dance Festival",
+  img:"/events/sfMargazhi.jpg"
+},
+{ date: "2025-02",
+  event: "Pravaahini and Natyanjani Festivals Tour in India ",
+ img:"/homepage/homepage2.jpg",
+},
+{
+  date: "2025-03", event: "Natyanjali Festival in Sacramento",
+},
+{
+  date: "2025-03", 
+  event: "Sargolsav Dance Competition",
+},
+{
+  date: "2025-04", 
+  event: "Ram Navami Celebrations at Vista del Lago High School",
+},
+{
+  date: "2025-05", 
+  event: "Abhang Bhajans by Tukaram Ganapathi Maharaj",
+  img:"/events/AbhangBhajan.jpg"
+},
+{
+  date: "2025-05", 
+  event: "Students participated in Meraki Shining Stars featuring Women Empowerment",
+  img: "/events/Meraki.jpg",
+},
+{
+  date: "2025-06", 
+  event: "Solo performance by Sahana Shankar for 'Sangama'organized by Chinmaya Mission Sacramento",
+},
+{
+  date: "2025-06", 
+  event: "Students of Kaladhaara participated in Navadarshana's Dance Intensive",
+  img: "/events/navadharshana.jpg",
+},
+{
+  date: "2025-07", 
+  event: "Performance at Conference of Asian American Professionals (CAAPS)",
+},
+ { date: "2025-08", event: "Arangetram - Chitraleka Sathyanarayanan",img:"/arangetram/leka.jpg" },
+  {
+    date: "2025-08", event: "Arangetram - Dhatrisri Alla",
+    img: "/arangetram/Dhatri.jpeg"
+  },
+  { date: "2025-08", event: "15th Anniversary Annual Day", imgs: ["/events/AnnualDay1.jpeg","/events/AnnualDay2.jpeg"]},
+  { date: "2025-08", event: "Hosted Annual Day for Soundaryam School of Layam", img: "/events/SoundaryamAnnualDay.jpg"},
+  { date: "2025-08", event: "Arangetram - Trishelle Ravindran", img: "/arangetram/Trishelle.jpg" },
+  { date: "2025-08", event: "Varnamala", img: "/events/Varnamala.jpg" },
+
+  {
+  date: "2025-09", 
+  event: "Solo Performance by Sahana Shankar at EKA Dance Festival",
+},
+
+  
+  
+  {
     date: "2024-01",
     event: "UTSAVAM: Ram Yatra",
     subevents: [
@@ -57,8 +116,8 @@ const events = [
     event: "Performance at Shree Ganesh Utsav Samiti's Ganesh Chaturthi",
   },
   { date: "2024-09", event: "Folsom Sac Fair" },
-  {
-    date: "2024-10",
+   {date: "2024-10", event: "10th International Nrithyanjali Festival- Angkor Wat, Cambodia" },
+   { date: "2024-10",
     event:
       "Navaratri Bhajan & Sangeetham performance: Sri Venkateshwara Temple",
     img: "/events/sangeetham.png"
@@ -108,13 +167,14 @@ const events = [
   { date: "2023-04", event: "Fit to Dance workshop" },
   { date: "2023-04", event: "Maha Rudra festival" },
   { date: "2023-07", event: "FETNA inaugural performance" },
-  { date: "2023-08", event: "Sahana Shankar's Arangetram" },
+  { date: "2023-08", event: "Samyukta Suresh and Sadhana Suresh's Arangetram",img:"/arangetram/Samy-sadhu.jpeg" },
+  { date: "2023-08", event: "Hasmitha Vaibhavi Kanugula's Arangetram",img:"/arangetram/Hasmitha.jpeg" },
   {
     date: "2023-08",
     event: "Cosmic Elements: Thematic performance by Mathura Viswanathan",
   },
-  { date: "2023-08", event: "Hasmitha Vaibhavi Kanugula's Arangetram" },
-  { date: "2023-08", event: "Samyukta Suresh and Sadhana Suresh's Arangetram" },
+  { date: "2023-08", event: "Sahana Shankar's Arangetram",img:"/arangetram/sahana.jpg" },
+  
 
   {
     date: "2022-02",
@@ -150,7 +210,6 @@ const events = [
     date: "2022-10",
     event: "Vijayadashmi performance at in-home Mather theater",
   },
-  // Events for 2021
   {
     date: "2021-01",
     event: "Marghazi Kala Utsavam, Kaladhaara production, Mather, CA",
@@ -175,7 +234,7 @@ const events = [
     event: "BALLAD OF THE GODS, Kaladhaara production, Sacramento, CA",
   },
 
-  // Events for 2020
+  
   { date: "2020-01", event: "Adavuthon/Suryanmaskar workshop" },
   {
     date: "2020-02",
@@ -184,7 +243,6 @@ const events = [
   { date: "2020-03", event: "Sacramento Natyanjali" },
   { date: "2020-06", event: "Kaladhaara Annual day Performance" },
 
-  // Events for 2019
   { date: "2019-01", event: "Adavuthon" },
   { date: "2019-02", event: "Mathura's India tour" },
   { date: "2019-03", event: "Natyanjali, Sacramento, CA" },
