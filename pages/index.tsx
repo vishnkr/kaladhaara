@@ -25,19 +25,19 @@ export default function Home() {
       </Head>
       {showAnnouncement && (
   <div className="bg-black bg-opacity-50 z-10 fixed top-0 left-0 w-full h-full flex items-center rounded-md justify-center">
-    <div className="bg-orange-100 p-4 flex flex-col items-center justify-center rounded-sm relative mx-2 max-w-lg w-full">
+  <div className="bg-orange-100 p-4 flex flex-col items-center justify-center 
+  rounded-sm relative mx-2 max-w-md w-[80%]">
       <p className="text-xl md:text-3xl text-slate-700 font-semibold text-center my-2">
         🎉 Margazhi Utsavam in Sac Valley Applications Open!
       </p>
 
       {/* Banner */}
       <img
-        className="w-full h-auto object-contain rounded mb-4"
-        src="/cfa.jpg"
-        alt="Sac Valley Margazhi Applications Open"
+        className="w-full max-h-[70vh] object-contain rounded mb-4"
+  src="/cfa.jpg"
+  alt="Sac Valley Margazhi Applications Open"
       />
 
-      {/* Applications Button */}
       <a
         href="https://forms.gle/qXmxQYyiKsKDmxeCA"
         target="_blank"
