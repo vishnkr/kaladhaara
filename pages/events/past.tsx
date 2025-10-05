@@ -59,6 +59,10 @@ const events = [
   event: "Solo Performance by Sahana Shankar at EKA Dance Festival",
 },
 
+{
+    date: "2025-09", event: "Navaratri Performances by Students and Faculty of Kaladhaara",
+    img: "/events/Navaratri.jpg"
+  },
   
   
   {
