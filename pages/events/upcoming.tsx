@@ -4,8 +4,9 @@ import { ReactNode } from "react";
 const events: Event[] = [
   { 
     year: "2025", 
-    title: "Pravaahini— Three streams, one journey, infinite resonance (multiple performance schedule coming shortly)",
-    id: 'pravaahini-sac-bay-2025'
+    title: "Pravaahini— Three streams, one journey, infinite resonance- November 9, 2025",
+    id: 'pravaahini-sac-bay-2025',
+    poster: "/events/pravaahiniFlyer.jpg"
   },
   { 
     year: "2025", 
@@ -36,6 +37,7 @@ type Event = {
   year: string;
   title: string;
   poster?: string;
+  image?: string;
   jsxContent?: ReactNode; 
   id? :string;
 };

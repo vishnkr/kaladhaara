@@ -13,10 +13,13 @@ export default function Newsletters() {
       <div className="newsletters-list">
         <ul>
           <li>
-            <a href="/newsletterApril2025.pdf" target="_blank" className="text-lg text-blue-500 underline">2025 Newsletter - Vol 2</a>
+            <a href="/newsletterOct2025.pdf" target="_blank" className="text-lg text-blue-500 underline">2025 Newsletter - Vol 4</a>
           </li>
           <li>
-            <a href="/newsletterJan2025.pdf" target="_blank" className="text-lg text-blue-500 underline">2025 Newsletter - Vol 1</a>
+            <a href="/newsletterApril2025.pdf" target="_blank" className="text-lg text-blue-500 underline">2025 Newsletter - Vol 3</a>
+          </li>
+          <li>
+            <a href="/newsletterJan2025.pdf" target="_blank" className="text-lg text-blue-500 underline">2025 Newsletter - Vol 2</a>
           </li>
           <li>
             <a href="/newsletter.pdf" target="_blank" className="text-lg text-blue-500 underline">2024 Newsletter - Vol 1</a>
