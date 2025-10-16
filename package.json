@@ -21,8 +21,6 @@
     "@stripe/stripe-js": "^1.54.1",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@types/mapbox-gl": "^2.7.11",
-    "@types/node": "18.16.3",
-    "@types/react": "18.2.0",
     "@types/react-dom": "18.2.1",
     "mapbox-gl": "^2.14.1",
     "next": "13.3.4",
@@ -34,6 +32,8 @@
     "typescript": "5.0.4"
   },
   "devDependencies": {
+    "@types/node": "^24.8.0",
+    "@types/react": "^19.2.2",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.23",
     "tailwindcss": "^3.3.2"
