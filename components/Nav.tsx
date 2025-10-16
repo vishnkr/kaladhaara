@@ -7,21 +7,18 @@ export default function Nav() {
   const [activeDropdown, setActiveDropdown] = useState<number | null>(null);
   const [showMenu, setShowMenu] = useState(false);
 
+  const isWide = () =>
+    typeof window !== "undefined" ? window.innerWidth > 960 : false;
+
   const onMouseEnter = (idx: number) => {
-    if (window.innerWidth > 960) {
-      setActiveDropdown(idx);
-    }
+    if (isWide()) setActiveDropdown(idx);
   };
 
   const onMouseLeave = () => {
-    if (window.innerWidth > 960) {
-      setActiveDropdown(null);
-    }
+    if (isWide()) setActiveDropdown(null);
   };
 
-  const toggleMenu = () => {
-    setShowMenu((prevShowMenu) => !prevShowMenu);
-  };
+  const toggleMenu = () => setShowMenu((prev) => !prev);
 
   return (
     <nav className="bg-[#ededbb] text-sky-900">
@@ -29,11 +26,7 @@ export default function Nav() {
         <div className="flex items-center justify-between w-full">
           {/* Logo Section */}
           <Link className="flex items-center" href="/">
-            <img
-              src="/logo.png"
-              className="h-16 w-auto object-contain"
-              alt="Logo"
-            />
+            <img src="/logo.png" className="h-16 w-auto object-contain" alt="Logo" />
           </Link>
 
           {/* Mobile Menu Toggle */}
@@ -46,9 +39,7 @@ export default function Nav() {
           >
             <span className="sr-only">Open main menu</span>
             <svg
-              className={`w-5 h-5 transition-transform ${
-                showMenu ? "rotate-90" : "rotate-0"
-              }`}
+              className={`w-5 h-5 transition-transform ${showMenu ? "rotate-90" : "rotate-0"}`}
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 17 14"
@@ -66,74 +57,83 @@ export default function Nav() {
 
         {/* Navigation Menu */}
         <div
-          className={`${
-            showMenu ? "block" : "hidden"
-          } w-full md:flex md:items-center`}
+          className={`${showMenu ? "block" : "hidden"} w-full md:flex md:items-center`}
           id="navbar-default"
         >
           <div className="flex flex-col md:flex-row items-stretch md:items-center space-y-2 md:space-y-0 md:space-x-4 w-full">
-            {menuItems.map((menu, idx) => (
-              <div
-                key={idx}
-                className="relative w-full"
-                onMouseEnter={() => onMouseEnter(idx)}
-                onMouseLeave={onMouseLeave}
-              >
-                {menu.submenu ? (
-                  <div className="relative group w-full">
-                    <div
-                      className="font-semibold cursor-pointer leading-6 text-red-900 px-2 py-2 whitespace-nowrap flex items-center"
-                      aria-haspopup="menu"
-                      aria-expanded={activeDropdown === idx}
-                      onClick={() => {
-                        if (window.innerWidth <= 960) {
-                          setActiveDropdown(
-                            activeDropdown === idx ? null : idx
-                          );
-                        }
-                      }}
-                    >
-                      <span>{menu.title}</span>
-                      <svg
-                        className="w-3 h-3 ml-1 inline-block"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 10 6"
+            {menuItems.map((menu, idx) => {
+              const isContact =
+                typeof menu.title === "string" &&
+                menu.title.toLowerCase().includes("contact");
+
+              // If it's the Contact link, add ?notice=waitlist
+              const linkHref = isContact
+                ? { pathname: menu.url, query: { notice: "waitlist" } }
+                : menu.url;
+
+              return (
+                <div
+                  key={idx}
+                  className="relative w-full"
+                  onMouseEnter={() => onMouseEnter(idx)}
+                  onMouseLeave={onMouseLeave}
+                >
+                  {menu.submenu ? (
+                    <div className="relative group w-full">
+                      <div
+                        className="font-semibold cursor-pointer leading-6 text-red-900 px-2 py-2 whitespace-nowrap flex items-center"
+                        aria-haspopup="menu"
+                        aria-expanded={activeDropdown === idx}
+                        onClick={() => {
+                          if (!isWide()) {
+                            setActiveDropdown(activeDropdown === idx ? null : idx);
+                          }
+                        }}
                       >
-                        <path
-                          stroke="currentColor"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="m1 1 4 4 4-4"
+                        <span>{menu.title}</span>
+                        <svg
+                          className="w-3 h-3 ml-1 inline-block"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 10 6"
+                        >
+                          <path
+                            stroke="currentColor"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="m1 1 4 4 4-4"
+                          />
+                        </svg>
+                      </div>
+
+                      <div
+                        className={`w-full ${
+                          activeDropdown === idx ? "block" : "hidden"
+                        } md:block md:absolute md:top-full md:left-0 md:z-50`}
+                      >
+                        <Dropdown
+                          curpath={menu.url}
+                          submenus={menu.submenu}
+                          dropdown={activeDropdown === idx}
                         />
-                      </svg>
+                      </div>
                     </div>
-                    <div
-                      className={`w-full ${
-                        activeDropdown === idx ? "block" : "hidden"
-                      } md:block md:absolute md:top-full md:left-0 md:z-50`}
+                  ) : (
+                    <Link
+                      href={linkHref as any}
+                      prefetch={false}
+                      target={menu.target || "_self"}
+                      rel={menu.target === "_blank" ? "noopener noreferrer" : ""}
+                      className="font-medium lg:font-semibold leading-6 text-red-900 group transition duration-300 ease-in-out px-2 py-2 whitespace-nowrap block"
                     >
-                      <Dropdown
-                        curpath={menu.url}
-                        submenus={menu.submenu}
-                        dropdown={activeDropdown === idx}
-                      />
-                    </div>
-                  </div>
-                ) : (
-                  <Link
-                    href={menu.url}
-                    target={menu.target || "_self"}
-                    rel={menu.target === "_blank" ? "noopener noreferrer" : ""}
-                    className="font-medium lg:font-semibold leading-6 text-red-900 group transition duration-300 ease-in-out px-2 py-2 whitespace-nowrap block"
-                  >
-                    {menu.title}
-                    <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-orange-700"></span>
-                  </Link>
-                )}
-              </div>
-            ))}
+                      {menu.title}
+                      <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-orange-700"></span>
+                    </Link>
+                  )}
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

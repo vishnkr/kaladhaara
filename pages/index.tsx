@@ -7,6 +7,7 @@ export default function Home() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [showAnnouncement, setShowAnnouncement] = useState(true);
   const [showAnnouncement2, setShowAnnouncement2] = useState(false);
+
   const updateImageIndex = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images);
   };
@@ -17,60 +18,63 @@ export default function Home() {
       clearInterval(interval);
     };
   }, []);
+
   return (
     <main className="flex flex-col min-h-screen">
       <Head>
         <title>Kaladhaara</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
+
       {showAnnouncement && (
-  <div className="bg-black bg-opacity-50 z-10 fixed top-0 left-0 w-full h-full flex items-center rounded-md justify-center">
-  <div className="bg-orange-100 p-4 flex flex-col items-center justify-center 
-  rounded-sm relative mx-2 max-w-md w-[80%]">
-      <p className="text-xl md:text-3xl text-slate-700 font-semibold text-center my-2">
-        🎉 Margazhi Utsavam in Sac Valley Applications Open!
-      </p>
+        <div className="fixed top-0 left-0 z-10 flex h-full w-full items-center justify-center bg-black/50">
+          {/* Tan modal container, side-by-side layout on md+ */}
+          <div className="relative mx-3 w-[92%] max-w-3xl rounded-lg bg-orange-100 p-4 shadow-xl sm:p-6">
+            {/* Title */}
+            <p className="mb-3 text-center text-xl font-semibold text-slate-700 md:text-3xl">
+              Pravaahini — Three streams, one journey, infinite resonance
+            </p>
 
-      {/* Banner */}
-      <img
-        className="w-full max-h-[70vh] object-contain rounded mb-4"
-  src="/cfa.jpg"
-  alt="Sac Valley Margazhi Applications Open"
-      />
+            {/* Media: stack on mobile, side-by-side on desktop */}
+            <div className="grid grid-cols-1 items-start justify-items-center gap-4 md:grid-cols-2">
+              {/* Poster */}
+              <img
+                className="w-full max-w-[520px] max-h-[70vh] rounded-md object-contain"
+                src="/events/PravaahiniPopUp.jpeg"
+                alt="Pravaahini Poster"
+              />
 
-      <a
-        href="https://forms.gle/qXmxQYyiKsKDmxeCA"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="px-4 py-2 bg-[#ececb2] text-red-900 rounded-lg font-semibold hover:bg-orange-600 hover:text-white transition"
-      >
-        Apply Now
-      </a>
+              {/* QR with caption */}
+              <div className="flex w-full max-w-[520px] flex-col items-center">
+                <img
+                  className="w-full max-w-[520px] max-h-[70vh] rounded-md object-contain"
+                  src="/events/pravaahiniQR.jpeg"
+                  alt="Pravaahini QR code"
+                />
+                <p className="mt-2 text-xs text-slate-600">Scan for details</p>
+              </div>
+            </div>
 
-
-      <button
-        onClick={() => setShowAnnouncement(false)}
-        className="absolute top-0 right-0 mt-2 mr-2 w-6 h-6 flex items-center justify-center font-bold text-black rounded-full bg-white"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-4 w-4"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M6 18L18 6M6 6l12 12"
-          />
-        </svg>
-      </button>
-    </div>
-  </div>
-)}
-
+            {/* Close button */}
+            <button
+              onClick={() => setShowAnnouncement(false)}
+              className="absolute right-2 top-2 flex h-7 w-7 items-center justify-center rounded-full bg-white/90 text-slate-800 shadow hover:bg-white"
+              aria-label="Close"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-4 w-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      )}
 
       <div className="relative px-6 lg:px-8 py-16 sm:py-8">
         <div className="pb-8">
@@ -86,6 +90,7 @@ export default function Home() {
                 Of Greater Sacramento
               </h1>
             </div>
+
             <div className="hidden md:block md:w-[50%] md:h-[50%] overflow-hidden rounded-md ">
               <div className="items-center aspect-w-1 aspect-h-1">
                 <img
@@ -95,6 +100,7 @@ export default function Home() {
                 />
               </div>
             </div>
+
             <div className="md:hidden w-full h-[50%]">
               <div className="aspect-w-1 aspect-h-1">
                 <img
@@ -107,12 +113,14 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       <div className="flex flex-col text-center">
         <h3 className="my-2 text-xl font font-semibold md:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-yellow-600 to-orange-600">
           What our students are saying about Kaladhaara
         </h3>
         <ReviewCarousel />
       </div>
+
       {/*showAnnouncement2 &&  <div className="bg-gradient-to-r from-fuchsia-500 via-fuchsia-900 to-orange-600 text-white p-6 md:p-4 text-center rounded-md">
         <h2 className="text-2xl md:text-3xl font-bold mb-2">
           Trial classes and Admissions are open!
@@ -202,6 +210,7 @@ export default function Home() {
         </div>
       </div>
       */}
+
       {/*showAnnouncement && (
         <div className="bg-black bg-opacity-50 z-10 fixed top-0 left-0 w-full h-full flex items-center rounded-md justify-center">
           <div className="bg-orange-100 p-4 flex flex-col items-center justify-center rounded-sm relative mx-2">
