@@ -4,7 +4,7 @@ import { ReactNode } from "react";
 const events: Event[] = [
   { 
     year: "2025", 
-    title: "Pravaahini— Three streams, one journey, infinite resonance- November 9, 2025",
+    title: "Pravaahini- Three streams, one journey, infinite resonance- November 9, 2025",
     id: 'pravaahini-sac-bay-2025',
     poster: "/events/pravaahiniFlyer.jpg"
   },
