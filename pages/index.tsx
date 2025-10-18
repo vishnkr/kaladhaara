@@ -28,34 +28,28 @@ export default function Home() {
 
       {showAnnouncement && (
         <div className="fixed top-0 left-0 z-10 flex h-full w-full items-center justify-center bg-black/50">
-          {/* Tan modal container, side-by-side layout on md+ */}
           <div className="relative mx-3 w-[92%] max-w-3xl rounded-lg bg-orange-100 p-4 shadow-xl sm:p-6">
-            {/* Title */}
             <p className="mb-3 text-center text-xl font-semibold text-slate-700 md:text-3xl">
-              Pravaahini — Three streams, one journey, infinite resonance
+              Pravaahini - Three streams, one journey, infinite resonance 🌊🌊🌊
             </p>
 
-            {/* Media: stack on mobile, side-by-side on desktop */}
             <div className="grid grid-cols-1 items-start justify-items-center gap-4 md:grid-cols-2">
-              {/* Poster */}
               <img
                 className="w-full max-w-[520px] max-h-[70vh] rounded-md object-contain"
                 src="/events/PravaahiniPopUp.jpeg"
                 alt="Pravaahini Poster"
               />
 
-              {/* QR with caption */}
               <div className="flex w-full max-w-[520px] flex-col items-center">
                 <img
                   className="w-full max-w-[520px] max-h-[70vh] rounded-md object-contain"
                   src="/events/pravaahiniQR.jpeg"
                   alt="Pravaahini QR code"
                 />
-                <p className="mt-2 text-xs text-slate-600">Scan for details</p>
+                <p className="mt-2 text-xs text-slate-600">Scan for ticket link</p>
               </div>
             </div>
 
-            {/* Close button */}
             <button
               onClick={() => setShowAnnouncement(false)}
               className="absolute right-2 top-2 flex h-7 w-7 items-center justify-center rounded-full bg-white/90 text-slate-800 shadow hover:bg-white"
