@@ -27,37 +27,28 @@ export default function Home() {
       </Head>
 
       {showAnnouncement && (
-        <div className="fixed top-0 left-0 z-10 flex h-full w-full items-center justify-center bg-black/50">
-          <div className="relative mx-3 w-[92%] max-w-3xl rounded-lg bg-orange-100 p-4 shadow-xl sm:p-6">
-            <p className="mb-3 text-center text-xl font-semibold text-slate-700 md:text-3xl">
+        <div className="fixed inset-0 z-10 flex items-center justify-center bg-black/60 backdrop-blur-sm px-4">
+          <div className="relative w-full max-w-sm sm:max-w-md md:max-w-lg rounded-3xl bg-gradient-to-b from-orange-50 to-orange-100 p-3 sm:p-5 shadow-xl border border-orange-200">
+            <p className="mb-3 text-center text-base sm:text-lg md:text-xl font-semibold text-slate-800 leading-snug">
               Pravaahini - Three streams, one journey, infinite resonance 🌊🌊🌊
             </p>
 
-            <div className="grid grid-cols-1 items-start justify-items-center gap-4 md:grid-cols-2">
+            <div className="flex justify-center">
               <img
-                className="w-full max-w-[520px] max-h-[70vh] rounded-md object-contain"
                 src="/events/PravaahiniPopUp.jpeg"
                 alt="Pravaahini Poster"
+                className="w-full max-w-[340px] sm:max-w-[380px] md:max-w-[420px] rounded-xl object-contain shadow-md"
               />
-
-              <div className="flex w-full max-w-[520px] flex-col items-center">
-                <img
-                  className="w-full max-w-[520px] max-h-[70vh] rounded-md object-contain"
-                  src="/events/pravaahiniQR.jpeg"
-                  alt="Pravaahini QR code"
-                />
-                <p className="mt-2 text-xs text-slate-600">Scan for ticket link</p>
-              </div>
             </div>
 
             <button
               onClick={() => setShowAnnouncement(false)}
-              className="absolute right-2 top-2 flex h-7 w-7 items-center justify-center rounded-full bg-white/90 text-slate-800 shadow hover:bg-white"
+              className="absolute right-3 top-3 flex h-8 w-8 items-center justify-center rounded-full bg-white text-gray-800 shadow hover:bg-gray-100 hover:scale-105 transition"
               aria-label="Close"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-4 w-4"
+                className="h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
