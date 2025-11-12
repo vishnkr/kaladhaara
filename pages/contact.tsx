@@ -10,7 +10,6 @@ export default function Contact() {
   const router = useRouter();
   const [showNotice, setShowNotice] = useState(false);
 
-  // Show when navigated here with ?notice=waitlist (from the nav link)
   useEffect(() => {
     if (!router.isReady) return;
     setShowNotice(router.query.notice === "waitlist");

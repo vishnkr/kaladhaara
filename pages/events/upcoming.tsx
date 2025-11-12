@@ -4,9 +4,10 @@ import { ReactNode } from "react";
 const events: Event[] = [
   { 
     year: "2025", 
-    title: "Pravaahini- Three streams, one journey, infinite resonance- November 9, 2025",
+    title: "Pravaahini- Three streams, one journey, infinite resonance- Bay Area - November 22, 2025",
     id: 'pravaahini-sac-bay-2025',
-    poster: "/events/pravaahiniFlyer.jpg"
+    poster: "/events/PravaahiniBay.jpeg",
+
   },
   { 
     year: "2025", 
@@ -136,7 +137,7 @@ export default function Upcoming() {
                           )}
                           
                           {event.poster && (
-                            <div className="h-auto max-w-[800px] mx-auto">
+                            <div className="h-auto max-w-[500px] mx-auto">
                               <img 
                                 src={event.poster} 
                                 alt={event.title} 

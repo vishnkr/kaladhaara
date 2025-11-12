@@ -65,7 +65,7 @@ const staff = [
     {
       name: "Vatsalya Narayan",
       role: "Tech Designer",
-      description: ["As a faculty member at Kaladhaara, I've grown in so many different ways. Being in high school I enjoy teaching kids as it allows me to better communicate and understand nuances of learning and choreography. I currently am an Adavu batch teacher and help manage foundational concepts. I have been with Kaladhaara since it's starting and was recently initiated as a teacher into its wonderful faculty team!"],
+      description: ["I’ve probably seen the 4 walls of our dance studios more than my own home. Whether it’s teaching, dancing, or learning, Kaladhaara is my second home. I completed my arangetram at the age of 10 under the guidance of my mom and guru Smt. Mathura Viswanathan. Since then I have been exposed to the technical facets of teaching and dancing. I work with multiple batches of all levels and work with advanced arangetram students on nuance and technique. I also help run rehearsals and performance coordination. Kaladhaara has given me the opportunity to perform in places around the world such as India, Cambodia, and nationally in the USA. Kaladhaara has taught me a discipline that I will forever cherish. Dance is more than a hobby for me, it is a way of life and I look forward to sharing it through performing and teaching."],
       imageSrc: "/faculty/Vatsu.jpg"
     },
     {

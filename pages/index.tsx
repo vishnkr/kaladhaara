@@ -35,7 +35,7 @@ export default function Home() {
 
             <div className="flex justify-center">
               <img
-                src="/events/PravaahiniPopUp.jpeg"
+                src="/events/PravaahiniBay.jpeg"
                 alt="Pravaahini Poster"
                 className="w-full max-w-[340px] sm:max-w-[380px] md:max-w-[420px] rounded-xl object-contain shadow-md"
               />
