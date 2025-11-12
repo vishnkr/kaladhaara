@@ -63,6 +63,26 @@ const events = [
     date: "2025-09", event: "Navaratri Performances by Students and Faculty of Kaladhaara",
     img: "/events/Navaratri.jpg"
   },
+  {
+    date: "2025-10", event: "Concord Murugan Temple Tiruvizha",
+    img: "/events/ConcordTirivizha.jpeg"
+  },
+  {
+    date: "2025-10", event: "Goddard Rocklin Diwali Celebration",
+  },
+  {
+    date: "2025-10", event: "River City High School Diwali Celebration ",
+    img: "/events/RiverCityHigh.jpeg"
+  },
+  {
+    date: "2025-11", event: "Natomas Nrithyostav",
+    img: "/events/Nrithyotsav.jpeg"
+  },
+  
+  {
+    date: "2025-11", event: "Pravaahini - Sacramento",
+    img: "/events/Pravaahini.jpeg"
+  },
   
   
   {
