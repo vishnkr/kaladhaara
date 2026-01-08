@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 export default function Home() {
   const images = 6;
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [showAnnouncement, setShowAnnouncement] = useState(true);
+  const [showAnnouncement, setShowAnnouncement] = useState(false);
   const [showAnnouncement2, setShowAnnouncement2] = useState(false);
 
   const updateImageIndex = () => {
@@ -30,7 +30,7 @@ export default function Home() {
         <div className="fixed inset-0 z-10 flex items-center justify-center bg-black/60 backdrop-blur-sm px-4">
           <div className="relative w-full max-w-sm sm:max-w-md md:max-w-lg rounded-3xl bg-gradient-to-b from-orange-50 to-orange-100 p-3 sm:p-5 shadow-xl border border-orange-200">
             <p className="mb-3 text-center text-base sm:text-lg md:text-xl font-semibold text-slate-800 leading-snug">
-              Pravaahini - Three streams, one journey, infinite resonance 🌊🌊🌊
+              njnknj
             </p>
 
             <div className="flex justify-center">
