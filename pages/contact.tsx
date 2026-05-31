@@ -28,8 +28,7 @@ export default function Contact() {
 
           <div className="relative mx-2 rounded-md border border-orange-200 bg-[#fdebd1] px-4 py-3 shadow-lg">
             <p className="text-center text-sm md:text-base text-slate-800">
-              <strong>Notice:</strong> New admissions for 2025 are closed. Please fill out
-              the contact form to be added to the waitlist for next year.
+              <strong>Notice:</strong> New admissions for 2026 are now open. Please fill out the contact form to get in touch with us!
             </p>
             <button
               aria-label="Close notice"

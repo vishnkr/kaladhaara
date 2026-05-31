@@ -3,30 +3,29 @@ import { ReactNode } from "react";
 
 const events: Event[] = [
   { 
-    year: "2025", 
-    title: "Pravaahini- Three streams, one journey, infinite resonance- Bay Area - November 22, 2025",
-    id: 'pravaahini-sac-bay-2025',
-    poster: "/events/PravaahiniBay.jpeg",
-
-  },
-  { 
-    year: "2025", 
-    title: "Sac Valley Margazhi",
-    id: 'sac-valley-margazhi-2025'
+    year: "2026", 
+    title: "Arangetram of Shrika Pidikiti",
+    id: 'arangetrams-2026'
   },
   { 
     year: "2026", 
-    title: "Chennai Sabha Performances",
-    id: 'chennai-sabha-2026'
+    title: "Eka Bhakthi",
+    id: 'production-2026',
+    poster: "/events/ekaBhakti.jpeg"
   },
   { 
     year: "2026", 
-    title: "Sacramento Natyanjali",
-    id: 'natyanjali-sac-2026'
+    title: "Arangetram of Akshara Vaidyanathan",
+    id: 'arangetrams-2026'
   },
   { 
     year: "2026", 
-    title: "Arangetrams",
+    title: "Arangetram of Avni Mahendra",
+    id: 'arangetrams-2026'
+  },
+  { 
+    year: "2026", 
+    title: "Arangetram of Vaishvi Gaddampalli",
     id: 'arangetrams-2026'
   }
 ];
