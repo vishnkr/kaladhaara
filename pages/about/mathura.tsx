@@ -41,16 +41,9 @@ export default function FirstPost() {
         </div>
 
         <p className="mt-8 text-lg text-center leading-8 text-gray-600">
-          Mathura Viswanathan is the founder and artistic director of Kaladhaara
-          Arts Academy. Rooted with a strong foundation from eminent Gurus like
-          Kalaimamani Smt. Krishnakumari Narendran, Natanamamani Sri A. Lakshman
-          and Nritya Choodamani Smt. Priyadarsini Govind, her abhinaya skills
-          were groomed under Padma Vibhushan Smt. Kalanidhi Narayan. Presently,
-          Mathura is delving into learning Karanas under the mentorship of Guru
-          Sri. N. Srikanth to enhance her learning in this art form. Having been
-          initiated into the art of nattuvangam by the exponent Bhagavatula
-          Seetharama Sharma, she continues to hone her nattuvangam skills with
-          Mridangam vidwan Sri. Nagai P.Sriram.
+          Mathura Viswanathan is the founder and artistic director of Kaladhaara Arts Academy, a dance academy based in Sacramento, California.  Rooted with a strong foundation from illustrious Gurus like: Smt. Krishnakumari Narendran, Sri. A. Lakshman, Smt. Kalanidhi Narayan, Smt. Priyadarshini Govind, Shri N. Srikanth, and Bagavatula Sri Seetharama Sharma Garu, Mathura Viswanathan brings with her a treasure trove of nuanced learning.  
+Having started her journey as a performing artist, she has traveled to multiple countries as part of group productions as well as solo performances. It is this knowledge and experience that she wishes to impart to every student of Kaladhaara. With a vision to create an authentic arts academy, Mathura has formulated an intensive curriculum streamlined towards passing on the cultural heritage to the next generation. Under her proficient leadership, Kaladhaara is blossoming into enriching the greater Sacramento Community with classes in Bharatnatyam, Bhajans, and collaborative dance group meet ups. 
+Mathura has been channeling her creative energy into choreographing and directing numerous group productions, showcased both locally and internationally, while nurturing her students to be confident solo performers. 
         </p>
 
         <div className="flex flex-col lg:flex-row mt-8">
@@ -60,16 +53,15 @@ export default function FirstPost() {
                 Her very notable achievements include the following:
               </p>
               <ul className="list-disc ml-6">
-                <li>Kalemane Kalashree Award, Mysuru (2025)</li>
-                <li>Kartik Fine Arts' Nrithyajyoti award of excellence (2016)</li>
-                <li>Balasaraswathi endowment award (2016)</li>
+                <li>ICCR Empanelled Artist</li>
+                <li>Dharmavarapu Seetharama Anjaneyalu Award for Best All-Rounder (2004)</li>
+                <li>Music Academy's Spirit of Youth Best Dancer Award (2006)</li>
                 <li>Vazhuvoor Ramaiyah Pillai Award (2015)</li>
-                <li>Music Academy's Spirit of Youth Best Dancer award (2006)</li>
-                <li>Balasaraswathi prize for best performance (2005)</li>
-                <li>
-                  Dharmavarapu Seetharama Anjaneyalu award as the best
-                  all-rounder (2004)
-                </li>
+                <li>Nrithyajothi Award of Excellence from Karthik Fine Arts (2016)</li>
+                <li>Balasaraswati Endowment Award (2016)</li>
+                <li>Cambodia Cultural Ambassador Award (2024)</li>
+                <li>Kalemane Kalashree Award, Mysore (2025)</li>
+                <li>Sang Ratu Ugrasena Award, ICCR Bali (2025)</li>
               </ul>
             </div>
           </div>

@@ -2,6 +2,42 @@ import Head from "next/head";
 import { useState } from "react";
 
 const events = [
+
+
+{
+    date: "2026-02", event: "Folsom Hindu Temple Shivaratri Performances",
+    img: "/events/shivaratri26.jpeg"
+  },
+  {
+    date: "2026-03", event: "Sacramento Natyanjali Festival",
+    img: "/events/sacNatyanjali26.jpeg"
+  },
+  {
+    date: "2026-03", event: "Sargolsav Bharatanatyam Competition 2026",
+    img: "/events/sargolsav26.jpeg"
+  },
+  {
+    date: "2026-03", event: "Placer County Multicultural Fair",
+    img: "/events/placerCounty.jpeg"
+  },
+  {
+    date: "2026-03", event: "Spring Showcase 2026",
+    img: "/events/springshow.jpeg"
+  },
+  {
+    date: "2026-05", event: "Rocklin Heritage Street Faire",
+    img: "/events/rocklinHeritage.jpeg"
+  },
+  {
+    date: "2026-05", event: "Pravaahini - Chicago",
+    img: "/events/pravaahiniChicago.jpeg"
+  },
+  {
+    date: "2026-05", event: "Sri Srinivasa & Sri Subramanya Kalyanam Performances",
+    img: "/events/Kalyanam.jpeg"
+  },
+
+
   {
   date: "2025-01",event: "Margazhi in the SF Music and Dance Festival",
   img:"/events/sfMargazhi.jpg"
@@ -83,7 +119,17 @@ const events = [
     date: "2025-11", event: "Pravaahini - Sacramento",
     img: "/events/Pravaahini.jpeg"
   },
-  
+  {
+    date: "2025-11", event: "Pravaahini - Bay Area",
+    img: "/events/PravaahiniBay.jpeg"
+  },
+  {
+    date: "2025-12", event: "Sac Valley Margazhi 2025",
+    img: "/events/svm25.jpeg"
+  },
+  {
+    date: "2025-12", event: "Chennai Sabha Performances by Vatsalya"
+  },
   
   {
     date: "2024-01",
@@ -167,7 +213,7 @@ const events = [
   },
   {
     date: "2024-12",
-    event: "Sac Valley Margazhi",
+    event: "Sac Valley Margazhi 2024",
     img: "/events/svm.jpg"
   },
   {
