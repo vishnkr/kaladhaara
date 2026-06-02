@@ -17,12 +17,16 @@ const events = [
     img: "/events/sargolsav26.jpeg"
   },
   {
+    date: "2026-03", event: "Placer County Multicultural Fair",
+    img: "/events/placerCounty.jpeg"
+  },
+  {
     date: "2026-03", event: "Spring Showcase 2026",
     img: "/events/springshow.jpeg"
   },
   {
     date: "2026-05", event: "Rocklin Heritage Street Faire",
-    img: "/events/rocklinheritage.jpeg"
+    img: "/events/rocklinHeritage.jpeg"
   },
   {
     date: "2026-05", event: "Pravaahini - Chicago",
@@ -30,7 +34,7 @@ const events = [
   },
   {
     date: "2026-05", event: "Sri Srinivasa & Sri Subramanya Kalyanam Performances",
-    img: "/events/kalyanam.jpeg"
+    img: "/events/Kalyanam.jpeg"
   },
 
 

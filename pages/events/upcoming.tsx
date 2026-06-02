@@ -27,6 +27,12 @@ const events: Event[] = [
     year: "2026", 
     title: "Arangetram of Vaishvi Gaddampalli",
     id: 'arangetrams-2026'
+  },
+
+  { 
+    year: "2026", 
+    title: "KKSF NextGen Dance and Music Festival",
+    id: 'events-2026'
   }
 ];
 

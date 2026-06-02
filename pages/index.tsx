@@ -6,7 +6,8 @@ export default function Home() {
   const images = 6;
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [showAnnouncement, setShowAnnouncement] = useState(false);
-  const [showAnnouncement2, setShowAnnouncement2] = useState(false);
+const [showAnnouncement2, setShowAnnouncement2] = useState(false);
+const [showAdmissionsNotice, setShowAdmissionsNotice] = useState(true);
 
   const updateImageIndex = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images);
@@ -21,11 +22,36 @@ export default function Home() {
 
   return (
     <main className="flex flex-col min-h-screen">
-      <Head>
-        <title>Kaladhaara</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head>
+     <Head>
+  <title>Kaladhaara</title>
+  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+</Head>
 
+{showAdmissionsNotice && (
+  <div className="bg-yellow-100 border-b border-yellow-300 px-4 py-3">
+    <div className="max-w-7xl mx-auto flex items-center justify-between">
+      <p className="text-sm md:text-base text-gray-800">
+        <strong>Notice:</strong> New admissions for  are now open!
+        Please fill out our contact form to get in touch with us.
+
+        <a
+          href="/contact"
+          className="ml-2 font-semibold text-red-700 hover:underline"
+        >
+          Contact Us →
+        </a>
+      </p>
+
+      <button
+        onClick={() => setShowAdmissionsNotice(false)}
+        className="ml-4 text-gray-600 hover:text-black text-xl leading-none"
+        aria-label="Close notice"
+      >
+        ×
+      </button>
+    </div>
+  </div>
+)}
       {showAnnouncement && (
         <div className="fixed inset-0 z-10 flex items-center justify-center bg-black/60 backdrop-blur-sm px-4">
           <div className="relative w-full max-w-sm sm:max-w-md md:max-w-lg rounded-3xl bg-gradient-to-b from-orange-50 to-orange-100 p-3 sm:p-5 shadow-xl border border-orange-200">
@@ -101,6 +127,8 @@ export default function Home() {
 
       <div className="flex flex-col text-center">
         <h3 className="my-2 text-xl font font-semibold md:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-yellow-600 to-orange-600">
+          
+          
           What our students are saying about Kaladhaara
         </h3>
         <ReviewCarousel />
