@@ -11,7 +11,11 @@ export default function Newsletters() {
       <h1 className="text-3xl font-semibold text-center">Kaladhaara Newsletters</h1>
       <p className="text-center text-lg my-4">Explore our past newsletters below.</p>
       <div className="newsletters-list">
-        <ul><li>
+        <ul>
+          <li>
+            <a href="/newsletterJune2026.pdf" target="_blank" className="text-lg text-blue-500 underline">2026 Newsletter - Vol 6</a>
+          </li>
+          <li>
             <a href="/newsletterFeb2026.pdf" target="_blank" className="text-lg text-blue-500 underline">2026 Newsletter - Vol 5</a>
           </li>
           <li>
