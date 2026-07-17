@@ -31,7 +31,7 @@ const [showAdmissionsNotice, setShowAdmissionsNotice] = useState(true);
   <div className="bg-yellow-100 border-b border-yellow-300 px-4 py-3">
     <div className="max-w-7xl mx-auto flex items-center justify-between">
       <p className="text-sm md:text-base text-gray-800">
-        <strong>Notice:</strong> New admissions for  are now open!
+        <strong>Notice:</strong> New admissions for 2026 are now open!
         Please fill out our contact form to get in touch with us.
 
         <a
