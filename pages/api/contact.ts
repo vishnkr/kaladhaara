@@ -8,13 +8,7 @@ type ContactPayload = {
   message: string;
 };
 
-
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-
-  console.log("DEBUG — SHEET_ID:", JSON.stringify(process.env.GOOGLE_SHEET_ID));
-  console.log("DEBUG — SERVICE_EMAIL:", JSON.stringify(process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL));
-  console.log("DEBUG — KEY length:", process.env.GOOGLE_PRIVATE_KEY?.length ?? "undefined");
-
   if (req.method !== "POST") {
     res.setHeader("Allow", ["POST"]);
     return res.status(405).json({ error: "Method not allowed" });
@@ -27,10 +21,17 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   }
 
   try {
+    const { GOOGLE_SERVICE_ACCOUNT_EMAIL, GOOGLE_PRIVATE_KEY, GOOGLE_SHEET_ID } = process.env;
+
+    if (!GOOGLE_SERVICE_ACCOUNT_EMAIL || !GOOGLE_PRIVATE_KEY || !GOOGLE_SHEET_ID) {
+      console.error("Missing required Google Sheets environment variables");
+      return res.status(500).json({ error: "Server misconfiguration" });
+    }
+
     const auth = new google.auth.GoogleAuth({
       credentials: {
-        client_email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
-        private_key: process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, "\n"),
+        client_email: GOOGLE_SERVICE_ACCOUNT_EMAIL,
+        private_key: GOOGLE_PRIVATE_KEY.replace(/\\n/g, "\n"),
       },
       scopes: ["https://www.googleapis.com/auth/spreadsheets"],
     });
@@ -38,7 +39,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     const sheets = google.sheets({ version: "v4", auth });
 
     await sheets.spreadsheets.values.append({
-      spreadsheetId: process.env.GOOGLE_SHEET_ID,
+      spreadsheetId: GOOGLE_SHEET_ID,
       range: "Sheet1!A:E",
       valueInputOption: "USER_ENTERED",
       requestBody: {
