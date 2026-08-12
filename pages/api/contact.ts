@@ -48,8 +48,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     });
 
     return res.status(200).json({ success: true });
-  } catch (err) {
-    console.error("Failed to write to Google Sheet:", err);
-    return res.status(500).json({ error: "Failed to save submission" });
-  }
+} catch (err: any) {
+  console.error("Failed to write to Google Sheet:", err);
+  return res.status(500).json({ error: "Failed to save submission", debug: err?.message || String(err) });
+}
 }
