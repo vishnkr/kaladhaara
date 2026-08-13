@@ -23,6 +23,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   try {
     const { GOOGLE_SERVICE_ACCOUNT_EMAIL, GOOGLE_PRIVATE_KEY, GOOGLE_SHEET_ID } = process.env;
 
+    console.log("EMAIL present:", !!GOOGLE_SERVICE_ACCOUNT_EMAIL);
+    console.log("KEY present:", !!GOOGLE_PRIVATE_KEY, "length:", GOOGLE_PRIVATE_KEY?.length);
+    console.log("SHEET_ID present:", !!GOOGLE_SHEET_ID);
+
     if (!GOOGLE_SERVICE_ACCOUNT_EMAIL || !GOOGLE_PRIVATE_KEY || !GOOGLE_SHEET_ID) {
       console.error("Missing required Google Sheets environment variables");
       return res.status(500).json({ error: "Server misconfiguration" });
@@ -48,8 +52,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     });
 
     return res.status(200).json({ success: true });
-} catch (err: any) {
-  console.error("Failed to write to Google Sheet:", err);
-  return res.status(500).json({ error: "Failed to save submission", debug: err?.message || String(err) });
-}
+  } catch (err) {
+    console.error("Failed to write to Google Sheet:", err);
+    return res.status(500).json({ error: "Failed to save submission" });
+  }
 }
