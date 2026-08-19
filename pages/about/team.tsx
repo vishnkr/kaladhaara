@@ -43,7 +43,7 @@ const staff = [
       imageSrc: "/faculty/Raji.jpg",
     },
       {
-      name: "Rajini Aiyah",
+      name: "Rajni Aiyah",
       role: "Instructor and Stage Manager",
       description: ["I'm grateful to my parents for introducing me to Bharatanatyam and deeply indebted to my Guru for nurturing my passion. I completed my arangetram and a 5-year course in theory and practicals. I joined Kaladhaara as a parent in 2014 and later became a faculty member in 2019. Dance helps me connect intellectually and spiritually. I feel the unison with eternity through Bharatanatyam. As an Adavu teacher at Kaladhaara, I cherish imparting this beautiful art form to the students."]
       ,imageSrc: "/faculty/rajini.jpg",
