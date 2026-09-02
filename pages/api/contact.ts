@@ -6,6 +6,9 @@ type ContactPayload = {
   email: string;
   phone: string;
   message: string;
+  kidName: string;
+  kidDob: string;
+  location: string;
 };
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
@@ -14,18 +17,14 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     return res.status(405).json({ error: "Method not allowed" });
   }
 
-  const { name, email, phone, message } = req.body as ContactPayload;
+  const { name, email, phone, message, kidName, kidDob, location } = req.body as ContactPayload;
 
-  if (!name || !email || !phone || !message) {
+  if (!name || !email || !phone || !message || !kidName || !kidDob || !location) {
     return res.status(400).json({ error: "Missing required fields" });
   }
 
   try {
     const { GOOGLE_SERVICE_ACCOUNT_EMAIL, GOOGLE_PRIVATE_KEY, GOOGLE_SHEET_ID } = process.env;
-
-    console.log("EMAIL present:", !!GOOGLE_SERVICE_ACCOUNT_EMAIL);
-    console.log("KEY present:", !!GOOGLE_PRIVATE_KEY, "length:", GOOGLE_PRIVATE_KEY?.length);
-    console.log("SHEET_ID present:", !!GOOGLE_SHEET_ID);
 
     if (!GOOGLE_SERVICE_ACCOUNT_EMAIL || !GOOGLE_PRIVATE_KEY || !GOOGLE_SHEET_ID) {
       console.error("Missing required Google Sheets environment variables");
@@ -44,10 +43,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
     await sheets.spreadsheets.values.append({
       spreadsheetId: GOOGLE_SHEET_ID,
-      range: "Sheet1!A:E",
+      range: "Sheet1!A:H",
       valueInputOption: "USER_ENTERED",
       requestBody: {
-        values: [[new Date().toISOString(), name, email, phone, message]],
+        values: [[new Date().toISOString(), name, email, phone, message, kidName, kidDob, location]],
       },
     });
 

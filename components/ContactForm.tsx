@@ -4,12 +4,17 @@ import { faInstagram, faFacebook, faYoutube } from '@fortawesome/free-brands-svg
 import Link from 'next/link';
 import { useState } from 'react';
 
+const LOCATION_OPTIONS = ["Folsom", "Roseville", "Rancho Cordova"];
+
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
     message: "",
+    kidName: "",
+    kidDob: "",
+    location: "",
   });
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
 
@@ -23,11 +28,11 @@ const ContactForm = () => {
 
     try {
       const results = await Promise.allSettled([
-   fetch("https://formspree.io/f/xrgwbyge", {
-     method: "POST",
-     headers: { "Content-Type": "application/json", Accept: "application/json" },
-     body: JSON.stringify(formData),
-   }),
+        fetch("https://formspree.io/f/xrgwbyge", {
+          method: "POST",
+          headers: { "Content-Type": "application/json", Accept: "application/json" },
+          body: JSON.stringify(formData),
+        }),
         fetch("/api/contact", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -35,14 +40,21 @@ const ContactForm = () => {
         }),
       ]);
 
-      // Consider it a success if at least one destination received it
       const anySucceeded = results.some(
         (r) => r.status === "fulfilled" && r.value.ok
       );
 
       if (anySucceeded) {
         setStatus("success");
-        setFormData({ name: "", email: "", phone: "", message: "" });
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          message: "",
+          kidName: "",
+          kidDob: "",
+          location: "",
+        });
       } else {
         setStatus("error");
       }
@@ -129,6 +141,60 @@ const ContactForm = () => {
             required
           />
         </div>
+
+        <div className="mb-4">
+          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="kidName">
+            Child's Name<span className="text-red-500">*</span>
+          </label>
+          <input
+            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="kidName"
+            type="text"
+            placeholder="Enter your child's name"
+            name="kidName"
+            value={formData.kidName}
+            onChange={handleChange}
+            required
+          />
+        </div>
+
+        <div className="mb-4">
+          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="kidDob">
+            Child's Date of Birth<span className="text-red-500">*</span>
+          </label>
+          <input
+            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="kidDob"
+            type="date"
+            name="kidDob"
+            value={formData.kidDob}
+            onChange={handleChange}
+            required
+          />
+        </div>
+
+        <div className="mb-6">
+          <label className="block text-gray-700 text-sm font-bold mb-2">
+            Location Preference<span className="text-red-500">*</span>
+          </label>
+          <div className="flex flex-col gap-2">
+            {LOCATION_OPTIONS.map((location) => (
+              <label key={location} className="flex items-center gap-2 text-gray-700 font-normal">
+                <input
+                  type="radio"
+                  name="location"
+                  value={location}
+                  checked={formData.location === location}
+                  onChange={handleChange}
+                  className="w-4 h-4"
+                  required
+                />
+                {location}
+              </label>
+            ))}
+          </div>
+        </div>
+
         <div className="mb-6">
           <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="message">
             Message<span className="text-red-500">*</span>
