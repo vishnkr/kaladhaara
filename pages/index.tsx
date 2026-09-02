@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 export default function Home() {
   const images = 6;
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [showAnnouncement, setShowAnnouncement] = useState(false);
+  const [showAnnouncement, setShowAnnouncement] = useState(true);
 const [showAnnouncement2, setShowAnnouncement2] = useState(false);
 const [showAdmissionsNotice, setShowAdmissionsNotice] = useState(true);
 
@@ -38,7 +38,7 @@ const [showAdmissionsNotice, setShowAdmissionsNotice] = useState(true);
           href="/contact"
           className="ml-2 font-semibold text-red-700 hover:underline"
         >
-          Contact Us →
+          Contact Us &#8594;
         </a>
       </p>
 
@@ -47,24 +47,34 @@ const [showAdmissionsNotice, setShowAdmissionsNotice] = useState(true);
         className="ml-4 text-gray-600 hover:text-black text-xl leading-none"
         aria-label="Close notice"
       >
-        ×
+        &#215;
       </button>
     </div>
   </div>
 )}
       {showAnnouncement && (
         <div className="fixed inset-0 z-10 flex items-center justify-center bg-black/60 backdrop-blur-sm px-4">
-          <div className="relative w-full max-w-sm sm:max-w-md md:max-w-lg rounded-3xl bg-gradient-to-b from-orange-50 to-orange-100 p-3 sm:p-5 shadow-xl border border-orange-200">
+          <div className="relative w-full max-w-sm sm:max-w-md md:max-w-lg rounded-3xl bg-gradient-to-b from-orange-50 to-orange-100 p-3 sm:p-5 shadow-xl border border-orange-200 max-h-[90vh] overflow-y-auto">
             <p className="mb-3 text-center text-base sm:text-lg md:text-xl font-semibold text-slate-800 leading-snug">
-              njnknj
+              Sac Valley Margazhi 2026&#8211;2027 &#8212; Applications now open!
             </p>
 
             <div className="flex justify-center">
               <img
-                src="/events/PravaahiniBay.jpeg"
-                alt="Pravaahini Poster"
-                className="w-full max-w-[340px] sm:max-w-[380px] md:max-w-[420px] rounded-xl object-contain shadow-md"
-              />
+                src="/events/svm26.jpeg"
+                alt="Sac Valley Margazhi Utsavam 2026-2027 Poster"
+className="w-full max-w-[280px] sm:max-w-[320px] md:max-w-[360px] rounded-xl object-contain shadow-md"              />
+            </div>
+
+            <div className="flex justify-center mt-4">
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSc79xfK2Faasu8HssjlJXJGpalS_5vveIHqV7o7JeQhL5yFtQ/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-yellow-400 hover:bg-yellow-500 text-violet-900 font-semibold px-6 py-3 rounded-lg transition duration-300 ease-in-out shadow-lg text-sm sm:text-base"
+              >
+                Apply Now
+              </a>
             </div>
 
             <button

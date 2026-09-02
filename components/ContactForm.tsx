@@ -4,7 +4,7 @@ import { faInstagram, faFacebook, faYoutube } from '@fortawesome/free-brands-svg
 import Link from 'next/link';
 import { useState } from 'react';
 
-const LOCATION_OPTIONS = ["Folsom", "Roseville", "Mather"];
+const LOCATION_OPTIONS = ["Folsom", "Roseville", "Rancho Cordova"];
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
