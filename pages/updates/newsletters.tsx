@@ -13,6 +13,9 @@ export default function Newsletters() {
       <div className="newsletters-list">
         <ul>
           <li>
+            <a href="/newsletterNov2026.pdf" target="_blank" className="text-lg text-blue-500 underline">2026 Newsletter - Vol 7</a>
+          </li>
+          <li>
             <a href="/newsletterJune2026.pdf" target="_blank" className="text-lg text-blue-500 underline">2026 Newsletter - Vol 6</a>
           </li>
           <li>
